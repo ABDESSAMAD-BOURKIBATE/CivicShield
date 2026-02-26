@@ -1,0 +1,304 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U gui%b			gui.adb			37c422a1 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W cascade_failure%s	cascade_failure.adb	cascade_failure.ali
+W emergency_response%s	emergency_response.adb	emergency_response.ali
+W healthcare%s		healthcare.adb		healthcare.ali
+W logging%s		logging.adb		logging.ali
+W power_grid%s		power_grid.adb		power_grid.ali
+W stability_index%s	stability_index.adb	stability_index.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.concat_7%s	s-conca7.adb		s-conca7.ali
+Z system.concat_8%s	s-conca8.adb		s-conca8.ali
+Z system.concat_9%s	s-conca9.adb		s-conca9.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W transport_control%s	transport_control.adb	transport_control.ali
+W water_network%s	water_network.adb	water_network.ali
+
+U gui%s			gui.ads			706ba75a EE NE OO PK IU
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-charac.ads		20250808065140 2d3ec45b ada.characters%s
+D a-chlat1.ads		20250808065140 e0d72e76 ada.characters.latin_1%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D cascade_failure.ads	20260226075950 270fd7a5 cascade_failure%s
+D emergency_response.ads  20260226075812 863a997b emergency_response%s
+D gui.ads		20260226090144 706ba75a gui%s
+D gui.adb		20260226090144 7384b8e7 gui%b
+D healthcare.ads	20260226075850 fabc5a11 healthcare%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D power_grid.ads	20260226090020 a8cbb82d power_grid%s
+D stability_index.ads	20260226075528 1edd3d25 stability_index%s
+D system.ads		20250808065140 a869df9e system%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-conca4.ads		20250808065140 33f85f3e system.concat_4%s
+D s-conca5.ads		20250808065140 4099d1db system.concat_5%s
+D s-conca6.ads		20250808065140 8252f108 system.concat_6%s
+D s-conca7.ads		20250808065140 09fd419f system.concat_7%s
+D s-conca8.ads		20250808065140 8d8f50c1 system.concat_8%s
+D s-conca9.ads		20250808065140 54efc86b system.concat_9%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D transport_control.ads	20260226075724 d0143e64 transport_control%s
+D water_network.ads	20260226075652 99fc9dbc water_network%s
+G a e
+G c Z s b [initialize_dashboard gui 18 14 none]
+G c Z s b [render_dashboard gui 19 14 none]
+G c Z s b [render_event_log gui 20 14 none]
+G c Z s b [render_final_report gui 21 14 none]
+G c Z s b [clear_screen gui 22 14 none]
+G c Z b b [status_bar gui 60 13 none]
+G c Z b b [status_text gui 82 13 none]
+G c Z b b [threat_display gui 95 13 none]
+G c Z b b [uss_display gui 120 13 none]
+G r c none [initialize_dashboard gui 18 14 none] [log_event logging 82 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_health_percentage power_grid 61 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_health_percentage water_network 67 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_health_percentage transport_control 46 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_health_percentage emergency_response 56 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_health_percentage healthcare 46 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_score stability_index 60 13 none]
+G r c none [render_dashboard gui 19 14 none] [get_threat stability_index 61 13 none]
+G r c none [render_dashboard gui 19 14 none] [get_impact_report cascade_failure 53 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_status power_grid 60 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_status water_network 66 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_status transport_control 45 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_status emergency_response 55 14 none]
+G r c none [render_dashboard gui 19 14 none] [get_status healthcare 45 14 none]
+G r c none [render_event_log gui 20 14 none] [retrieve_logs logging 94 14 none]
+G r c none [render_final_report gui 21 14 none] [get_analysis stability_index 62 13 none]
+G r c none [render_final_report gui 21 14 none] [retrieve_logs logging 94 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 16|33r6 34r6 38r23 39r23
+X 2 a-charac.ads
+16K13*Characters 18e19 16|34r10 39r27
+X 3 a-chlat1.ads
+16K24*Latin_1 294e27 16|34w21 39r38
+51e4*ESC{character} 16|41r35
+X 11 a-textio.ads
+58K13*Text_IO 785e16 16|33w10 38r27
+284U14*New_Line 16|171s10 179s10 220s10 360s10 369s10 384s10 387s10
+515U14*Put 16|144s10 153s10 390s10 394s13
+565U14*Put_Line 16|156s10 159s10 162s10 165s10 168s10 172s10 175s10 177s10
+. 189s13 221s10 223s10 228s10 232s10 239s10 246s10 253s10 260s10 267s10 271s10
+. 278s13 285s10 290s13 314s13 330s16 348s13 361s10 363s10 367s10 371s10 375s10
+. 379s10 388s10 395s13
+X 13 cascade_failure.ads
+28K9*Cascade_Failure 55e20 16|31w6 213r25 214r9
+40R9*Impact_Report 48e14 16|213r41
+46i7*Total_Cascades{natural} 16|277r17 280r34
+47i7*Recovery_Actions{natural} 16|282r34
+53V14*Get_Impact_Report{40R9} 16|214s25
+X 14 emergency_response.ads
+24K9*Emergency_Response 58e23 16|28w6 206r9 257r11 258r14
+26E9*Response_Status_Type 26e73 16|257r30
+55V14*Get_Status{26E9} 16|258s33
+56V14*Get_Health_Percentage{float} 16|206s28
+X 15 gui.ads
+16K9*GUI 24l5 24e8 16|36b14 398l5 398t8
+18U14*Initialize_Dashboard 16|150b14 190l8 190t28
+19U14*Render_Dashboard 19>32 19>48 16|196b14 291l8 291t24
+19i32 Step{natural} 16|197b7 216r52
+19i48 Max_Steps{natural} 16|197b23 217r52
+20U14*Render_Event_Log 16|297b14 349l8 349t24 385s7
+21U14*Render_Final_Report 16|355b14 396l8 396t27
+22U14*Clear_Screen 16|142b14 145l8 145t20 154s7
+X 16 gui.adb
+38K12 IO=38:27 144r7 153r7 156r7 159r7 162r7 165r7 168r7 171r7 172r7 175r7
+. 177r7 179r7 189r10 220r7 221r7 223r7 228r7 232r7 239r7 246r7 253r7 260r7
+. 267r7 271r7 278r10 285r7 290r10 314r10 330r13 348r10 360r7 361r7 363r7
+. 367r7 369r7 371r7 375r7 379r7 384r7 387r7 388r7 390r7 394r10 395r10
+39K12 L1=39:38 41r32
+41e4 ESC{character} 44r31 45r31 46r31 47r31 48r31 49r31 50r31 51r31 52r31
+. 53r31 54r31 55r31 144r15 144r29 153r15 390r15 394r18
+44a4 RST{string} 76r40 89r33 101r44 102r51 104r47 105r52 107r45 108r56 111r35
+. 113r52 136r14 158r9 161r9 164r9 167r9 170r9 174r9 176r50 178r57 222r40
+. 223r32 227r16 227r34 229r40 232r32 233r47 239r32 240r47 246r32 247r47 253r32
+. 254r47 260r32 261r47 268r40 271r32 278r35 280r52 282r54 286r40 315r33 333r15
+. 336r15 339r15 342r15 362r40 363r32 366r9 366r27 368r40 373r29 377r44 382r9
+. 389r52
+45a4 BOLD{string} 68r21 87r21 89r22 101r27 104r27 107r27 110r27 112r26 125r21
+. 132r22 156r26 159r26 162r26 165r26 168r26 221r26 223r38 228r26 233r22 240r22
+. 247r22 254r22 261r22 267r26 279r25 285r26 308r53 314r29 361r26 363r38 367r26
+. 371r26 375r26 379r26 388r26
+46a4 GRN{string} 65r30 84r30 102r20 122r32 281r19 305r47 388r20
+47a4 YEL{string} 66r33 85r33 105r20 123r35 306r47
+48a4 RED{string} 67r33 68r15 86r33 87r15 108r20 112r20 124r35 125r15 279r19
+. 307r47 308r47 380r32
+49a4 BLU{string} 233r16 240r16 247r16 254r16 261r16 334r15
+50a4 CYN{string} 156r20 159r20 162r20 165r20 168r20 221r20 223r20 227r22
+. 228r20 232r20 239r20 246r20 253r20 260r20 267r20 271r20 278r23 285r20 314r23
+. 361r20 363r20 366r15 367r20
+51a4 WHT{string} 172r20 223r45 272r16 273r16 340r15 363r45 371r20 375r20
+. 379r20
+52a4 DIM{string} 175r20 177r20 331r15
+53a4 BG_R{string} 107r20 110r20
+54a4 BG_G{string} 101r20
+55a4 BG_Y{string} 104r20
+60V13 Status_Bar{string} 60b13 60>25 77l8 77t18 234s15 241s15 248s15 255s15
+. 262s15
+60f25 Pct{float} 62r51 65r13 66r16 67r16
+61i7 Filled{natural} 70r21 73r16
+63a7 Bar{string} 71m10 74m10 76r28
+64a7 Color{string} 76r14
+70i11 I{integer} 71r15
+73i11 I{integer} 74r15
+82V13 Status_Text{string} 82b13 82>26 82>38 90l8 90t19 235s15 242s15 249s15
+. 256s15 263s15
+82a26 S{string} 89r29
+82f38 Pct{float} 84r13 85r16 86r16
+83a7 Color{string} 89r14
+95V13 Threat_Display{string} 95b13 96>7 115l8 115t22 274s9 377s9
+96e7 T{22|27E9} 99r12
+120V13 USS_Display{string} 120b13 120>26 137l8 137t19 272s32 373s9
+120f26 Score{float} 122r13 123r16 124r16 126r44 128r19
+121a7 Color{string} 132r14
+126i7 Whole{natural} 128r34 129r49
+127i7 Frac{natural} 130r49 134r18
+129a7 W_Img{string} 133r14 133r21 133r40
+130a7 F_Img{string} 135r14 135r21 135r40
+199f7 Power_H{float} 234r27 237r38
+201f7 Water_H{float} 241r27 244r41
+203f7 Transport_H{float} 248r27 251r45
+205f7 Emergency_H{float} 255r27 258r46
+207f7 Healthcare_H{float} 262r27 265r38
+209f7 USS{float} 272r45
+211e7 Threat{22|27E9} 274r25
+213r7 Report{13|40R9} 277r10 280r27 282r27
+216a7 Step_Img{string} 225r27
+217a7 Max_Img{string} 226r9 226r18 226r39
+298a7 Buffer{20|72A9} 310m30 317r21
+299i7 Count{natural} 310m38 311r28
+300r7 Item{20|53R9} 317m13 319r18 332r30 335r43 338r45 341r15 341r34
+301i7 Show{natural} 311m7 313r10 316r43
+302p7 Sev_Color(string) 321m19 323m19 325m19 327m19 337r15
+305a7 Green_Ref{string} 321r32
+306a7 Yellow_Ref{string} 323r32
+307a7 Red_Ref{string} 325r32
+308a7 Bold_Red{string} 327r32
+316m14 I{20|71M9} 317r29
+356r7 Analysis{22|51R9} 358r31 377r25 381r9 381r39
+358f7 USS{float} 373r22
+X 17 healthcare.ads
+23K9*Healthcare 16|29w6 208r9 264r11 265r14 17|48e15
+25E9*Healthcare_Status_Type 16|264r22 17|25e75
+45V14*Get_Status{25E9} 16|265s25
+46V14*Get_Health_Percentage{float} 16|208s20
+X 20 logging.ads
+23K9*Logging 16|32w6 181r7 183r18 184r18 298r16 300r16 310r7 316r24 320r21
+. 322r21 324r21 326r21 335r15 338r15 20|104e12
+29E9*Log_Category 16|335r23 20|37e14
+37n7*System{29E9} 16|183r26
+43E9*Severity_Level 16|338r23 20|47e16
+44n7*Info{43E9} 16|184r26 320r29
+45n7*Warning{43E9} 16|322r29
+46n7*Error{43E9} 16|324r29
+47n7*Critical{43E9} 16|326r29
+53R9*Log_Entry 16|300r24 20|59e14
+54i7*Timestamp{natural} 16|332r35
+55e7*Category{29E9} 16|335r48
+56e7*Severity{43E9} 16|319r23 338r50
+57a7*Message{string} 16|341r20
+58i7*Msg_Len{natural} 16|341r39
+71M9*Log_Index 16|316r32
+72A9*Log_Array(53R9)<71M9> 16|298r24
+82U14*Log_Event 16|181s15
+83i7 Step{natural} 16|182r10
+84e7 Cat{29E9} 16|183r10
+85e7 Sev{43E9} 16|184r10
+86a7 Msg{string} 16|185r10
+94U14*Retrieve_Logs 16|310s15
+X 21 power_grid.ads
+24K9*Power_Grid 16|25w6 200r9 236r11 237r14 21|63e15
+30E9*Grid_Status_Type 16|236r22 21|30e65
+60V14*Get_Status{30E9} 16|237s25
+61V14*Get_Health_Percentage{float} 16|200s20
+X 22 stability_index.ads
+21K9*Stability_Index 16|30w6 96r11 100r15 103r15 106r15 109r15 210r9 211r25
+. 212r9 356r27 357r9 22|64e20
+27E9*Threat_Level 16|96r27 211r41 22|27e54
+27n26*Low{27E9} 16|100r31
+27n31*Medium{27E9} 16|103r31
+27n39*High{27E9} 16|106r31
+27n45*Critical{27E9} 16|109r31
+51R9*Stability_Analysis 16|356r43 22|56e14
+52f7*USS{float} 16|358r40
+53e7*Threat{27E9} 16|377r34
+54a7*Weakest_Sector{string} 16|381r18
+55i7*Sector_Len{natural} 16|381r48
+60V13*Get_Score{float} 16|210s25
+61V13*Get_Threat{27E9} 16|212s25
+62V13*Get_Analysis{51R9} 16|357s25
+X 51 transport_control.ads
+23K9*Transport_Control 16|27w6 204r9 250r11 251r14 51|48e22
+25E9*Traffic_Status_Type 16|250r29 51|25e69
+45V14*Get_Status{25E9} 16|251s32
+46V14*Get_Health_Percentage{float} 16|204s27
+X 52 water_network.ads
+23K9*Water_Network 16|26w6 202r9 243r11 244r14 52|69e18
+29E9*Network_Status_Type 16|243r25 52|29e68
+66V14*Get_Status{29E9} 16|244s28
+67V14*Get_Health_Percentage{float} 16|202s23
+

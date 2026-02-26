@@ -1,0 +1,206 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U access_control%b	access_control.adb	f9169ea9 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W logging%s		logging.adb		logging.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U access_control%s	access_control.ads	e9babf63 EE NE OO PK
+
+D access_control.ads	20260226075448 e9babf63 access_control%s
+D access_control.adb	20260226083610 602700bf access_control%b
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca2.ads		20250808065140 b5fb73f7 system.concat_2%s
+D s-conca6.ads		20250808065140 8252f108 system.concat_6%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+G a e
+G c Z s b [initialize access_control 56 14 none]
+G c Z s b [authenticate_user access_control 65 13 none]
+G c Z s b [authorize_action access_control 76 13 none]
+G c Z s b [log_access access_control 87 14 none]
+G c Z b b [reset access_control__auth_store 39 17 none]
+G c Z b b [add_user access_control__auth_store 40 17 none]
+G c Z b b [validate access_control__auth_store 42 17 none]
+G c Z b b [get_role access_control__auth_store 45 16 none]
+G c Z b b [is_valid access_control__auth_store 46 16 none]
+G c Z b b [auth_store__resetN access_control 39 7 none]
+G c Z b b [auth_store__resetP access_control 39 7 none]
+G c Z b b [auth_store__add_userN access_control 40 7 none]
+G c Z b b [auth_store__add_userP access_control 40 7 none]
+G c Z b b [auth_store__validateN access_control 42 7 none]
+G c Z b b [auth_store__validateP access_control 42 7 none]
+G c Z b b [auth_store__get_roleN access_control 45 7 none]
+G c Z b b [auth_store__get_roleP access_control 45 7 none]
+G c Z b b [auth_store__is_validN access_control 46 7 none]
+G c Z b b [auth_store__is_validP access_control 46 7 none]
+G c Z b b [user_recordIP access_control 22 9 none]
+G c Z b b [Tuser_arrayBIP access_control 32 4 none]
+G c Z b b [auth_storeTVIP access_control 38 4 none]
+G r c none [initialize access_control 56 14 none] [log_event logging 82 14 none]
+G r c none [authenticate_user access_control 65 13 none] [log_event logging 82 14 none]
+G r c none [log_access access_control 87 14 none] [log_event logging 82 14 none]
+X 1 access_control.ads
+24K9*Access_Control 92l5 92e19 2|15b14 265l5 265t19
+30E9*User_Role 30e57 2|27r19 41r55 45r56 62r55 112r56 205r14
+30n23*Administrator{30E9} 2|144r54 214r15
+30n38*Operator{30E9} 2|145r54 217r15
+30n48*Observer{30E9} 2|119r17 146r54 226r15
+36E9*Action_Type 42e20 78r16 89r17 2|203r16 245r17 255r30
+37n7*View_Dashboard{36E9} 2|219r21 228r21
+38n7*View_Logs{36E9} 2|219r38 228r38
+39n7*Inject_Failure{36E9} 2|220r21
+40n7*Trigger_Recovery{36E9} 2|220r38
+41n7*Modify_Config{36E9} 2|222r21
+42n7*Manage_Users{36E9} 2|222r37
+48I9*Session_Token<integer> 50r29 67r33 77r16 88r17 2|28r19 44r25 45r34 46r35
+. 50r20 88r25 112r34 122r34 165r33 167r15 202r16 244r17 257r33
+50i4*Invalid_Token{48I9} 2|80r26 93r20 124r21 171r19 189r17
+56U14*Initialize 2|140b14 158l8 158t18
+65V13*Authenticate_User{48I9} 66>7 67>7 2|163b13 190l8 190t25
+66a7 Username{string} 2|164b7 169r28 176r46 182r53
+67a7 Password{string} 2|165b7 169r38
+76V13*Authorize_Action{boolean} 77>7 78>7 2|201b13 238l8 238t24
+77i7 Token{48I9} 2|202b7 207r35 211r36
+78e7 Action{36E9} 2|203b7 218r18 227r18
+87U14*Log_Access 88>7 89>7 90>7 2|243b14 263l8 263t18
+88i7 Token{48I9} 2|244b7 257r54
+89e7 Action{36E9} 2|245b7 255r49
+90b7 Granted{boolean} 2|246b7 249r13 254r22
+X 2 access_control.adb
+20N4 Max_Users 32r35 68r27
+22R9 User_Record 30e14 32r49 64r16
+23a7*Username{string} 71m14 72m14 97r26
+24i7*User_Len{natural} 74m14 95r26
+25a7*Password{string} 75m14 76m14 100r26
+26i7*Pass_Len{natural} 78m14 96r26
+27e7*Role{1|30E9} 79m14 116r33
+28i7*Token{1|48I9} 80m14 103m26 106r36 115r52 128r52
+29b7*Active{boolean} 81m14 104m26 115r26 128r26
+32A9 User_Array(22R9)<integer> 48r20
+38w14 Auth_Store 53b19 135l8 135t18 142r7 144r7 145r7 146r7 169r7 207r14
+. 211r15
+39U17 Reset 55b17 59l11 59t16 142s18
+40U17 Add_User 41>10 41>29 41>48 61b17 84l11 84t19 144s18 145s18 146s18
+41a10 Username{string} 62b10 65r51 73r12 73r22 73r40
+41a29 Password{string} 62b29 66r51 77r12 77r22 77r40
+41e48 Role{1|30E9} 62b48 79r26
+42U17 Validate 43>10 43>29 44<10 86b17 110l11 110t19 169s18
+43a10 Username{string} 87b10 90r51 98r18 98r28 98r46
+43a29 Password{string} 87b29 91r51 101r18 101r28 101r46
+44i10 Result{1|48I9} 88b10 93m10 106m16
+45V16 Get_Role{1|30E9} 45>26 112b16 120l11 120t19 211s26
+45i26 Token{1|48I9} 112b26 115r60
+46V16 Is_Valid{boolean} 46>27 122b16 133l11 133t19 207s25
+46i27 Token{1|48I9} 122b26 124r13 128r60
+48a7 Users{32A9} 83r10 95r16 96r16 97r16 100r16 103r16 104r16 106r26 115r16
+. 115r42 116r23 128r16 128r42
+49i7 User_Count{natural} 57r10 68r13 82r10 82r24 83r17 94r24 114r24 127r24
+50i7 Next_Token{1|48I9} 58r10 103r36 105r16 105r30
+64r10 Rec{22R9} 71m10 72m10 74m10 75m10 76m10 78m10 79m10 80m10 81m10 83r32
+65i10 U_Len{natural} 72r29 73r57 74r26
+66i10 P_Len{natural} 76r29 77r57 78r26
+90i10 U_Len{natural} 95r37 97r41 98r63
+91i10 P_Len{natural} 96r37 100r41 101r63
+94i14 I{integer} 95r23 96r23 97r23 100r23 103r23 104r23 106r33
+114i14 I{integer} 115r23 115r49 116r30
+127i14 I{integer} 128r23 128r49
+167i7 Token{1|48I9} 169m48 171r10 185r14
+205e7 Role{1|30E9} 211m7 213r12
+248a7 Status_Str{string} 256r24
+X 3 ada.ads
+18K9*Ada 2|13r6 156r10 261r10 3|22e8
+X 11 a-textio.ads
+58K13*Text_IO 2|13w10 156r14 261r14 11|785e16
+565U14*Put_Line 2|156s22 261s22
+X 17 logging.ads
+23K9*Logging 2|12w6 148r7 150r18 151r18 172r10 174r21 175r21 178r10 180r21
+. 181r21 251r7 253r18 254r35 254r53 17|104e12
+36n7*Access_Ctrl{29E9} 2|150r26 174r29 180r29 253r26
+44n7*Info{43E9} 2|151r26 175r29 254r43
+45n7*Warning{43E9} 2|181r29 254r61
+82U14*Log_Event 2|148s15 172s18 178s18 251s15
+83i7 Step{natural} 2|149r10 173r13 179r13 252r10
+84e7 Cat{29E9} 2|150r10 174r13 180r13 253r10
+85e7 Sev{43E9} 2|151r10 175r13 181r13 254r10
+86a7 Msg{string} 2|152r10 176r13 182r13 255r10
+X 35 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

@@ -1,0 +1,238 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U water_network%b	water_network.adb	24b85af6 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W logging%s		logging.adb		logging.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+U water_network%s	water_network.ads	99fc9dbc EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20250808065140 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20250808065140 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca2.ads		20250808065140 b5fb73f7 system.concat_2%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-conca5.ads		20250808065140 4099d1db system.concat_5%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-rannum.ads		20250808065140 95815eca system.random_numbers%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20250808065140 8bab724f system.val_int%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-valuns.ads		20250808065140 f7ddb71d system.val_uns%s
+D s-valuei.ads		20250808065140 d9377ca5 system.value_i%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-valueu.ads		20250808065140 a38d32a6 system.value_u%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+D water_network.ads	20260226075652 99fc9dbc water_network%s
+D water_network.adb	20260226090602 8d994d45 water_network%b
+G a e
+G c Z s b [initialize water_network 63 14 none]
+G c Z s b [simulate_step water_network 64 14 none]
+G c Z s b [inject_failure water_network 65 14 none]
+G c Z s b [get_status water_network 66 14 none]
+G c Z s b [get_health_percentage water_network 67 14 none]
+G c Z s s [pump_recordIP water_network 43 9 none]
+G c Z s s [reservoir_recordIP water_network 53 9 none]
+G c Z b b [reset water_network__network_state 24 17 none]
+G c Z b b [update_pumps water_network__network_state 25 17 none]
+G c Z b b [update_reservoirs water_network__network_state 26 17 none]
+G c Z b b [recalculate_status water_network__network_state 27 17 none]
+G c Z b b [get_status water_network__network_state 28 17 none]
+G c Z b b [get_health water_network__network_state 29 17 none]
+G c Z b b [fail_pump water_network__network_state 30 17 none]
+G c Z b b [recover_one water_network__network_state 31 17 none]
+G c Z b b [network_state__resetN water_network 24 7 none]
+G c Z b b [network_state__resetP water_network 24 7 none]
+G c Z b b [network_state__update_pumpsN water_network 25 7 none]
+G c Z b b [network_state__update_pumpsP water_network 25 7 none]
+G c Z b b [network_state__update_reservoirsN water_network 26 7 none]
+G c Z b b [network_state__update_reservoirsP water_network 26 7 none]
+G c Z b b [network_state__recalculate_statusN water_network 27 7 none]
+G c Z b b [network_state__recalculate_statusP water_network 27 7 none]
+G c Z b b [network_state__get_statusN water_network 28 7 none]
+G c Z b b [network_state__get_statusP water_network 28 7 none]
+G c Z b b [network_state__get_healthN water_network 29 7 none]
+G c Z b b [network_state__get_healthP water_network 29 7 none]
+G c Z b b [network_state__fail_pumpN water_network 30 7 none]
+G c Z b b [network_state__fail_pumpP water_network 30 7 none]
+G c Z b b [network_state__recover_oneN water_network 31 7 none]
+G c Z b b [network_state__recover_oneP water_network 31 7 none]
+G c Z b b [Tpump_arrayBIP water_network 16 4 none]
+G c Z b b [Treservoir_arrayBIP water_network 17 4 none]
+G c Z b b [network_stateTVIP water_network 23 4 none]
+G r c none [initialize water_network 63 14 none] [log_event logging 82 14 none]
+G r c none [inject_failure water_network 65 14 none] [log_event logging 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 58|9r6 10r6 14r10 70r19 187r7 200r10 214r10 243r10
+X 4 a-numeri.ads
+20K13*Numerics 36e17 58|10r10 14r14 70r23 187r11
+X 5 a-nuflra.ads
+41K22*Float_Random 74e30 58|10w19 14r23 70r32 187r20
+47R9*Generator<33|65R9> 58|14r36
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<33|73p13> 58|70s45
+53U14*Reset<33|103p14> 58|187s33
+X 11 a-textio.ads
+58K13*Text_IO 785e16 58|9w10 200r14 214r14 243r14
+565U14*Put_Line 58|200s22 214s22 243s22
+X 17 logging.ads
+23K9*Logging 104e12 58|8w6 190r7 192r18 193r18 226r7 228r18 229r18 237r10
+. 239r21 240r21
+31n7*Water{29E9} 58|192r26 228r26 239r29
+44n7*Info{43E9} 58|193r26
+45n7*Warning{43E9} 58|240r29
+46n7*Error{43E9} 58|229r26
+82U14*Log_Event 58|190s15 226s15 237s18
+83i7 Step{natural} 58|191r10 227r10 238r13
+84e7 Cat{29E9} 58|192r10 228r10 239r13
+85e7 Sev{43E9} 58|193r10 229r10 240r13
+86a7 Msg{string} 58|194r10 230r10 241r13
+X 37 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 57 water_network.ads
+23K9*Water_Network 69l5 69e18 58|12b14 257l5 257t18
+29E9*Network_Status_Type 29e68 66r32 58|28r35 36r21 149r34 247r31
+29n33*Normal{29E9} 58|36r44 59r24 139r23
+29n41*Warning{29E9} 58|141r23
+29n50*Critical{29E9} 58|143r23
+29n60*Offline{29E9} 58|145r23
+34N4*Num_Pumps 41r31 58|135r43 195r33
+35N4*Num_Reservoirs 51r36 58|99r32 131r40 196r33
+36N4*Num_Pipelines
+41I9*Pump_Id<short_short_integer> 44r21 58|16r35 30r33 44r19 67r19 92r19
+. 120r19 159r33 170r19 221r12 223r13 230r45
+43R9*Pump_Record 49e14 58|16r47
+44i7*Id{41I9} 58|45m27
+45f7*Flow_Rate{float} 58|46m27 71m26 71r49 73r29 74m29 75r32 76m29 81r35
+. 94r53 163m24 173m26
+46f7*Max_Flow{float} 58|47m27 75r54 76r52 81r57
+47b7*Is_Online{boolean} 58|48m27 68r26 93r26 121r26 161r24 162m24 171r30
+. 172m26
+48f7*Pressure{float} 58|49m27 80m26 164m24 174m26
+51I9*Reservoir_Id<short_short_integer> 54r21 58|17r35 52r19 101r19 126r19
+53R9*Reservoir_Record 58e14 58|17r52
+54i7*Id{51I9} 58|53m32
+55f7*Capacity_L{float} 58|54m32 110r61 111r59 128r58
+56f7*Current_L{float} 58|55m32 102m28 103r30 108r31 109m31 110r34 111m31
+. 128r31
+57f7*Inflow_Rate{float} 58|56m32 105r30
+63U14*Initialize 58|185b14 201l8 201t18
+64U14*Simulate_Step 58|206b14 215l8 215t21
+65U14*Inject_Failure 65>30 58|220b14 245l8 245t22
+65a30 Component{string} 58|220b30 223r28 241r50
+66V14*Get_Status{29E9} 58|247b13 250l8 250t18
+67V14*Get_Health_Percentage{float} 58|252b13 255l8 255t29
+X 58 water_network.adb
+14r4 Gen{5|47R9} 70r53 187r40
+16A9 Pump_Array(57|43R9)<57|41I9> 34r21
+17A9 Reservoir_Array(57|53R9)<57|51I9> 35r21
+23w14 Network_State 40b19 180l8 180t21 188r7 208r7 209r7 210r7 224r7 233r7
+. 249r14 254r14
+24U17 Reset 42b17 61l11 61t16 188s21
+25U17 Update_Pumps 64b17 84l11 84t23 208s21
+26U17 Update_Reservoirs 87b17 114l11 114t28 209s21
+27U17 Recalculate_Status 116b17 147l11 147t29 210s21 233s21
+28V17 Get_Status{57|29E9} 149b16 152l11 152t21 249s28
+29V17 Get_Health{float} 154b16 157l11 157t21 254s28
+30U17 Fail_Pump 30>28 159b17 166l11 166t20 224s21
+30i28 Id{57|41I9} 159b28 161r20 162r20 163r20 164r20
+31U17 Recover_One 32r29 168b17 178l11 178t22
+34a7 Pumps{16A9} 45r13 68r16 71r16 71r39 73r19 74r19 75r22 75r44 76r19 76r42
+. 80r16 81r25 81r47 93r16 94r43 121r16 161r13 162r13 163r13 164r13 171r20
+. 172r16 173r16 174r16
+35a7 Reservoirs{17A9} 53r13 102r13 103r15 105r15 108r16 109r16 110r19 110r46
+. 111r16 111r44 128r16 128r43
+36e7 Status{57|29E9} 59r10 139r13 141r13 143r13 145r13 151r17
+37f7 Health_Pct{float} 60r10 134r10 138r13 140r16 142r16 156r17
+44i14 I{57|41I9} 45r20 45r40
+52i14 I{57|51I9} 53r25 53r47
+65f10 Fluctuation{float} 69m16 71r61
+67i14 I{57|41I9} 68r23 71r23 71r46 73r26 74r26 75r29 75r51 76r26 76r49 80r23
+. 81r32 81r54
+88f10 Total_Flow{float} 94m16 94r30 99r12
+89f10 Consumption_Per_Reservoir{float} 98m10 104r15
+92i14 I{57|41I9} 93r23 94r50
+101i14 I{57|51I9} 102r25 103r27 105r27 108r28 109r28 110r31 110r58 111r28
+. 111r56
+117i10 Online_Count{natural} 122m16 122r32 135r20
+118f10 Avg_Reservoir_Pct{float} 127m13 127r34 130m10 131r13 136r12
+120i14 I{57|41I9} 121r23
+126i14 I{57|51I9} 128r28 128r55
+170i14 I{57|41I9} 171r27 172r23 173r23 174r23
+221i7 Id{57|41I9} 223m7 224r32 230r60
+

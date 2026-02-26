@@ -1,0 +1,228 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U healthcare%b		healthcare.adb		b7175554 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W logging%s		logging.adb		logging.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U healthcare%s		healthcare.ads		fabc5a11 EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20250808065140 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20250808065140 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D healthcare.ads	20260226075850 fabc5a11 healthcare%s
+D healthcare.adb	20260226090024 7d76854a healthcare%b
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-rannum.ads		20250808065140 95815eca system.random_numbers%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+G a e
+G c Z s b [initialize healthcare 42 14 none]
+G c Z s b [simulate_step healthcare 43 14 none]
+G c Z s b [admit_patient healthcare 44 14 none]
+G c Z s b [get_status healthcare 45 14 none]
+G c Z s b [get_health_percentage healthcare 46 14 none]
+G c Z s s [hospital_recordIP healthcare 31 9 none]
+G c Z b b [reset healthcare__healthcare_state 22 17 none]
+G c Z b b [simulate_arrivals healthcare__healthcare_state 23 17 none]
+G c Z b b [simulate_discharges healthcare__healthcare_state 24 17 none]
+G c Z b b [recalculate_status healthcare__healthcare_state 25 17 none]
+G c Z b b [get_status healthcare__healthcare_state 26 17 none]
+G c Z b b [get_health healthcare__healthcare_state 27 17 none]
+G c Z b b [admit_to_hospital healthcare__healthcare_state 28 17 none]
+G c Z b b [activate_surge healthcare__healthcare_state 29 17 none]
+G c Z b b [healthcare_state__resetN healthcare 22 7 none]
+G c Z b b [healthcare_state__resetP healthcare 22 7 none]
+G c Z b b [healthcare_state__simulate_arrivalsN healthcare 23 7 none]
+G c Z b b [healthcare_state__simulate_arrivalsP healthcare 23 7 none]
+G c Z b b [healthcare_state__simulate_dischargesN healthcare 24 7 none]
+G c Z b b [healthcare_state__simulate_dischargesP healthcare 24 7 none]
+G c Z b b [healthcare_state__recalculate_statusN healthcare 25 7 none]
+G c Z b b [healthcare_state__recalculate_statusP healthcare 25 7 none]
+G c Z b b [healthcare_state__get_statusN healthcare 26 7 none]
+G c Z b b [healthcare_state__get_statusP healthcare 26 7 none]
+G c Z b b [healthcare_state__get_healthN healthcare 27 7 none]
+G c Z b b [healthcare_state__get_healthP healthcare 27 7 none]
+G c Z b b [healthcare_state__admit_to_hospitalN healthcare 28 7 none]
+G c Z b b [healthcare_state__admit_to_hospitalP healthcare 28 7 none]
+G c Z b b [healthcare_state__activate_surgeN healthcare 29 7 none]
+G c Z b b [healthcare_state__activate_surgeP healthcare 29 7 none]
+G c Z b b [Thospital_arrayBIP healthcare 16 4 none]
+G c Z b b [healthcare_stateTVIP healthcare 21 4 none]
+G r c none [initialize healthcare 42 14 none] [log_event logging 82 14 none]
+G r c none [admit_patient healthcare 44 14 none] [log_event logging 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 14|9r6 10r6 14r10 71r19 85r19 103r19 113r19 243r7 255r10 269r10
+. 301r10
+X 4 a-numeri.ads
+20K13*Numerics 36e17 14|10r10 14r14 71r23 85r23 103r23 113r23 243r11
+X 5 a-nuflra.ads
+41K22*Float_Random 74e30 14|10w19 14r23 71r32 85r32 103r32 113r32 243r20
+47R9*Generator<33|65R9> 14|14r36
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<33|73p13> 14|71s45 85s45 103s45 113s45
+53U14*Reset<33|103p14> 14|243s33
+X 11 a-textio.ads
+58K13*Text_IO 785e16 14|9w10 255r14 269r14 301r14
+565U14*Put_Line 14|255s22 269s22 301s22
+X 13 healthcare.ads
+23K9*Healthcare 48l5 48e15 14|12b14 314l5 314t15
+25E9*Healthcare_Status_Type 25e75 45r32 14|26r35 33r20 186r34 304r31
+25n36*Normal{25E9} 14|33r46 58r24 165r23
+25n44*Warning{25E9} 14|167r23
+25n53*Critical{25E9} 14|169r23 175r22
+25n63*Overwhelmed{25E9} 14|171r23 175r43
+27N4*Num_Hospitals 29r35 14|251r33
+29I9*Hospital_Id<short_short_integer> 32r26 14|16r34 29r38 67r19 99r19 131r19
+. 176r22 200r19 231r38
+31R9*Hospital_Record 40e14 14|16r50
+32i7*Id{29I9} 14|41m28 45m28 49m28 53m28
+33i7*Total_Beds{natural} 14|41m37 45m37 49m37 53m37 73r48 133r61 214r38
+34i7*Occupied_Beds{natural} 14|42m28 46m28 50m28 54m28 79m30 82r35 105r33
+. 106m33 107r35 109m33 135r48 219r39 220m39 221r41
+35i7*ICU_Total{natural} 14|42m49 46m49 50m50 54m49 88r38 136r60 204r36
+36i7*ICU_Occupied{natural} 14|43m28 47m28 51m28 55m28 86m33 89r38 114r33
+. 116m33 117r35 138r48 203r36 206m36 207r38
+37i7*Surge_Capacity{natural} 14|43m48 47m47 51m48 55m47 76r52 142r47 216r44
+38b7*Surge_Active{boolean} 14|44m28 48m28 52m28 56m28 74r33 140r33 177r37
+. 180m33 215r42 233m25
+39b7*Is_Operational{boolean} 14|44m51 48m51 52m51 56m51 68r30 100r30 132r30
+. 178r33 201r30
+42U14*Initialize 14|241b14 256l8 256t18
+43U14*Simulate_Step 14|261b14 270l8 270t21
+44U14*Admit_Patient 44>29 14|275b14 302l8 302t21
+44a29 Severity{string} 14|275b29 279r18 279r38 287r54 293r56
+45V14*Get_Status{25E9} 14|304b13 307l8 307t18
+46V14*Get_Health_Percentage{float} 14|309b13 312l8 312t29
+X 14 healthcare.adb
+14r4 Gen{5|47R9} 71r53 85r53 103r53 113r53 243r40
+16A9 Hospital_Array(13|31R9)<13|29I9> 32r20
+21w14 Healthcare_State 37b19 236l8 236t24 244r7 263r7 264r7 265r7 280r7 297r7
+. 306r14 311r14
+22U17 Reset 39b17 60l11 60t16 244s24
+23U17 Simulate_Arrivals 63b17 93l11 93t28 263s24
+24U17 Simulate_Discharges 96b17 121l11 121t30 264s24
+25U17 Recalculate_Status 123b17 184l11 184t29 265s24 297s24
+26V17 Get_Status{13|25E9} 186b16 189l11 189t21 306s31
+27V17 Get_Health{float} 191b16 194l11 194t21 311s31
+28U17 Admit_To_Hospital 28>36 28<54 196b17 229l11 229t28 280s24
+28b36 Is_ICU{boolean} 197b10 202r19
+28b54 Success{boolean} 197b28 199m10 208m22 222m25
+29U17 Activate_Surge 29>33 30r29 231b17 234l11 234t25
+29i33 Id{13|29I9} 231b33 233r21
+32a7 Hospitals{16A9} 41r10 45r10 49r10 53r10 68r16 73r34 74r19 76r38 79r16
+. 82r21 86r19 88r24 89r24 100r16 105r19 106r19 107r21 109r19 114r19 116r19
+. 117r21 132r16 133r47 135r34 136r46 138r34 140r19 142r33 177r23 178r19 180r19
+. 201r16 203r22 204r22 206r22 207r24 214r24 215r28 216r30 219r25 220r25 221r27
+. 233r10
+33e7 Status{13|25E9} 58r10 165r13 167r13 169r13 171r13 175r13 175r34 188r17
+34f7 Health_Pct{float} 59r10 162r10 164r13 166r16 168r16 193r17
+64i10 Arrivals{natural} 70m16 82r51
+65i10 Effective_Beds{natural} 73m16 75m19 76r21 81r21
+67i14 I{13|29I9} 68r27 73r45 74r30 76r49 79r27 82r32 86r30 88r35 89r35
+97i10 Discharges{natural} 102m16 105r50 107r51
+99i14 I{13|29I9} 100r27 105r30 106r30 107r32 109r30 114r30 116r30 117r32
+124i10 Total_Beds{natural} 133m16 133r34 141m19 141r33 147r13 149r54
+125i10 Total_Occupied{natural} 134m16 134r34 149r29
+126i10 Total_ICU{natural} 136m16 136r34 154r13 156r54
+127i10 Total_ICU_Used{natural} 137m16 137r34 156r29
+128f10 Occupancy_Pct{float} 148m13 151m13 162r24
+129f10 ICU_Pct{float} 155m13 158m13 162r46
+131i14 I{13|29I9} 132r27 133r58 135r45 136r57 138r45 140r30 142r44
+176i17 I{13|29I9} 177r34 178r30 180r30
+200i14 I{13|29I9} 201r27 203r33 204r33 206r33 207r35 214r35 215r39 216r41
+. 219r36 220r36 221r38
+213i22 Effective{natural} 219r55
+276b7 Is_ICU{boolean} 279m7 280r43
+277b7 Success{boolean} 280m51 282r10
+X 19 logging.ads
+23K9*Logging 14|8w6 246r7 248r18 249r18 283r10 285r21 286r21 289r10 291r21
+. 292r21 19|104e12
+34n7*Healthcare{29E9} 14|248r26 285r29 291r29
+44n7*Info{43E9} 14|249r26 286r29
+46n7*Error{43E9} 14|292r29
+82U14*Log_Event 14|246s15 283s18 289s18
+83i7 Step{natural} 14|247r10 284r13 290r13
+84e7 Cat{29E9} 14|248r10 285r13 291r13
+85e7 Sev{43E9} 14|249r10 286r13 292r13
+86a7 Msg{string} 14|250r10 287r13 293r13
+X 37 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

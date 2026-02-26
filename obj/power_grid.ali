@@ -1,0 +1,230 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U power_grid%b		power_grid.adb		e1a052f1 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W logging%s		logging.adb		logging.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+U power_grid%s		power_grid.ads		a8cbb82d EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20250808065140 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20250808065140 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D power_grid.ads	20260226090020 a8cbb82d power_grid%s
+D power_grid.adb	20260226090356 79b660d3 power_grid%b
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca2.ads		20250808065140 b5fb73f7 system.concat_2%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-conca5.ads		20250808065140 4099d1db system.concat_5%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-rannum.ads		20250808065140 95815eca system.random_numbers%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20250808065140 8bab724f system.val_int%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-valuns.ads		20250808065140 f7ddb71d system.val_uns%s
+D s-valuei.ads		20250808065140 d9377ca5 system.value_i%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-valueu.ads		20250808065140 a38d32a6 system.value_u%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+G a e
+G c Z s b [initialize power_grid 57 14 none]
+G c Z s b [simulate_step power_grid 58 14 none]
+G c Z s b [inject_failure power_grid 59 14 none]
+G c Z s b [get_status power_grid 60 14 none]
+G c Z s b [get_health_percentage power_grid 61 14 none]
+G c Z s s [generator_recordIP power_grid 44 9 none]
+G c Z s s [Tgenerator_arrayBIP power_grid 52 4 none]
+G c Z b b [reset power_grid__grid_state 37 17 none]
+G c Z b b [set_generator power_grid__grid_state 38 17 none]
+G c Z b b [get_generator power_grid__grid_state 39 17 none]
+G c Z b b [update_status power_grid__grid_state 40 17 none]
+G c Z b b [get_status power_grid__grid_state 41 17 none]
+G c Z b b [get_health power_grid__grid_state 42 17 none]
+G c Z b b [fail_generator power_grid__grid_state 43 17 none]
+G c Z b b [recover_one power_grid__grid_state 44 17 none]
+G c Z b b [grid_state__resetN power_grid 37 7 none]
+G c Z b b [grid_state__resetP power_grid 37 7 none]
+G c Z b b [grid_state__set_generatorN power_grid 38 7 none]
+G c Z b b [grid_state__set_generatorP power_grid 38 7 none]
+G c Z b b [grid_state__get_generatorN power_grid 39 7 none]
+G c Z b b [grid_state__get_generatorP power_grid 39 7 none]
+G c Z b b [grid_state__update_statusN power_grid 40 7 none]
+G c Z b b [grid_state__update_statusP power_grid 40 7 none]
+G c Z b b [grid_state__get_statusN power_grid 41 7 none]
+G c Z b b [grid_state__get_statusP power_grid 41 7 none]
+G c Z b b [grid_state__get_healthN power_grid 42 7 none]
+G c Z b b [grid_state__get_healthP power_grid 42 7 none]
+G c Z b b [grid_state__fail_generatorN power_grid 43 7 none]
+G c Z b b [grid_state__fail_generatorP power_grid 43 7 none]
+G c Z b b [grid_state__recover_oneN power_grid 44 7 none]
+G c Z b b [grid_state__recover_oneP power_grid 44 7 none]
+G c Z b b [grid_stateTVIP power_grid 36 4 none]
+G r c none [initialize power_grid 57 14 none] [log_event logging 82 14 none]
+G r c none [simulate_step power_grid 58 14 none] [log_event logging 82 14 none]
+G r c none [inject_failure power_grid 59 14 none] [log_event logging 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 19|18r6 19r6 27r10 179r7 192r10 209r16 235r10 266r10
+X 4 a-numeri.ads
+20K13*Numerics 36e17 19|19r10 27r14 179r11 209r20
+X 5 a-nuflra.ads
+41K22*Float_Random 74e30 19|19w19 27r23 179r20 209r29
+47R9*Generator<35|65R9> 19|27r36
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<35|73p13> 19|209s42
+53U14*Reset<35|103p14> 19|179s33
+X 11 a-textio.ads
+58K13*Text_IO 785e16 19|18w10 192r14 235r14 266r14
+565U14*Put_Line 19|192s22 235s22 266s22
+X 17 logging.ads
+23K9*Logging 104e12 19|20w6 182r7 184r18 185r18 219r16 221r27 222r27 249r7
+. 251r18 252r18 260r10 262r21 263r21
+30n7*Power{29E9} 19|184r26 221r35 251r26 262r29
+44n7*Info{43E9} 19|185r26
+45n7*Warning{43E9} 19|222r35 263r29
+46n7*Error{43E9} 19|252r26
+82U14*Log_Event 19|182s15 219s24 249s15 260s18
+83i7 Step{natural} 19|183r10 220r19 250r10 261r13
+84e7 Cat{29E9} 19|184r10 221r19 251r10 262r13
+85e7 Sev{43E9} 19|185r10 222r19 252r10 263r13
+86a7 Msg{string} 19|186r10 223r19 253r10 264r13
+X 18 power_grid.ads
+24K9*Power_Grid 63l5 63e15 19|22b14 286l5 286t15
+30E9*Grid_Status_Type 30e65 60r32 19|41r35 48r22 116r34 273r31
+30n30*Normal{30E9} 19|48r42 64r26 106r23
+30n38*Warning{30E9} 19|108r23
+30n47*Critical{30E9} 19|110r23
+30n57*Offline{30E9} 19|112r23
+35N4*Num_Generators 42r36 19|187r33
+36N4*Num_Substations 19|188r33
+42I9*Generator_Id<short_short_integer> 45r23 52r35 19|38r37 39r37 43r38 57r19
+. 69r37 74r36 90r19 127r38 142r19 150r22 163r19 204r16 223r41 243r12 246r13
+. 254r18
+44R9*Generator_Record 50e14 52r52 19|38r57 39r58 69r57 74r57 201r20
+45i7*Id{42I9} 19|58m32
+46f7*Capacity_MW{float} 19|59m32 91r63 94r33 215r42 216r40
+47f7*Current_Load{float} 19|60m32 95r58 135r39 137m26 152m34 153r36 166m31
+. 210m17 210r37 213r20 214m20 215r23 216m20
+48b7*Is_Online{boolean} 19|61m32 92r31 131r33 136m26 143r31 151r34 164r35
+. 165m31 206r17
+49i7*Failure_Count{natural} 19|62m32 138m26 139r28
+52A9*Generator_Array(44R9)<42I9> 19|47r22
+57U14*Initialize 19|177b14 193l8 193t18
+58U14*Simulate_Step 19|200b14 236l8 236t21
+59U14*Inject_Failure 59>30 19|242b14 268l8 268t22
+59a30 Component{string} 19|242b30 246r33 264r50
+60V14*Get_Status{30E9} 19|273b13 276l8 276t18
+61V14*Get_Health_Percentage{float} 19|281b13 284l8 284t29
+X 19 power_grid.adb
+27r4 Gen{5|47R9} 179r40 209r50
+36w14 Grid_State 53b19 172l8 172t18 180r7 205r17 227r13 231r7 247r7 256r7
+. 275r14 283r14
+37U17 Reset 55b17 67l11 67t16 180s18
+38U17 Set_Generator 38>32 38>51 69b17 72l11 72t24 227s24
+38i32 Id{18|42I9} 69b32 71r22
+38r51 Rec{18|44R9} 69b51 71r29
+39V17 Get_Generator{18|44R9} 39>32 74b16 77l11 77t24 205s28
+39i32 Id{18|42I9} 74b31 76r29
+40U17 Update_Status 83b17 114l11 114t24 231s18 256s18
+41V17 Get_Status{18|30E9} 116b16 119l11 119t21 275s25
+42V17 Get_Health{float} 121b16 124l11 124t21 283s25
+43U17 Fail_Generator 43>33 127b17 158l11 158t25 247s18
+43i33 Id{18|42I9} 127b33 131r29 135r35 136r22 137r22 138r22 139r24
+44U17 Recover_One 45r29 161b17 170l11 170t22
+47a7 Generators{18|52A9} 58r13 71r10 76r17 91r48 92r16 94r18 95r43 131r17
+. 135r23 136r10 137r10 138r10 139r12 143r16 151r19 152r19 153r21 164r20 165r16
+. 166r16
+48e7 Status{18|30E9} 64r10 106r13 108r13 110r13 112r13 118r17
+49f7 Health_Pct{float} 65r10 100r13 102r13 105r13 107r16 109r16 123r17
+50i7 Step_Counter{natural} 66r10 88r10 88r26
+57i14 I{18|42I9} 58r25 58r49
+84f10 Total_Capacity{float} 91m13 91r31 99r13 100r46
+85f10 Online_Capacity{float} 93m16 93r35 100r28
+86f10 Total_Load{float} 95m16 95r30
+90i14 I{18|42I9} 91r60 92r28 94r30 95r55
+128f10 Lost_Load{float} 135m10 154r21
+129i10 Online_Count{natural} 144m16 144r32 149r13 154r40
+142i14 I{18|42I9} 143r28
+150i17 I{18|42I9} 151r31 152r31 153r33
+163i14 I{18|42I9} 164r32 165r28 166r28
+201r7 Rec{18|44R9} 205m10 206r13 210m13 210r33 213r16 214m16 215r19 215r38
+. 216m16 216r36 227r42
+202f7 Fluctuation{float} 208m13 210r52
+204i11 I{18|42I9} 205r43 223r61 227r39
+243i7 Id{18|42I9} 246m7 247r34 254r38
+X 39 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

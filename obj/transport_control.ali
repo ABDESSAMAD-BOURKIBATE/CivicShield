@@ -1,0 +1,225 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U transport_control%b	transport_control.adb	3706c797 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W logging%s		logging.adb		logging.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+U transport_control%s	transport_control.ads	d0143e64 EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20250808065140 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20250808065140 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca2.ads		20250808065140 b5fb73f7 system.concat_2%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-rannum.ads		20250808065140 95815eca system.random_numbers%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20250808065140 8bab724f system.val_int%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-valuns.ads		20250808065140 f7ddb71d system.val_uns%s
+D s-valuei.ads		20250808065140 d9377ca5 system.value_i%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-valueu.ads		20250808065140 a38d32a6 system.value_u%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+D transport_control.ads	20260226075724 d0143e64 transport_control%s
+D transport_control.adb	20260226090602 d7cf73fc transport_control%b
+G a e
+G c Z s b [initialize transport_control 42 14 none]
+G c Z s b [simulate_step transport_control 43 14 none]
+G c Z s b [inject_incident transport_control 44 14 none]
+G c Z s b [get_status transport_control 45 14 none]
+G c Z s b [get_health_percentage transport_control 46 14 none]
+G c Z s s [intersection_recordIP transport_control 33 9 none]
+G c Z b b [reset transport_control__traffic_state 22 17 none]
+G c Z b b [step_signals transport_control__traffic_state 23 17 none]
+G c Z b b [propagate_congestion transport_control__traffic_state 24 17 none]
+G c Z b b [recalculate_status transport_control__traffic_state 25 17 none]
+G c Z b b [get_status transport_control__traffic_state 26 17 none]
+G c Z b b [get_health transport_control__traffic_state 27 17 none]
+G c Z b b [set_incident transport_control__traffic_state 28 17 none]
+G c Z b b [clear_incidents transport_control__traffic_state 29 17 none]
+G c Z b b [traffic_state__resetN transport_control 22 7 none]
+G c Z b b [traffic_state__resetP transport_control 22 7 none]
+G c Z b b [traffic_state__step_signalsN transport_control 23 7 none]
+G c Z b b [traffic_state__step_signalsP transport_control 23 7 none]
+G c Z b b [traffic_state__propagate_congestionN transport_control 24 7 none]
+G c Z b b [traffic_state__propagate_congestionP transport_control 24 7 none]
+G c Z b b [traffic_state__recalculate_statusN transport_control 25 7 none]
+G c Z b b [traffic_state__recalculate_statusP transport_control 25 7 none]
+G c Z b b [traffic_state__get_statusN transport_control 26 7 none]
+G c Z b b [traffic_state__get_statusP transport_control 26 7 none]
+G c Z b b [traffic_state__get_healthN transport_control 27 7 none]
+G c Z b b [traffic_state__get_healthP transport_control 27 7 none]
+G c Z b b [traffic_state__set_incidentN transport_control 28 7 none]
+G c Z b b [traffic_state__set_incidentP transport_control 28 7 none]
+G c Z b b [traffic_state__clear_incidentsN transport_control 29 7 none]
+G c Z b b [traffic_state__clear_incidentsP transport_control 29 7 none]
+G c Z b b [Tintersection_arrayBIP transport_control 16 4 none]
+G c Z b b [traffic_stateTVIP transport_control 21 4 none]
+G r c none [initialize transport_control 42 14 none] [log_event logging 82 14 none]
+G r c none [inject_incident transport_control 44 14 none] [log_event logging 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 57|9r6 10r6 14r10 70r19 190r7 203r10 218r10 248r10
+X 4 a-numeri.ads
+20K13*Numerics 36e17 57|10r10 14r14 70r23 190r11
+X 5 a-nuflra.ads
+41K22*Float_Random 74e30 57|10w19 14r23 70r32 190r20
+47R9*Generator<32|65R9> 57|14r36
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<32|73p13> 57|70s45
+53U14*Reset<32|103p14> 57|190s33
+X 11 a-textio.ads
+58K13*Text_IO 785e16 57|9w10 203r14 218r14 248r14
+565U14*Put_Line 57|203s22 218s22 248s22
+X 17 logging.ads
+23K9*Logging 104e12 57|8w6 193r7 195r18 196r18 231r7 233r18 234r18 242r10
+. 244r21 245r21
+32n7*Transport{29E9} 57|195r26 233r26 244r29
+44n7*Info{43E9} 57|196r26
+45n7*Warning{43E9} 57|245r29
+46n7*Error{43E9} 57|234r26
+82U14*Log_Event 57|193s15 231s15 242s18
+83i7 Step{natural} 57|194r10 232r10 243r13
+84e7 Cat{29E9} 57|195r10 233r10 244r13
+85e7 Sev{43E9} 57|196r10 234r10 245r13
+86a7 Msg{string} 57|197r10 235r10 246r13
+X 36 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 56 transport_control.ads
+23K9*Transport_Control 48l5 48e22 57|12b14 262l5 262t22
+25E9*Traffic_Status_Type 25e69 45r32 57|26r35 33r23 153r34 252r31
+25n33*Normal{25E9} 57|33r46 50r24 143r23
+25n41*Warning{25E9} 57|145r23
+25n50*Critical{25E9} 57|147r23
+25n60*Gridlock{25E9} 57|149r23
+27N4*Num_Intersections 29r39 57|135r54 140r46 198r33
+29I9*Intersection_Id<short_short_integer> 34r25 57|16r38 28r36 41r19 58r19
+. 99r19 104r23 112r23 127r19 163r36 172r19 226r12 228r13 236r18
+31E9*Signal_Phase 31e55 35r25
+31n26*Green{31E9} 57|44r35 62r24 64r62 175r53
+31n33*Yellow{31E9} 57|62r62 63r24
+31n41*Red{31E9} 57|63r62 64r24
+31n46*Flashing{31E9} 57|65r24 166r48
+33R9*Intersection_Record 40e14 57|16r58
+34i7*Id{29I9} 57|43m16
+35e7*Phase{31E9} 57|44m16 61r39 62m53 63m53 64m53 166m29 175m34
+36f7*Congestion{float} 57|45m16 71m34 72r36 76m37 77r39 81r37 82m37 83r40
+. 84m37 89r43 100r34 101r44 105m41 108r46 113m41 116r46 129r33 177m34 178r52
+37b7*Is_Operational{boolean} 57|46m16 59r34 130r34 167m29 176m34
+38b7*Incident_Active{boolean} 57|47m16 75r37 165m29 173r34 174m34
+39f7*Delay_Seconds{float} 57|48m16 88m34
+42U14*Initialize 57|188b14 205l8 205t18
+43U14*Simulate_Step 57|210b14 220l8 220t21
+44U14*Inject_Incident 44>31 57|225b14 250l8 250t23
+44a31 Location{string} 57|225b31 228r36 246r53
+45V14*Get_Status{25E9} 57|252b13 255l8 255t18
+46V14*Get_Health_Percentage{float} 57|257b13 260l8 260t29
+X 57 transport_control.adb
+14r4 Gen{5|47R9} 70r53 190r40
+16A9 Intersection_Array(56|33R9)<56|29I9> 32r23
+21w14 Traffic_State 37b19 183l8 183t21 191r7 212r7 213r7 214r7 229r7 238r7
+. 254r14 259r14
+22U17 Reset 39b17 52l11 52t16 191s21
+23U17 Step_Signals 55b17 92l11 92t23 212s21
+24U17 Propagate_Congestion 96b17 120l11 120t31 213s21
+25U17 Recalculate_Status 122b17 151l11 151t29 214s21 238s21
+26V17 Get_Status{56|25E9} 153b16 156l11 156t21 254s28
+27V17 Get_Health{float} 158b16 161l11 161t21 259s28
+28U17 Set_Incident 28>31 163b17 168l11 168t23 229s21
+28i31 Id{56|29I9} 163b31 165r25 166r25 167r25
+29U17 Clear_Incidents 30r29 170b17 181l11 181t26
+32a7 Intersections{16A9} 42r13 59r16 61r21 62r35 63r35 64r35 71r16 72r18
+. 75r19 76r19 77r21 81r19 82r19 83r22 84r19 88r16 89r25 100r16 101r26 105r19
+. 108r24 113r19 116r24 129r15 130r16 165r10 166r10 167r10 173r16 174r16 175r16
+. 176r16 177r16 178r34
+33e7 Status{56|25E9} 50r10 143r13 145r13 147r13 149r13 155r17
+34f7 Health_Pct{float} 51r10 138r10 142r13 144r16 146r16 160r17
+41i14 I{56|29I9} 42r28 43r35
+56f10 Fluctuation{float} 69m16 72r49
+58i14 I{56|29I9} 59r31 61r36 62r50 63r50 64r50 71r31 72r33 75r34 76r34 77r36
+. 81r34 82r34 83r37 84r34 88r31 89r40
+97f10 Spill{float} 101m16 108r59 116r59
+99i14 I{56|29I9} 100r31 101r41 104r19 105r34 108r39 112r19 113r34 116r39
+123f10 Total_Congestion{float} 128m13 128r33 135r28
+124f10 Avg_Congestion{float} 135m10 139r22
+125i10 Operational_Cnt{natural} 131m16 131r35 140r20
+127i14 I{56|29I9} 129r30 130r31
+172i14 I{56|29I9} 173r31 174r31 175r31 176r31 177r31 178r49
+226i7 Id{56|29I9} 228m7 229r35 236r41
+

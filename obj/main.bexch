@@ -1,0 +1,31 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\LENOVO\Downloads\CivicShield\civicshield.gpr
+20260226083350 2892cb6d3bd5bd90e4f87d2aa30a4d95
+[BOUND OBJECT FILES]
+C:\Users\LENOVO\Downloads\CivicShield\obj\logging.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\access_control.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\emergency_response.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\healthcare.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\power_grid.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\stability_index.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\transport_control.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\water_network.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\cascade_failure.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\gui.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\LENOVO\Downloads\CivicShield\obj\
+-LC:\Users\LENOVO\Downloads\CivicShield\obj\
+-LC:/users/lenovo/appdata/local/alire/cache/toolchains/gnat_native_15.2.1_346e2e00/lib/gcc/x86_64-w64-mingw32/15.2.0/adalib/
+-static
+C:/users/lenovo/appdata/local/alire/cache/toolchains/gnat_native_15.2.1_346e2e00/lib/gcc/x86_64-w64-mingw32/15.2.0/adalib/libgnarl.a
+C:/users/lenovo/appdata/local/alire/cache/toolchains/gnat_native_15.2.1_346e2e00/lib/gcc/x86_64-w64-mingw32/15.2.0/adalib/libgnat.a
+-Xlinker
+--stack=0x800000,0x1000
+-mthreads

@@ -1,0 +1,235 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U emergency_response%b	emergency_response.adb	28a7d4d3 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W logging%s		logging.adb		logging.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U emergency_response%s	emergency_response.ads	863a997b EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20250808065140 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20250808065140 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D emergency_response.ads  20260226075812 863a997b emergency_response%s
+D emergency_response.adb  20260226090406 9e40c7a7 emergency_response%b
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-conca5.ads		20250808065140 4099d1db system.concat_5%s
+D s-conca6.ads		20250808065140 8252f108 system.concat_6%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-rannum.ads		20250808065140 95815eca system.random_numbers%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+G a e
+G c Z s b [initialize emergency_response 49 14 none]
+G c Z s b [simulate_step emergency_response 50 14 none]
+G c Z s b [dispatch_event emergency_response 51 14 none]
+G c Z s b [get_status emergency_response 55 14 none]
+G c Z s b [get_health_percentage emergency_response 56 14 none]
+G c Z s s [unit_recordIP emergency_response 40 9 none]
+G c Z b b [reset emergency_response__dispatch_state 24 17 none]
+G c Z b b [return_available_units emergency_response__dispatch_state 25 17 none]
+G c Z b b [recalculate_status emergency_response__dispatch_state 26 17 none]
+G c Z b b [get_status emergency_response__dispatch_state 27 17 none]
+G c Z b b [get_health emergency_response__dispatch_state 28 17 none]
+G c Z b b [deploy_unit emergency_response__dispatch_state 29 17 none]
+G c Z b b [fail_unit emergency_response__dispatch_state 33 17 none]
+G c Z b b [recover_one emergency_response__dispatch_state 35 17 none]
+G c Z b b [dispatch_state__resetN emergency_response 24 7 none]
+G c Z b b [dispatch_state__resetP emergency_response 24 7 none]
+G c Z b b [dispatch_state__return_available_unitsN emergency_response 25 7 none]
+G c Z b b [dispatch_state__return_available_unitsP emergency_response 25 7 none]
+G c Z b b [dispatch_state__recalculate_statusN emergency_response 26 7 none]
+G c Z b b [dispatch_state__recalculate_statusP emergency_response 26 7 none]
+G c Z b b [dispatch_state__get_statusN emergency_response 27 7 none]
+G c Z b b [dispatch_state__get_statusP emergency_response 27 7 none]
+G c Z b b [dispatch_state__get_healthN emergency_response 28 7 none]
+G c Z b b [dispatch_state__get_healthP emergency_response 28 7 none]
+G c Z b b [dispatch_state__deploy_unitN emergency_response 29 7 none]
+G c Z b b [dispatch_state__deploy_unitP emergency_response 29 7 none]
+G c Z b b [dispatch_state__fail_unitN emergency_response 33 7 none]
+G c Z b b [dispatch_state__fail_unitP emergency_response 33 7 none]
+G c Z b b [dispatch_state__recover_oneN emergency_response 35 7 none]
+G c Z b b [dispatch_state__recover_oneP emergency_response 35 7 none]
+G c Z b b [Tunit_arrayBIP emergency_response 17 4 none]
+G c Z b b [dispatch_stateTVIP emergency_response 23 4 none]
+G r c none [initialize emergency_response 49 14 none] [log_event logging 82 14 none]
+G r c none [dispatch_event emergency_response 51 14 none] [log_event logging 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 14|10r6 11r6 15r10 92r26 161r24 197r7 209r10 223r10 261r10
+X 4 a-numeri.ads
+20K13*Numerics 36e17 14|11r10 15r14 92r30 161r28 197r11
+X 5 a-nuflra.ads
+41K22*Float_Random 74e30 14|11w19 15r23 92r39 161r37 197r20
+47R9*Generator<35|65R9> 14|15r36
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<35|73p13> 14|92s52 161s50
+53U14*Reset<35|103p14> 14|197s33
+X 11 a-textio.ads
+58K13*Text_IO 785e16 14|10w10 209r14 223r14 261r14
+565U14*Put_Line 14|209s22 223s22 261s22
+X 13 emergency_response.ads
+24K9*Emergency_Response 58l5 58e23 14|13b14 275l5 275t23
+26E9*Response_Status_Type 26e73 55r32 14|27r35 39r21 135r34 265r31
+26n34*Normal{26E9} 14|39r45 81r24 125r23
+26n42*Warning{26E9} 14|127r23
+26n51*Critical{26E9} 14|129r23
+26n61*Overwhelmed{26E9} 14|131r23
+28E9*Unit_Type 28e45 42r23 52r23 14|30r21 147r21 231r23 244r21 252r39
+28n23*Fire{28E9} 14|51r47
+28n29*Police{28E9} 14|62r47
+28n37*Medical{28E9} 14|73r47
+30E9*Priority_Level 30e57 53r23 14|31r21 148r21 232r23 246r21
+30n28*Low{30E9}
+30n33*Medium{30E9}
+30n41*High{30E9}
+30n47*Emergency{30E9}
+32N4*Num_Fire_Units 35r36 14|49r24
+33N4*Num_Police_Units 35r53 14|60r24
+34N4*Num_Medical_Units 36r36 14|71r24
+35N4*Total_Units 38r31 14|121r48 122r46 205r33
+38I9*Unit_Id<short_short_integer> 41r23 14|17r30 33r33 46r16 90r19 110r19
+. 154r19 170r33 180r19
+40R9*Unit_Record 47e14 14|17r42
+41i7*Id{38I9} 14|50m29 61m29 72m29
+42e7*Kind{28E9} 14|51m29 62m29 73m29 155r26
+43b7*Is_Available{boolean} 14|52m29 63m29 74m29 91r30 95m29 113r29 156r26
+. 159m26 174m24 183m26
+44b7*Is_Operational{boolean} 14|53m29 64m29 75m29 91r57 111r26 157r26 172r24
+. 173m24 181r30 182m26
+45f7*Travel_Time{float} 14|54m29 65m29 76m29 96m29 99m29 100r31 160m26 184m26
+46i7*Deploy_Count{natural} 14|55m29 66m29 77m29 162m26 163r28
+49U14*Initialize 14|195b14 211l8 211t18
+50U14*Simulate_Step 14|216b14 225l8 225t21
+51U14*Dispatch_Event 52>7 53>7 54>7 14|230b14 263l8 263t22
+52e7 Event_Type{28E9} 14|231b7 237r35 244r38 252r56
+53e7 Priority{30E9} 14|232b7 237r47 246r43
+54a7 Location{string} 14|233b7 245r21 253r36
+55V14*Get_Status{26E9} 14|265b13 268l8 268t18
+56V14*Get_Health_Percentage{float} 14|270b13 273l8 273t29
+X 14 emergency_response.adb
+15r4 Gen{5|47R9} 92r60 161r58 197r40
+17A9 Unit_Array(13|40R9)<13|38I9> 38r21
+23w14 Dispatch_State 43b19 190l8 190t22 198r7 218r7 219r7 237r7 257r7 267r14
+. 272r14
+24U17 Reset 45b17 83l11 83t16 198s22
+25U17 Return_Available_Units 87b17 104l11 104t33 218s22
+26U17 Recalculate_Status 106b17 133l11 133t29 219s22 257s22
+27V17 Get_Status{13|26E9} 135b16 138l11 138t21 267s29
+28V17 Get_Health{float} 140b16 143l11 143t21 272s29
+29U17 Deploy_Unit 30>10 31>10 32<10 146b17 168l11 168t22 237s22
+30e10 Kind{13|28E9} 147b10 155r33
+31e10 Priority{13|30E9} 148b10 151r31
+32b10 Success{boolean} 149b10 153m10 164m16
+33U17 Fail_Unit 33>28 34r29 170b17 176l11 176t20
+33i28 Id{13|38I9} 170b28 172r20 173r20 174r20
+35U17 Recover_One 36r29 178b17 188l11 188t22
+38a7 Units{17A9} 50r13 61r13 72r13 91r20 91r47 95r19 96r19 99r19 100r21 111r16
+. 113r19 155r16 156r16 157r16 159r16 160r16 162r16 163r18 172r13 173r13 174r13
+. 181r20 182r16 183r16 184r16
+39e7 Status{13|26E9} 81r10 125r13 127r13 129r13 131r13 137r17
+40f7 Health_Pct{float} 82r10 120r10 124r13 126r16 128r16 142r17
+46i10 Idx{13|38I9} 50r20 50r47 56m13 56r20 61r20 61r47 67m13 67r20 72r20
+. 72r47 78m13 78r20
+49i14 I{integer}
+60i14 I{integer}
+71i14 I{integer}
+88f10 Chance{float} 92m16 94r19
+90i14 I{13|38I9} 91r27 91r54 95r26 96r26 99r26 100r28
+107i10 Available_Count{natural} 114m19 114r38 122r20
+108i10 Operational_Count{natural} 112m16 112r37 121r20
+110i14 I{13|38I9} 111r23 113r26
+154i14 I{13|38I9} 155r23 156r23 157r23 159r23 160r23 162r23 163r25
+180i14 I{13|38I9} 181r27 182r23 183r23 184r23
+235b7 Success{boolean} 237m57 239r10
+X 19 logging.ads
+23K9*Logging 14|9w6 200r7 202r18 203r18 240r10 242r21 243r21 248r10 250r21
+. 251r21 19|104e12
+33n7*Emergency{29E9} 14|202r26 242r29 250r29
+44n7*Info{43E9} 14|203r26 243r29
+46n7*Error{43E9} 14|251r29
+82U14*Log_Event 14|200s15 240s18 248s18
+83i7 Step{natural} 14|201r10 241r13 249r13
+84e7 Cat{29E9} 14|202r10 242r13 250r13
+85e7 Sev{43E9} 14|203r10 243r13 251r13
+86a7 Msg{string} 14|204r10 244r13 252r13
+X 39 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

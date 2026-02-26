@@ -1,0 +1,167 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U logging%b		logging.adb		118cabd8 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_8%s	s-conca8.adb		s-conca8.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U logging%s		logging.ads		446466ab EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D logging.adb		20260226075424 61078aad logging%b
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca2.ads		20250808065140 b5fb73f7 system.concat_2%s
+D s-conca8.ads		20250808065140 8d8f50c1 system.concat_8%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+G a e
+G c Z s b [log_event logging 82 14 none]
+G c Z s b [retrieve_logs logging 94 14 none]
+G c Z s b [initialize logging 102 14 none]
+G c Z s s [log_entryIP logging 53 9 none]
+G c Z s s [Tlog_arrayBIP logging 72 4 none]
+G c Z b b [add_entry logging__event_logger 25 17 none]
+G c Z b b [get_entries logging__event_logger 26 17 none]
+G c Z b b [reset logging__event_logger 27 17 none]
+G c Z b b [event_logger__add_entryN logging 25 7 none]
+G c Z b b [event_logger__add_entryP logging 25 7 none]
+G c Z b b [event_logger__get_entriesN logging 26 7 none]
+G c Z b b [event_logger__get_entriesP logging 26 7 none]
+G c Z b b [event_logger__resetN logging 27 7 none]
+G c Z b b [event_logger__resetP logging 27 7 none]
+G c Z b b [event_loggerTVIP logging 24 4 none]
+G c Z b b [pad_message logging 69 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 16|13r6 97r7 105r10 130r7
+X 9 a-textio.ads
+58K13*Text_IO 785e16 16|13w10 97r11 105r14 130r11
+565U14*Put_Line 16|97s19 105s22 130s19
+X 15 logging.ads
+23K9*Logging 104l5 104e12 16|15b14 134l5 134t12
+29E9*Log_Category 37e14 55r19 84r17 16|82r17 99r10
+30n7*Power{29E9}
+31n7*Water{29E9}
+32n7*Transport{29E9}
+33n7*Emergency{29E9}
+34n7*Healthcare{29E9}
+35n7*Cascade{29E9}
+36n7*Access_Ctrl{29E9}
+37n7*System{29E9}
+43E9*Severity_Level 47e16 56r19 85r17 16|83r17 100r10
+44n7*Info{43E9}
+45n7*Warning{43E9}
+46n7*Error{43E9}
+47n7*Critical{43E9}
+53R9*Log_Entry 59e14 72r43 16|25r44 38r44 86r20
+54i7*Timestamp{natural} 16|88m18
+55e7*Category{29E9} 16|89m18
+56e7*Severity{43E9} 16|90m18
+57a7*Message{string} 16|91m18
+58i7*Msg_Len{natural} 16|92m18
+65N4*Max_Log_Entries 71r26 16|42r27
+71M9*Log_Index 72r29 16|30r21
+72A9*Log_Array(53R9)<71M9> 95r20 16|26r43 29r21 49r43 114r20
+82U14*Log_Event 83>7 84>7 85>7 86>7 16|80b14 108l8 108t17
+83i7 Step{natural} 16|81b7 88r31 98r35 107r28
+84e7 Cat{29E9} 16|82b7 89r31 99r30
+85e7 Sev{43E9} 16|83b7 90r31 100r32
+86a7 Msg{string} 16|84b7 91r44 92r44 101r10
+94U14*Retrieve_Logs 95<7 96<7 16|113b14 122l8 122t21
+95a7 Buffer{72A9} 16|114b7 118m33
+96i7 Count{natural} 16|115b7 118m41 121m10
+102U14*Initialize 16|127b14 132l8 132t18
+X 16 logging.adb
+24w14 Event_Logger 34b19 62l8 62t20 94r7 118r7 129r7
+25U17 Add_Entry 25>28 38b17 45l11 45t20 94s20
+25r28 Entry_Data{15|53R9} 38b28 40r35
+26U17 Get_Entries 26<30 26<54 49b17 53l11 53t22 118s20
+26a30 Buffer{15|72A9} 49b30 51m10
+26i54 Count{natural} 49b54 52m10
+27U17 Reset 56b17 60l11 60t16 129s20
+29a7 Storage{15|72A9} 40r10 51r20
+30m7 Write_Index{15|71M9} 40r19 41r10 41r25 58r10
+31i7 Entry_Count{natural} 42r13 43r13 43r28 52r20 59r10
+69V13 Pad_Message{string} 69b13 69>26 75l8 75t19 91s31
+69a26 Msg{string} 71r49 73r28 73r33 73r46
+70a7 Result{string} 73m7 74r14
+71i7 Len{natural} 73r20 73r58
+86r7 Entry_Data{15|53R9} 88m7 89m7 90m7 91m7 92m7 94r31
+X 34 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

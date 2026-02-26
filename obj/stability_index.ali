@@ -1,0 +1,178 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U stability_index%b	stability_index.adb	702c8dfe OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W logging%s		logging.adb		logging.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U stability_index%s	stability_index.ads	1edd3d25 EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D stability_index.ads	20260226075528 1edd3d25 stability_index%s
+D stability_index.adb	20260226075530 1e7a91ae stability_index%b
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+G a e
+G c Z s b [initialize stability_index 58 14 none]
+G c Z s b [compute_score stability_index 59 14 none]
+G c Z s b [get_score stability_index 60 13 none]
+G c Z s b [get_threat stability_index 61 13 none]
+G c Z s b [get_analysis stability_index 62 13 none]
+G c Z s s [subsystem_healthIP stability_index 39 9 none]
+G c Z s s [stability_analysisIP stability_index 51 9 none]
+G c Z b b [set_score stability_index__index_state 34 17 none]
+G c Z b b [get_score stability_index__index_state 36 16 none]
+G c Z b b [get_threat stability_index__index_state 37 16 none]
+G c Z b b [get_analysis stability_index__index_state 38 16 none]
+G c Z b b [index_state__set_scoreN stability_index 34 7 none]
+G c Z b b [index_state__set_scoreP stability_index 34 7 none]
+G c Z b b [index_state__get_scoreN stability_index 36 7 none]
+G c Z b b [index_state__get_scoreP stability_index 36 7 none]
+G c Z b b [index_state__get_threatN stability_index 37 7 none]
+G c Z b b [index_state__get_threatP stability_index 37 7 none]
+G c Z b b [index_state__get_analysisN stability_index 38 7 none]
+G c Z b b [index_state__get_analysisP stability_index 38 7 none]
+G c Z b b [index_stateTVIP stability_index 33 4 none]
+G c Z b b [pad_sector stability_index 79 13 none]
+G r c none [initialize stability_index 58 14 none] [log_event logging 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 17|18r6 99r10 171r10
+X 9 a-textio.ads
+58K13*Text_IO 785e16 17|18w10 99r14 171r14
+565U14*Put_Line 17|99s22 171s22
+X 15 logging.ads
+23K9*Logging 104e12 17|17w6 92r7 94r18 95r18
+37n7*System{29E9} 17|94r26
+44n7*Info{43E9} 17|95r26
+82U14*Log_Event 17|92s15
+83i7 Step{natural} 17|93r10
+84e7 Cat{29E9} 17|94r10
+85e7 Sev{43E9} 17|95r10
+86a7 Msg{string} 17|96r10
+X 16 stability_index.ads
+21K9*Stability_Index 64l5 64e20 17|20b14 190l5 190t20
+27E9*Threat_Level 27e54 53r23 61r31 17|34r52 37r34 41r26 51r52 64r34 110r17
+. 180r31
+27n26*Low{27E9} 17|41r42 44r28 125r20
+27n31*Medium{27E9} 17|127r20
+27n39*High{27E9} 17|129r20
+27n45*Critical{27E9} 17|131r20
+33F9*Health_Percentage<float> 40r26 41r26 42r26 43r26 44r27
+39R9*Subsystem_Health 45e14 59r41 17|108r41
+40f7*Power_Health{33F9} 17|117r28 135r32
+41f7*Water_Health{33F9} 17|118r28 139r24 140r35
+42f7*Transport_Health{33F9} 17|119r28 145r24 146r35
+43f7*Emergency_Health{33F9} 17|120r28 151r24 152r35
+44f7*Healthcare_Health{33F9} 17|121r28 157r24
+51R9*Stability_Analysis 56e14 62r33 17|35r39 38r36 42r26 52r39 69r36 114r18
+. 185r33
+52f7*USS{float} 17|43m10 162m20
+53e7*Threat{27E9} 17|44m10 163m20
+54a7*Weakest_Sector{string} 17|45m10 164m20
+55i7*Sector_Len{natural} 17|46m10 165m20
+58U14*Initialize 17|90b14 101l8 101t18
+59U14*Compute_Score 59>29 17|108b14 173l8 173t21
+59r29 Health{39R9} 17|108b29 117r21 118r21 119r21 120r21 121r21 135r25 139r17
+. 140r28 145r17 146r28 151r17 152r28 157r17
+60V13*Get_Score{float} 17|175b13 178l8 178t17
+61V13*Get_Threat{27E9} 17|180b13 183l8 183t18
+62V13*Get_Analysis{51R9} 17|185b13 188l8 188t20
+X 17 stability_index.adb
+23f4 Power_Weight{float} 117r48
+24f4 Water_Weight{float} 118r48
+25f4 Healthcare_Weight{float} 121r49
+26f4 Emergency_Weight{float} 120r48
+27f4 Transport_Weight{float} 119r48
+33w14 Index_State 49b19 74l8 74t19 167r7 177r14 182r14 187r14
+34U17 Set_Score 34>28 34>43 35>28 51b17 57l11 57t20 167s19
+34f28 Score{float} 51b28 54r30
+34e43 Threat{16|27E9} 51b43 55r30
+35r28 Analysis{16|51R9} 52b28 56r30
+36V16 Get_Score{float} 59b16 62l11 62t20 177s26
+37V16 Get_Threat{16|27E9} 64b16 67l11 67t21 182s26
+38V16 Get_Analysis{16|51R9} 69b16 72l11 72t23 187s26
+40f7 Current_Score{float} 54r10 61r17
+41e7 Current_Threat{16|27E9} 55r10 66r17
+42r7 Current_Analysis{16|51R9} 56r10 71r17
+79V13 Pad_Sector{string} 79b13 79>25 85l8 85t18 136s18 141s21 147s21 153s21
+. 158s21
+79a25 Name{string} 81r49 83r28 83r34 83r48
+80a7 Result{string} 83m7 84r14
+81i7 Len{natural} 83r20 83r61
+109f7 USS{float} 117m7 124r10 126r13 128r13 162r38 167r30
+110e7 Threat{16|27E9} 125m10 127m10 129m10 131m10 163r38 167r35
+111a7 Weakest{string} 136m7 141m10 147m10 153m10 158m10 164r38
+112i7 W_Len{natural} 137m7 142m10 148m10 154m10 159m10 165r38
+113f7 Min_Val{float} 135m7 139r40 140m10 145r44 146m10 151r44 152m10 157r45
+114r7 Analysis{16|51R9} 162m7 167r43
+X 31 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

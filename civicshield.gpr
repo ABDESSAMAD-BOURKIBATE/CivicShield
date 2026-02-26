@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+--  CivicShield – Public Infrastructure Stability Simulator
+--  GNAT Project File
+--
+--  This project file defines the build configuration for the CivicShield
+--  simulator. All source files reside under src/. The project targets
+--  Ada 2012 with full runtime checks and debug information enabled.
+--
+--  Build:  gprbuild -P civicshield.gpr
+--  Clean:  gprclean -P civicshield.gpr
+-------------------------------------------------------------------------------
+
+project CivicShield is
+
+   for Source_Dirs use ("src");
+   for Object_Dir  use "obj";
+   for Exec_Dir    use "bin";
+   for Main        use ("main.adb");
+
+   for Languages use ("Ada");
+
+   package Compiler is
+      for Default_Switches ("Ada") use
+        ("-gnat2012",      --  Ada 2012 standard
+         "-gnatwa",        --  Enable all warnings
+         "-gnatyM120",     --  Max line length 120 characters
+         "-gnato",         --  Enable numeric overflow checks
+         "-fstack-check",  --  Enable stack overflow checks
+         "-g");            --  Debug information
+   end Compiler;
+
+   package Builder is
+      for Executable ("main.adb") use "civicshield";
+   end Builder;
+
+   package Linker is
+      for Default_Switches ("Ada") use ("-g");
+   end Linker;
+
+end CivicShield;

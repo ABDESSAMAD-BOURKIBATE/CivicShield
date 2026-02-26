@@ -1,0 +1,223 @@
+V "GNAT Lib v15"
+A -gnatA
+A -gnat2012
+A -gnatwa
+A -gnatyM120
+A -gnato
+A -fstack-check=specific
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U cascade_failure%b	cascade_failure.adb	8b26f500 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W emergency_response%s	emergency_response.adb	emergency_response.ali
+W healthcare%s		healthcare.adb		healthcare.ali
+W logging%s		logging.adb		logging.ali
+W power_grid%s		power_grid.adb		power_grid.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W transport_control%s	transport_control.adb	transport_control.ali
+W water_network%s	water_network.adb	water_network.ali
+
+U cascade_failure%s	cascade_failure.ads	270fd7a5 EE NE OO PK
+
+D ada.ads		20250808065140 76789da1 ada%s
+D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250808065140 17477cbd ada.streams%s
+D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
+D a-textio.ads		20250808065140 34ef47de ada.text_io%s
+D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
+D cascade_failure.ads	20260226075950 270fd7a5 cascade_failure%s
+D cascade_failure.adb	20260226090024 4107db4f cascade_failure%b
+D emergency_response.ads  20260226075812 863a997b emergency_response%s
+D healthcare.ads	20260226075850 fabc5a11 healthcare%s
+D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
+D i-cstrin.ads		20250808065140 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
+D logging.ads		20260226075410 446466ab logging%s
+D power_grid.ads	20260226090020 a8cbb82d power_grid%s
+D system.ads		20250808065140 a869df9e system%s
+D s-atacco.ads		20250808065140 5868e3ba system.address_to_access_conversions%s
+D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
+D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
+D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-multip.ads		20250808065140 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20250808065140 35a74841 system.os_interface%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
+D s-parame.ads		20250808065140 3597fc11 system.parameters%s
+D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
+D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250808065140 5be75682 system.stack_usage%s
+D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250808065140 601f6b72 system.task_info%s
+D s-taspri.ads		20250808065140 602eebc0 system.task_primitives%s
+D s-taskin.ads		20250808065140 38289021 system.tasking%s
+D s-taprob.ads		20250808065140 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
+D s-vaispe.ads		20250808065140 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
+D transport_control.ads	20260226075724 d0143e64 transport_control%s
+D water_network.ads	20260226075652 99fc9dbc water_network%s
+G a e
+G c Z s b [initialize cascade_failure 50 14 none]
+G c Z s b [evaluate_cascade cascade_failure 51 14 none]
+G c Z s b [apply_recovery cascade_failure 52 14 none]
+G c Z s b [get_impact_report cascade_failure 53 14 none]
+G c Z s s [impact_reportIP cascade_failure 40 9 none]
+G c Z b b [reset cascade_failure__cascade_state 44 17 none]
+G c Z b b [set_report cascade_failure__cascade_state 45 17 none]
+G c Z b b [get_report cascade_failure__cascade_state 46 17 none]
+G c Z b b [cascade_state__resetN cascade_failure 44 7 none]
+G c Z b b [cascade_state__resetP cascade_failure 44 7 none]
+G c Z b b [cascade_state__set_reportN cascade_failure 45 7 none]
+G c Z b b [cascade_state__set_reportP cascade_failure 45 7 none]
+G c Z b b [cascade_state__get_reportN cascade_failure 46 7 none]
+G c Z b b [cascade_state__get_reportP cascade_failure 46 7 none]
+G c Z b b [cascade_stateTVIP cascade_failure 43 4 none]
+G r c none [initialize cascade_failure 50 14 none] [log_event logging 82 14 none]
+G r c none [evaluate_cascade cascade_failure 51 14 none] [get_health_percentage power_grid 61 14 none]
+G r c none [evaluate_cascade cascade_failure 51 14 none] [get_health_percentage water_network 67 14 none]
+G r c none [evaluate_cascade cascade_failure 51 14 none] [get_health_percentage transport_control 46 14 none]
+G r c none [evaluate_cascade cascade_failure 51 14 none] [get_health_percentage emergency_response 56 14 none]
+G r c none [evaluate_cascade cascade_failure 51 14 none] [get_health_percentage healthcare 46 14 none]
+G r c none [evaluate_cascade cascade_failure 51 14 none] [log_event logging 82 14 none]
+G r c none [apply_recovery cascade_failure 52 14 none] [log_event logging 82 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 12|21r6 99r10 258r10 350r10
+X 9 a-textio.ads
+58K13*Text_IO 785e16 12|21w10 99r14 258r14 350r14
+565U14*Put_Line 12|99s22 258s22 350s22
+X 11 cascade_failure.ads
+28K9*Cascade_Failure 55l5 55e20 12|23b14 362l5 362t20
+34E9*Subsystem_Id 34e79
+34n26*Power{34E9}
+34n33*Water{34E9}
+34n40*Transport{34E9}
+34n51*Emergency_Resp{34E9}
+34n67*Health_Care{34E9}
+40R9*Impact_Report 48e14 53r39 12|45r38 46r35 48r24 71r38 76r34 119r16 269r16
+. 357r38
+41f7*Power_Impact{float} 12|49m10 62m29 120m10 278r17 285m17 286r19
+42f7*Water_Impact{float} 12|50m10 63m29 121m10 142m17 151r59 291r17 297m17
+. 298r19
+43f7*Transport_Impact{float} 12|51m10 64m29 122m10 155m17 165r40 303r17 309m17
+. 310r19
+44f7*Emergency_Impact{float} 12|52m10 65m29 123m10 200m17 201r19 231m17 232r19
+. 315r17 321m17 322r19
+45f7*Healthcare_Impact{float} 12|53m10 66m29 124m10 169m17 185m17 186r19
+. 216m17 217r19 327r17 333m17 334r19
+46i7*Total_Cascades{natural} 12|54m10 67m29 125m10 144m17 144r42 157m17 157r42
+. 171m17 171r42 187m17 187r42 203m17 203r42 218m17 218r42 233m17 233r42 246r17
+. 252r43 271r17
+47i7*Recovery_Actions{natural} 12|55m10 68m29 126m10 275m14 287m17 287r44
+. 299m17 299r44 311m17 311r44 323m17 323r44 335m17 335r44 345r40
+50U14*Initialize 12|86b14 101l8 101t18
+51U14*Evaluate_Cascade 12|112b14 260l8 260t24
+52U14*Apply_Recovery 12|268b14 352l8 352t22
+53V14*Get_Impact_Report{40R9} 12|357b13 360l8 360t25
+X 12 cascade_failure.adb
+28f4 Cascade_Threshold{float} 138r20 139r26 182r20 183r26 197r24 198r26 214r24
+. 215r26 229r25 230r26
+34f4 Power_To_Water{float} 143r26
+35f4 Power_To_Transport{float} 156r26
+36f4 Power_To_Healthcare{float} 170r26
+37f4 Water_To_Healthcare{float} 186r53
+38f4 Transport_To_Emergency{float} 202r28
+43w14 Cascade_State 58b19 81l8 81t21 88r7 244r7 269r33 338r7 359r14
+44U17 Reset 60b17 69l11 69t16 88s21
+45U17 Set_Report 45>29 71b17 74l11 74t21 244s21 338s21
+45r29 Report{11|40R9} 71b29 73r28
+46V17 Get_Report{11|40R9} 76b16 79l11 79t21 269s47 359s28
+48r7 Current_Report{11|40R9} 62r10 73r10 78r17
+113f7 Power_H{float} 131m7 138r10 139r46
+114f7 Water_H{float} 132m7 182r10 183r46
+115f7 Transport_H{float} 133m7 197r10 198r46
+116f7 Emergency_H{float} 134m7 214r10 215r46
+117f7 Healthcare_H{float} 135m7 229r10 230r46
+119r7 Report{11|40R9} 142m10 144m10 144r35 151r52 155m10 157m10 157r35 165r33
+. 169m10 171m10 171r35 185m10 186r12 187m10 187r35 200m10 201r12 203m10 203r35
+. 216m10 217r12 218m10 218r35 231m10 232r12 233m10 233r35 244r33 246r10 252r36
+128f7 Degradation{float} 139m10 143r12 156r12 170r12 183m10 186r39 198m10
+. 202r14 215m10 217r39 230m10 232r38
+269r7 Report{11|40R9} 271r10 275m7 278r10 285m10 286r12 287m10 287r37 291r10
+. 297m10 298r12 299m10 299r37 303r10 309m10 310r12 311m10 311r37 315r10 321m10
+. 322r12 323m10 323r37 327r10 333m10 334r12 335m10 335r37 338r33 345r33
+X 13 emergency_response.ads
+24K9*Emergency_Response 12|18w6 134r22 13|58e23
+56V14*Get_Health_Percentage{float} 12|134s41
+X 14 healthcare.ads
+23K9*Healthcare 12|19w6 135r23 14|48e15
+46V14*Get_Health_Percentage{float} 12|135s34
+X 19 logging.ads
+23K9*Logging 12|20w6 90r7 92r18 93r18 146r10 148r21 149r21 159r10 161r21
+. 162r21 173r10 175r21 176r21 189r10 191r21 192r21 205r10 207r21 208r21 220r10
+. 222r21 223r21 235r10 237r21 238r21 247r10 249r21 250r21 279r10 281r21 282r21
+. 292r10 294r21 295r21 304r10 306r21 307r21 316r10 318r21 319r21 328r10 330r21
+. 331r21 340r7 342r18 343r18 19|104e12
+35n7*Cascade{29E9} 12|92r26 148r29 161r29 175r29 191r29 207r29 222r29 237r29
+. 249r29 281r29 294r29 306r29 318r29 330r29 342r26
+44n7*Info{43E9} 12|93r26 282r29 295r29 307r29 319r29 331r29 343r26
+45n7*Warning{43E9} 12|149r29 162r29 192r29 208r29 223r29
+46n7*Error{43E9} 12|176r29 238r29
+47n7*Critical{43E9} 12|250r29
+82U14*Log_Event 12|90s15 146s18 159s18 173s18 189s18 205s18 220s18 235s18
+. 247s18 279s18 292s18 304s18 316s18 328s18 340s15
+83i7 Step{natural} 12|91r10 147r13 160r13 174r13 190r13 206r13 221r13 236r13
+. 248r13 280r13 293r13 305r13 317r13 329r13 341r10
+84e7 Cat{29E9} 12|92r10 148r13 161r13 175r13 191r13 207r13 222r13 237r13
+. 249r13 281r13 294r13 306r13 318r13 330r13 342r10
+85e7 Sev{43E9} 12|93r10 149r13 162r13 176r13 192r13 208r13 223r13 238r13
+. 250r13 282r13 295r13 307r13 319r13 331r13 343r10
+86a7 Msg{string} 12|94r10 150r13 163r13 177r13 193r13 209r13 224r13 239r13
+. 251r13 283r13 296r13 308r13 320r13 332r13 344r10
+X 20 power_grid.ads
+24K9*Power_Grid 12|15w6 131r22 20|63e15
+61V14*Get_Health_Percentage{float} 12|131s33
+X 37 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 53 transport_control.ads
+23K9*Transport_Control 12|17w6 133r22 53|48e22
+46V14*Get_Health_Percentage{float} 12|133s40
+X 54 water_network.ads
+23K9*Water_Network 12|16w6 132r22 54|69e18
+67V14*Get_Health_Percentage{float} 12|132s36
+
