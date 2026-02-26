@@ -7,25 +7,25 @@
 </p>
 
 <p align="center">
-  <strong>🏙️ High-Integrity Urban Infrastructure Simulation Engine</strong><br>
-  <em>Fault-Tolerant · Concurrent · Deterministic · Academically Rigorous</em>
+  <strong>🏙️ High-Integrity Urban Infrastructure Digital Twin</strong><br>
+  <em>Physics-Driven · Fault-Tolerant · Real-Time Web Dashboard · Academically Rigorous</em>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-Ada_2012-0033A0?style=flat-square&logo=ada&logoColor=white" alt="Ada"/>
+  <img src="https://img.shields.io/badge/Backend-Ada_2012-0033A0?style=flat-square&logo=ada&logoColor=white" alt="Ada"/>
+  <img src="https://img.shields.io/badge/Frontend-JavaScript_ES2022-F7DF1E?style=flat-square&logo=javascript&logoColor=000" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Build-Vite_7-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
   <img src="https://img.shields.io/badge/Compiler-GNAT_15.2.1-00529B?style=flat-square" alt="GNAT"/>
-  <img src="https://img.shields.io/badge/Build-gprbuild_25.0.1-007ACC?style=flat-square" alt="gprbuild"/>
-  <img src="https://img.shields.io/badge/Code-100%25_Ada-success?style=flat-square" alt="100% Ada"/>
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="MIT"/>
-  <img src="https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square" alt="Status"/>
+  <img src="https://img.shields.io/badge/Version-3.0-brightgreen?style=flat-square" alt="Version"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/⚡_Power_Grid-Simulated-FFD700?style=flat-square" alt="Power"/>
-  <img src="https://img.shields.io/badge/💧_Water_Network-Simulated-00BFFF?style=flat-square" alt="Water"/>
-  <img src="https://img.shields.io/badge/🚥_Transport-Simulated-FF6347?style=flat-square" alt="Transport"/>
-  <img src="https://img.shields.io/badge/🚨_Emergency-Simulated-FF4500?style=flat-square" alt="Emergency"/>
-  <img src="https://img.shields.io/badge/🏥_Healthcare-Simulated-32CD32?style=flat-square" alt="Healthcare"/>
+  <img src="https://img.shields.io/badge/⚡_Power_Grid-Physics_Based-FFD700?style=flat-square" alt="Power"/>
+  <img src="https://img.shields.io/badge/💧_Water_Network-Hydraulic_Model-00BFFF?style=flat-square" alt="Water"/>
+  <img src="https://img.shields.io/badge/🚥_Transport-Agent_Based-FF6347?style=flat-square" alt="Transport"/>
+  <img src="https://img.shields.io/badge/🚨_Emergency-Geospatial-FF4500?style=flat-square" alt="Emergency"/>
+  <img src="https://img.shields.io/badge/🏥_Healthcare-Capacity_Model-32CD32?style=flat-square" alt="Healthcare"/>
 </p>
 
 ---
@@ -48,24 +48,33 @@
 - [1. Abstract](#1-abstract)
 - [2. Problem Statement](#2-problem-statement)
 - [3. System Architecture](#3-system-architecture)
-- [4. Module Specifications](#4-module-specifications)
-- [5. Cascade Failure Model](#5-cascade-failure-model)
-- [6. Urban Stability Score (USS)](#6-urban-stability-score-uss)
-- [7. Concurrency Model](#7-concurrency-model)
-- [8. Security Architecture](#8-security-architecture)
-- [9. Build & Execution](#9-build--execution)
-- [10. Simulation Output](#10-simulation-output)
-- [11. Project Structure](#11-project-structure)
-- [12. Academic References](#12-academic-references)
-- [13. License](#13-license)
+- [4. Web Dashboard](#4-web-dashboard)
+- [5. Module Specifications](#5-module-specifications)
+- [6. Physics-Driven Digital Twin (v3.0)](#6-physics-driven-digital-twin-v30)
+- [7. Cascade Failure Model](#7-cascade-failure-model)
+- [8. Urban Stability Score (USS)](#8-urban-stability-score-uss)
+- [9. Concurrency Model](#9-concurrency-model)
+- [10. Security Architecture](#10-security-architecture)
+- [11. Build & Execution](#11-build--execution)
+- [12. Simulation Output](#12-simulation-output)
+- [13. Project Structure](#13-project-structure)
+- [14. Academic References](#14-academic-references)
+- [15. License](#15-license)
 
 ---
 
 ## 1. Abstract
 
-> **CivicShield** is a high-integrity, fault-tolerant simulator for critical urban infrastructure, engineered entirely in **Ada 2012**. It models five interdependent subsystems — **Power Grids**, **Water Distribution Networks**, **Traffic Control Systems**, **Emergency Response Units**, and **Healthcare Facilities** — with cascading failure propagation, concurrent task-based simulation, and deterministic execution guarantees.
+> **CivicShield** is a high-integrity, fault-tolerant **Digital Twin** for critical urban infrastructure, engineered in **Ada 2012** (core simulation engine) with a **premium real-time Web Dashboard** (JavaScript/Vite). It models five interdependent subsystems — **Power Grids**, **Water Distribution Networks**, **Traffic Control Systems**, **Emergency Response Units**, and **Healthcare Facilities** — with cascading failure propagation, physics-based modeling, stochastic failure analysis, and real-time visual monitoring.
 
-The simulator employs Ada's **protected types** for thread-safe shared state, **strong typing** for compile-time correctness, and **exception handling** for runtime fault tolerance. An integrated **Cascade Failure Engine** models inter-subsystem dependencies using a weighted propagation matrix, while the **Stability Index** computes a composite **Urban Stability Score (USS)** reflecting overall system health.
+The project operates on two tiers:
+
+| Tier | Technology | Purpose |
+|------|-----------|---------|
+| **🧠 Core Engine** | Ada 2012 | Physics-based subsystem modeling, Weibull reliability, geospatial graph |
+| **📺 Web Dashboard** | JavaScript + Vite | Real-time glassmorphism UI, live USS gauge, event log, simulation controls |
+
+The simulator employs Ada's **protected types** for thread-safe shared state, **strong SI-unit typing** for compile-time correctness, and **Weibull failure distributions** for industrial-grade reliability modeling. A **premium web dashboard** provides real-time visualization with glassmorphism design, animated USS gauge, subsystem health panels, and role-gated simulation controls.
 
 ---
 
@@ -80,7 +89,7 @@ Modern urban infrastructure consists of deeply interconnected systems where fail
 | 🚥 Traffic gridlock | 🚨 Emergency units delayed → 🏥 Patient mortality increases |
 | 🚨 Emergency saturation | 🏥 Untreated patients → ⚡ Power stations unmaintained |
 
-**CivicShield** provides a deterministic environment to study, visualize, and mitigate these cascading risks before they manifest in real-world infrastructure.
+**CivicShield** provides a deterministic, physics-driven environment to study, visualize, and mitigate these cascading risks before they manifest in real-world infrastructure.
 
 ---
 
@@ -90,21 +99,29 @@ Modern urban infrastructure consists of deeply interconnected systems where fail
 
 ```mermaid
 graph TB
-    subgraph "🎯 Entry Point"
-        MAIN["🚀 Main<br/><i>main.adb</i>"]
+    subgraph "🎯 Entry Points"
+        MAIN["🚀 Ada Main<br/><i>main.adb</i>"]
+        WEB["🌐 Web Dashboard<br/><i>main.js + Vite</i>"]
     end
 
     subgraph "🏗️ Infrastructure Subsystems"
-        PG["⚡ Power Grid<br/><i>5 Generators</i><br/><i>8 Substations</i>"]
-        WN["💧 Water Network<br/><i>6 Pumps</i><br/><i>3 Reservoirs</i>"]
+        PG["⚡ Power Grid<br/><i>Bus-Branch Model</i><br/><i>DC Power Flow</i>"]
+        WN["💧 Water Network<br/><i>Hydraulic Model</i><br/><i>Darcy-Weisbach</i>"]
         TC["🚥 Transport Control<br/><i>12 Intersections</i>"]
-        ER["🚨 Emergency Response<br/><i>15 Units</i>"]
+        ER["🚨 Emergency Response<br/><i>Agent-Based</i>"]
         HC["🏥 Healthcare<br/><i>4 Hospitals</i>"]
     end
 
     subgraph "🧠 Intelligence Engine"
-        CF["💥 Cascade Failure Engine<br/><i>Dependency Matrix</i>"]
+        CF["💥 Cascade Failure Engine<br/><i>Weighted Dependency Matrix</i>"]
         SI["📊 Stability Index<br/><i>USS Computation</i>"]
+        ST["🎲 Stochastic Engine<br/><i>Weibull / MTBF</i>"]
+    end
+
+    subgraph "🗺️ Foundation"
+        CT["📐 Core Types<br/><i>SI Units</i>"]
+        PHY["⚙️ Physics<br/><i>Power Flow · Hydraulics</i>"]
+        GEO["🗺️ Geospatial<br/><i>Spatial Graph · OSM</i>"]
     end
 
     subgraph "🔐 Security & Logging"
@@ -112,16 +129,20 @@ graph TB
         LOG["📝 Logging<br/><i>Circular Buffer</i>"]
     end
 
-    subgraph "🖥️ Presentation"
-        GUI["📺 Dashboard<br/><i>Real-time Display</i>"]
-    end
-
     MAIN --> PG & WN & TC & ER & HC
+    WEB --> PG & WN & TC & ER & HC
     PG & WN & TC & ER & HC --> CF
     CF --> SI
-    SI --> GUI
+    PG --> PHY
+    WN --> PHY
+    CF --> ST
+    PG & WN & TC & ER & HC --> GEO
+    PHY --> CT
+    GEO --> CT
+    ST --> CT
     PG & WN & TC & ER & HC -.->|events| LOG
     MAIN --> AC
+    WEB --> AC
     AC -.->|audit| LOG
 
     style PG fill:#FFD700,stroke:#B8860B,color:#000
@@ -131,10 +152,14 @@ graph TB
     style HC fill:#32CD32,stroke:#228B22,color:#000
     style CF fill:#9370DB,stroke:#7B68EE,color:#fff
     style SI fill:#20B2AA,stroke:#008B8B,color:#fff
+    style ST fill:#DA70D6,stroke:#BA55D3,color:#fff
     style MAIN fill:#003459,stroke:#00A8E8,color:#fff
-    style GUI fill:#2F4F4F,stroke:#5F9EA0,color:#fff
+    style WEB fill:#646CFF,stroke:#7C7FFF,color:#fff
     style AC fill:#8B0000,stroke:#DC143C,color:#fff
     style LOG fill:#556B2F,stroke:#9ACD32,color:#fff
+    style CT fill:#2F4F4F,stroke:#5F9EA0,color:#fff
+    style PHY fill:#4682B4,stroke:#5F9EA0,color:#fff
+    style GEO fill:#8B4513,stroke:#D2691E,color:#fff
 ```
 
 ### 3.2 Data Flow Architecture
@@ -180,9 +205,48 @@ sequenceDiagram
 
 ---
 
-## 4. Module Specifications
+## 4. Web Dashboard
 
-### 4.1 ⚡ Power Grid (`power_grid.ads / .adb`)
+CivicShield includes a **premium real-time web dashboard** built with Vite and vanilla JavaScript, featuring a glassmorphism dark-theme design.
+
+### 4.1 Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔐 **Login Page** | Glassmorphism design with animated particles, credential hints, role-based access |
+| 📊 **USS Gauge** | Real-time SVG gauge with animated threat-level color transitions |
+| 📈 **USS History Chart** | Canvas-rendered line chart tracking USS over all simulation steps |
+| ⚡ **Subsystem Panels** | 5 live panels with health bars, component chips, and detailed metrics |
+| 📝 **Event Log** | Filterable real-time log with severity icons and color-coded entries |
+| 💥 **Cascade Status** | Active cascade count and recovery action tracker |
+| 🎮 **Simulation Controls** | Start, Pause, Resume, Step, Reset, Speed slider (0.5x – 5x) |
+| 💥 **Manual Actions** | Role-gated failure injection and recovery trigger buttons |
+| 📊 **Final Report** | Modal with subsystem breakdown, cascade history, and summary |
+
+### 4.2 Running the Dashboard
+
+```bash
+cd CivicShield
+npm install
+npm run dev
+# → opens at http://localhost:5173
+```
+
+### 4.3 Design System
+
+| Element | Style |
+|---------|-------|
+| Theme | Dark glassmorphism (blur + transparency) |
+| Fonts | Inter (UI) + JetBrains Mono (data) |
+| Colors | 🟢 Green=Normal, 🟡 Yellow=Warning, 🟠 Orange=High, 🔴 Red=Critical |
+| Layout | 3-column: Controls + Subsystems + Logs |
+| Animations | Pulse gauges, slide-in logs, glow-on-critical |
+
+---
+
+## 5. Module Specifications
+
+### 5.1 ⚡ Power Grid (`power_grid.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
@@ -211,7 +275,7 @@ function  Get_Health_Percentage return Float;
 
 ---
 
-### 4.2 💧 Water Network (`water_network.ads / .adb`)
+### 5.2 💧 Water Network (`water_network.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
@@ -223,7 +287,7 @@ function  Get_Health_Percentage return Float;
 
 ---
 
-### 4.3 🚥 Transport Control (`transport_control.ads / .adb`)
+### 5.3 🚥 Transport Control (`transport_control.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
@@ -235,7 +299,7 @@ function  Get_Health_Percentage return Float;
 
 ---
 
-### 4.4 🚨 Emergency Response (`emergency_response.ads / .adb`)
+### 5.4 🚨 Emergency Response (`emergency_response.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
@@ -254,21 +318,21 @@ function  Get_Health_Percentage return Float;
 
 ---
 
-### 4.5 🏥 Healthcare (`healthcare.ads / .adb`)
+### 5.5 🏥 Healthcare (`healthcare.ads / .adb`)
 
 | Hospital | Beds | ICU | Surge |
 |----------|------|-----|-------|
-| Hospital 1 | 200 | 30 | +50 |
-| Hospital 2 | 150 | 20 | +30 |
-| Hospital 3 | 300 | 40 | +60 |
-| Hospital 4 | 100 | 15 | +20 |
+| General Hospital Alpha | 200 | 30 | +50 |
+| City Medical Center | 150 | 20 | +30 |
+| Regional Hospital Beta | 300 | 40 | +60 |
+| Community Health Clinic | 100 | 15 | +20 |
 | **Total** | **750** | **105** | **+160** |
 
-**Surge Activation:** Automatically activates when status reaches `Critical` or `Overwhelmed`.
+**Surge Activation:** Automatically activates when bed occupancy exceeds 90%.
 
 ---
 
-### 4.6 💥 Cascade Failure Engine (`cascade_failure.ads / .adb`)
+### 5.6 💥 Cascade Failure Engine (`cascade_failure.ads / .adb`)
 
 The core intelligence module that models inter-subsystem dependencies.
 
@@ -280,35 +344,131 @@ function  Get_Impact_Report return Impact_Report;
 
 ---
 
-### 4.7 📊 Stability Index (`stability_index.ads / .adb`)
+### 5.7 📊 Stability Index (`stability_index.ads / .adb`)
 
 Computes the **Urban Stability Score (USS)** — a single composite metric.
 
 ---
 
-### 4.8 🔑 Access Control (`access_control.ads / .adb`)
+### 5.8 🔑 Access Control (`access_control.ads / .adb`)
 
 Role-based access control with three privilege tiers.
 
 ---
 
-### 4.9 📝 Logging (`logging.ads / .adb`)
+### 5.9 📝 Logging (`logging.ads / .adb`)
 
 Centralized, thread-safe event logging with circular buffer (500 entries).
 
 ---
 
-### 4.10 📺 GUI Dashboard (`gui.ads / .adb`)
+## 6. Physics-Driven Digital Twin (v3.0)
 
-Console-based real-time status dashboard with GtkAda migration points.
+> ⚡ **CivicShield v3.0** introduces a complete architectural overhaul from percentage-based simulation to physics-driven Digital Twin modeling using real engineering mathematics.
+
+### 6.1 New Foundation Packages
+
+```mermaid
+graph TD
+    ROOT["CivicShield (Root)"]
+    CT["Core_Types<br/>SI Units · IDs · States"]
+    PHY["Physics<br/>DC Power Flow · Hydraulics · Weibull"]
+    GEO["Geospatial<br/>Spatial Graph · Agents · OSM"]
+    STO["Stochastic<br/>Weibull RNG · MTBF · CCF"]
+    PG["Power_Grid (v3)<br/>Bus-Branch · Generators · Relays"]
+    WN["Water_Network (v3)<br/>Pipes · Pumps · Tanks · Solver"]
+
+    ROOT --> CT
+    ROOT --> PHY
+    ROOT --> GEO
+    ROOT --> STO
+    ROOT --> PG
+    ROOT --> WN
+    PHY --> CT
+    GEO --> CT
+    STO --> CT
+    STO --> GEO
+    PG --> CT
+    PG --> GEO
+    WN --> CT
+    WN --> GEO
+```
+
+### 6.2 Strong Physical Typing (`Core_Types`)
+
+Every physical quantity is a **named Ada type** — mixing units is a compile-time error:
+
+```ada
+type Megawatts              is new Long_Float range 0.0 .. 100_000.0;
+type Kilovolts              is new Long_Float range 0.0 .. 1_200.0;
+type Hertz                  is new Long_Float range 0.0 .. 100.0;
+type Pascals                is new Long_Float range 0.0 .. 100_000_000.0;
+type Cubic_Meters_Per_Second is new Long_Float range 0.0 .. 10_000.0;
+type Probability            is new Long_Float range 0.0 .. 1.0;
+type MTBF_Hours             is new Long_Float range 0.0 .. Long_Float'Last;
+```
+
+### 6.3 Physics Engine (`Physics`)
+
+| Domain | Computation | Formula |
+|--------|------------|---------|
+| **Electrical** | DC Power Flow | `P_ij = (θ_i − θ_j) / X_ij` |
+| **Electrical** | Frequency Deviation | `Δf = −(ΔP / (2·H·S_base)) · f₀` |
+| **Electrical** | Line Losses | `P_loss = I² · R` |
+| **Hydraulic** | Darcy-Weisbach Head Loss | `h_f = f · (L/D) · (V²/2g)` |
+| **Hydraulic** | Hazen-Williams | `h_f = 10.67·Q^1.852 / (C^1.852·D^4.8704)·L` |
+| **Hydraulic** | Pump Power | `P = ρ·g·Q·H / η` |
+| **Reliability** | Weibull CDF | `F(t) = 1 − exp(−(t/η)^β)` |
+| **Reliability** | Weibull Hazard | `λ(t) = (β/η)·(t/η)^(β−1)` |
+| **Reliability** | MTBF | `η · Γ(1 + 1/β)` |
+
+### 6.4 Physics-Based Power Grid (v3)
+
+| Component | Old Model | New Physics Model |
+|-----------|-----------|-------------------|
+| Generator | On/Off + health % | Rated MW, ramp rate, inertia H, droop %, Weibull reliability |
+| Bus | Not modeled | Voltage (kV), angle (rad), ZIP load (Z+I+P), net injection |
+| Line | Not modeled | Impedance (R+jX p.u.), thermal limit (MW), loading % |
+| Protection | Not modeled | Overcurrent, under-frequency, over-voltage relays |
+| Dispatch | Not modeled | Economic dispatch minimizing fuel cost |
+
+### 6.5 Physics-Based Water Network (v3)
+
+| Component | Old Model | New Physics Model |
+|-----------|-----------|-------------------|
+| Pipe | Health % | Length, diameter, roughness (ε), HW coefficient, head loss |
+| Pump | On/Off | Characteristic curve (H vs Q), VFD speed, power draw P=ρgQH/η |
+| Tank | Level % | Cylindrical geometry, min/max level, mass balance (dV/dt) |
+| Junction | Not modeled | Elevation, base demand, diurnal pattern, pressure (bar) |
+| Solver | Not modeled | Global Gradient Algorithm (Newton-Raphson) |
+
+### 6.6 Stochastic Failure Engine
+
+| Feature | Description |
+|---------|-------------|
+| **Weibull Failures** | β<1 infant mortality, β=1 random, β>1 wear-out |
+| **Decision Logic** | `P(fail in Δt | survived to t) ≈ λ(t)·Δt` vs random draw |
+| **Repair Times** | Log-normal distribution with mean/std-dev |
+| **Common-Cause** | β-factor model with geospatial radius (earthquake, flood) |
+| **Monte Carlo** | Pre-sample failure times via inverse Weibull into priority queue |
+| **RNG** | Xoshiro256** (period 2²⁵⁶ − 1) |
+
+### 6.7 Geospatial Foundation
+
+| Feature | Description |
+|---------|-------------|
+| **Graph Model** | Directed G = (V, E) with WGS-84 coordinates |
+| **Infrastructure Layers** | Power, Water, Gas, Road, Rail, Telecom |
+| **OSM Integration** | Nodes/edges map to OSM node IDs and way IDs |
+| **Agent Model** | Emergency vehicles with position, speed, heading on edges |
+| **Pathfinding** | Dijkstra/A* on weighted spatial graph |
+| **Distance** | Haversine great-circle computation |
 
 ---
 
-## 5. Cascade Failure Model
+## 7. Cascade Failure Model
 
-### 5.1 Dependency Matrix
-
-The cascade engine uses a **weighted dependency matrix** derived from urban resilience research:
+### 7.1 Dependency Matrix
 
 <p align="center">
   <img src="assets/cascade_failure.png" alt="Cascade Failure Propagation Model" width="700"/>
@@ -343,7 +503,7 @@ graph LR
 | 💧 Water | 🏥 Healthcare | **0.40** | Hospitals need clean water for operations |
 | 🚥 Transport | 🚨 Emergency | **0.50** | Emergency vehicles require passable roads |
 
-### 5.2 Cascade Threshold
+### 7.2 Cascade Threshold
 
 A cascade is triggered when any subsystem's health drops below **50%**:
 
@@ -356,12 +516,10 @@ IF health(subsystem) < 50% THEN
 END IF
 ```
 
-### 5.3 Recovery Priority
-
-Recovery follows a **priority-ordered** policy based on cascade impact:
+### 7.3 Recovery Priority
 
 | Priority | Subsystem | Recovery Rate | Rationale |
-|----------|-----------|--------------|-----------|
+|----------|-----------|--------------|-----------| 
 | 🥇 1st | ⚡ Power | -10%/step | Highest cascade multiplier |
 | 🥈 2nd | 💧 Water | -8%/step | Critical for healthcare |
 | 🥉 3rd | 🚥 Transport | -5%/step | Enables emergency access |
@@ -370,9 +528,9 @@ Recovery follows a **priority-ordered** policy based on cascade impact:
 
 ---
 
-## 6. Urban Stability Score (USS)
+## 8. Urban Stability Score (USS)
 
-### 6.1 Computation Formula
+### 8.1 Computation Formula
 
 ```
 USS = Σ (weight_i × health_i)  for i ∈ {Power, Water, Transport, Emergency, Healthcare}
@@ -386,7 +544,7 @@ USS = Σ (weight_i × health_i)  for i ∈ {Power, Water, Transport, Emergency, 
 | 🚨 Emergency | **0.15** | Response capability determines crisis resilience |
 | 🚥 Transport | **0.10** | Indirect enabler for other services |
 
-### 6.2 Threat Level Classification
+### 8.2 Threat Level Classification
 
 | USS Range | Threat Level | Color | Description |
 |-----------|-------------|-------|-------------|
@@ -397,7 +555,7 @@ USS = Σ (weight_i × health_i)  for i ∈ {Power, Water, Transport, Emergency, 
 
 ---
 
-## 7. Concurrency Model
+## 9. Concurrency Model
 
 CivicShield uses **Ada Protected Objects** — a language-level concurrency primitive that guarantees:
 
@@ -424,9 +582,9 @@ end Grid_State;
 
 ---
 
-## 8. Security Architecture
+## 10. Security Architecture
 
-### 8.1 Role-Based Access Control (RBAC)
+### 10.1 Role-Based Access Control (RBAC)
 
 ```mermaid
 graph TD
@@ -456,19 +614,19 @@ graph TD
     style V fill:#808080,stroke:#696969,color:#fff
 ```
 
-### 8.2 Default Credentials (Simulation)
+### 10.2 Default Credentials (Simulation)
 
 | Username | Password | Role | Permissions |
 |----------|----------|------|-------------|
-| `admin` | `shield2024` | 👑 Administrator | Full access |
-| `operator` | `ops2024` | 🔧 Operator | Operations |
-| `observer` | `view2024` | 👁️ Observer | Read-only |
+| `admin` | `shield2026` | 👑 Administrator | Full access |
+| `operator` | `ops2026` | 🔧 Operator | Operations |
+| `observer` | `view2026` | 👁️ Observer | Read-only |
 
 ---
 
-## 9. Build & Execution
+## 11. Build & Execution
 
-### 9.1 Prerequisites
+### 11.1 Ada Engine Prerequisites
 
 | Requirement | Version | Purpose |
 |-------------|---------|---------|
@@ -476,39 +634,58 @@ graph TD
 | **gprbuild** | ≥ 25.x | Project build system |
 | **Alire** | ≥ 2.x | Package manager (optional) |
 
-### 9.2 Installation (Windows)
+### 11.2 Web Dashboard Prerequisites
+
+| Requirement | Version | Purpose |
+|-------------|---------|---------|
+| **Node.js** | ≥ 18.x | JavaScript runtime |
+| **npm** | ≥ 9.x | Package manager |
+
+### 11.3 Installation (Windows)
 
 ```powershell
-# Install Alire package manager
+# Install Ada toolchain
 winget install AdaLang.Alire.Portable
-
-# Install GNAT toolchain (restart terminal first)
 alr toolchain --select gnat_native gprbuild
+
+# Install Node.js (for web dashboard)
+winget install OpenJS.NodeJS
 ```
 
-### 9.3 Build Commands
+### 11.4 Build & Run
 
 ```bash
 # Clone the repository
-git clone https://github.com/abdessamad-bourkibate/CivicShield.git
+git clone https://github.com/ABDESSAMAD-BOURKIBATE/CivicShield.git
 cd CivicShield
 
-# Build the project
+# === Ada Engine ===
 gprbuild -P civicshield.gpr -p
-
-# Run the simulator
 ./bin/civicshield          # Linux/macOS
 .\bin\civicshield.exe      # Windows
 
-# Clean build artifacts
-gprclean -P civicshield.gpr
+# === Web Dashboard ===
+npm install
+npm run dev                # → http://localhost:5173
+
+# Build for production
+npm run build
+npm run preview
 ```
 
 ---
 
-## 10. Simulation Output
+## 12. Simulation Output
 
-### 10.1 Dashboard Display
+### 12.1 Web Dashboard
+
+The web dashboard provides a premium glassmorphism interface with:
+- **Left Sidebar:** USS gauge (SVG), simulation controls, manual actions
+- **Center:** 5 subsystem panels with health bars and component chips, USS history chart
+- **Right Sidebar:** Filterable event log, cascade status panel
+- **Modal:** Final stability report with subsystem breakdown
+
+### 12.2 Console Dashboard
 
 ```
 +----------------------------------------------------+
@@ -524,7 +701,7 @@ gprclean -P civicshield.gpr
 +----------------------------------------------------+
 ```
 
-### 10.2 Event Log Sample
+### 12.3 Event Log Sample
 
 ```
 [Step 0] ACCESS_CTRL | INFO    | User authenticated: operator
@@ -537,7 +714,7 @@ gprclean -P civicshield.gpr
 [Step 10] HEALTHCARE | INFO    | Patient admitted (Severity: CRITICAL)
 ```
 
-### 10.3 Scripted Failure Timeline
+### 12.4 Scripted Failure Timeline
 
 ```mermaid
 gantt
@@ -562,60 +739,77 @@ gantt
 
 ---
 
-## 11. Project Structure
+## 13. Project Structure
 
 ```
 CivicShield/
 │
 ├── 📄 civicshield.gpr              ← GNAT project file
+├── 📄 package.json                 ← Node.js / Vite configuration
+├── 📄 vite.config.js               ← Vite build configuration
+├── 📄 index.html                   ← Web dashboard entry point
+├── 📄 main.js                      ← JavaScript entry point
+├── 📄 style.css                    ← Premium glassmorphism stylesheet
 ├── 📄 README.md                    ← This document
 │
-└── 📂 src/
-    ├── 🚀 main.adb                 ← Entry point + simulation loop
-    │
-    ├── ⚡ power_grid.ads           ← Power grid specification
-    ├── ⚡ power_grid.adb           ← Power grid implementation
-    │
-    ├── 💧 water_network.ads        ← Water network specification
-    ├── 💧 water_network.adb        ← Water network implementation
-    │
-    ├── 🚥 transport_control.ads    ← Transport specification
-    ├── 🚥 transport_control.adb    ← Transport implementation
-    │
-    ├── 🚨 emergency_response.ads   ← Emergency specification
-    ├── 🚨 emergency_response.adb   ← Emergency implementation
-    │
-    ├── 🏥 healthcare.ads           ← Healthcare specification
-    ├── 🏥 healthcare.adb           ← Healthcare implementation
-    │
-    ├── 💥 cascade_failure.ads      ← Cascade engine specification
-    ├── 💥 cascade_failure.adb      ← Cascade engine implementation
-    │
-    ├── 📊 stability_index.ads      ← USS specification
-    ├── 📊 stability_index.adb      ← USS implementation
-    │
-    ├── 🔑 access_control.ads       ← RBAC specification
-    ├── 🔑 access_control.adb       ← RBAC implementation
-    │
-    ├── 📝 logging.ads              ← Logging specification
-    ├── 📝 logging.adb              ← Logging implementation
-    │
-    ├── 📺 gui.ads                  ← Dashboard specification
-    └── 📺 gui.adb                  ← Dashboard implementation
+├── 📂 src/
+│   │
+│   │── 🚀 main.adb                 ← Ada entry point + simulation loop
+│   │
+│   │── ⚡ power_grid.ads / .adb    ← Power grid (legacy)
+│   │── 💧 water_network.ads / .adb ← Water network (legacy)
+│   │── 🚥 transport_control.ads / .adb ← Transport
+│   │── 🚨 emergency_response.ads / .adb ← Emergency
+│   │── 🏥 healthcare.ads / .adb    ← Healthcare
+│   │── 💥 cascade_failure.ads / .adb ← Cascade engine
+│   │── 📊 stability_index.ads / .adb ← USS
+│   │── 🔑 access_control.ads / .adb ← RBAC
+│   │── 📝 logging.ads / .adb       ← Logging
+│   │── 📺 gui.ads / .adb           ← Console dashboard
+│   │
+│   │── ── v3.0 Digital Twin Specifications ──
+│   │── 📐 civicshield.ads          ← Root package (namespace)
+│   │── 📐 civicshield-core_types.ads ← SI units, identifiers, states
+│   │── ⚙️ civicshield-physics.ads   ← Power flow, hydraulics, Weibull math
+│   │── 🗺️ civicshield-geospatial.ads ← Spatial graph, agents, OSM
+│   │── ⚡ civicshield-power_grid.ads ← Bus-branch, generators, relays
+│   │── 💧 civicshield-water_network.ads ← Pipes, pumps, tanks, solver
+│   │── 🎲 civicshield-stochastic.ads ← Weibull RNG, MTBF, CCF
+│   │
+│   ├── 📂 engine/                   ← JavaScript simulation modules
+│   │   ├── powerGrid.js
+│   │   ├── waterNetwork.js
+│   │   ├── transportControl.js
+│   │   ├── emergencyResponse.js
+│   │   ├── healthcare.js
+│   │   ├── cascadeFailure.js
+│   │   ├── stabilityIndex.js
+│   │   ├── accessControl.js
+│   │   ├── logging.js
+│   │   └── simulation.js           ← Orchestrator (20-step loop)
+│   │
+│   └── 📂 ui/                      ← JavaScript UI components
+│       ├── loginPage.js             ← Glassmorphism login
+│       └── dashboard.js             ← Real-time monitoring dashboard
+│
+└── 📂 assets/                       ← Images and diagrams
 ```
 
 **Statistics:**
 | Metric | Value |
 |--------|-------|
-| Total Files | 23 |
-| Ada Specifications (`.ads`) | 10 |
+| Total Files | 40+ |
+| Ada Specifications (`.ads`) | 17 |
 | Ada Bodies (`.adb`) | 11 |
-| Total Source Size | ~110 KB |
-| Language | 100% Ada |
+| JavaScript Modules | 12 |
+| CSS Stylesheet | 1 (29 KB) |
+| Ada Source Size | ~130 KB |
+| JavaScript Source Size | ~45 KB |
+| Technology Stack | Ada 2012 + JavaScript ES2022 + Vite |
 
 ---
 
-## 12. Academic References
+## 14. Academic References
 
 This simulator's design is informed by the following research domains:
 
@@ -634,9 +828,18 @@ This simulator's design is informed by the following research domains:
 5. **Infrastructure Resilience Metrics**
    - Bruneau, M., et al. (2003). *A Framework to Quantitatively Assess and Enhance the Seismic Resilience of Communities.* EERI
 
+6. **Reliability Engineering**
+   - Abernethy, R.B. (2006). *The New Weibull Handbook.* Reliability Analysis Center
+
+7. **Hydraulic Network Analysis**
+   - Todini, E. & Pilati, S. (1988). *A Gradient Algorithm for the Analysis of Pipe Networks.* Computer Applications in Water Supply
+
+8. **Power System Analysis**
+   - Glover, J.D., Sarma, M.S., & Overbye, T.J. (2017). *Power Systems Analysis and Design.* Cengage Learning
+
 ---
 
-## 13. License
+## 15. License
 
 ```
 MIT License
@@ -657,11 +860,10 @@ copies or substantial portions of the Software.
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Built_with-Ada_2012-0033A0?style=for-the-badge&logo=ada&logoColor=white" alt="Ada"/>
+  <img src="https://img.shields.io/badge/Built_with-Ada_2012_+_JavaScript-0033A0?style=for-the-badge&logo=ada&logoColor=white" alt="Ada + JS"/>
   <img src="https://img.shields.io/badge/By-ABDESSAMAD_BOURKIBATE-003459?style=for-the-badge" alt="Author"/>
 </p>
 
 <p align="center">
-  <strong>🛡️ CivicShield — Protecting Infrastructure Through Simulation</strong>
+  <strong>🛡️ CivicShield — Protecting Infrastructure Through Physics-Driven Simulation</strong>
 </p>
-
