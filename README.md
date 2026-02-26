@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <img src="assets/civicshield_logo.png" alt="CivicShield Logo" width="400"/>
 </p>
 
@@ -8,7 +8,7 @@
 
 <p align="center">
   <strong>ðŸ›ï¸ High-Integrity Urban Infrastructure Simulation Engine</strong><br>
-  <em>Fault-Tolerant Â· Concurrent Â· Deterministic Â· Academically Rigorous</em>
+  <em>Fault-Tolerant · Concurrent · Deterministic · Academically Rigorous</em>
 </p>
 
 <p align="center">
@@ -21,10 +21,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/âš¡_Power_Grid-Simulated-FFD700?style=flat-square" alt="Power"/>
-  <img src="https://img.shields.io/badge/ðŸ’§_Water_Network-Simulated-00BFFF?style=flat-square" alt="Water"/>
-  <img src="https://img.shields.io/badge/ðŸš¦_Transport-Simulated-FF6347?style=flat-square" alt="Transport"/>
-  <img src="https://img.shields.io/badge/ðŸš¨_Emergency-Simulated-FF4500?style=flat-square" alt="Emergency"/>
+  <img src="https://img.shields.io/badge/⚡_Power_Grid-Simulated-FFD700?style=flat-square" alt="Power"/>
+  <img src="https://img.shields.io/badge/💧_Water_Network-Simulated-00BFFF?style=flat-square" alt="Water"/>
+  <img src="https://img.shields.io/badge/🚥_Transport-Simulated-FF6347?style=flat-square" alt="Transport"/>
+  <img src="https://img.shields.io/badge/🚨_Emergency-Simulated-FF4500?style=flat-square" alt="Emergency"/>
   <img src="https://img.shields.io/badge/ðŸ¥_Healthcare-Simulated-32CD32?style=flat-square" alt="Healthcare"/>
 </p>
 
@@ -38,12 +38,12 @@
 
 <p align="center">
   <strong>ABDESSAMAD BOURKIBATE</strong><br>
-  <em>Systems Engineer Â· Software Architect Â· Infrastructure Security Researcher</em>
+  <em>Systems Engineer · Software Architect · Infrastructure Security Researcher</em>
 </p>
 
 ---
 
-## ðŸ“‹ Table of Contents
+## 📋 Table of Contents
 
 - [1. Abstract](#1-abstract)
 - [2. Problem Statement](#2-problem-statement)
@@ -63,7 +63,7 @@
 
 ## 1. Abstract
 
-> **CivicShield** is a high-integrity, fault-tolerant simulator for critical urban infrastructure, engineered entirely in **Ada 2012**. It models five interdependent subsystems â€” **Power Grids**, **Water Distribution Networks**, **Traffic Control Systems**, **Emergency Response Units**, and **Healthcare Facilities** â€” with cascading failure propagation, concurrent task-based simulation, and deterministic execution guarantees.
+> **CivicShield** is a high-integrity, fault-tolerant simulator for critical urban infrastructure, engineered entirely in **Ada 2012**. It models five interdependent subsystems — **Power Grids**, **Water Distribution Networks**, **Traffic Control Systems**, **Emergency Response Units**, and **Healthcare Facilities** — with cascading failure propagation, concurrent task-based simulation, and deterministic execution guarantees.
 
 The simulator employs Ada's **protected types** for thread-safe shared state, **strong typing** for compile-time correctness, and **exception handling** for runtime fault tolerance. An integrated **Cascade Failure Engine** models inter-subsystem dependencies using a weighted propagation matrix, while the **Stability Index** computes a composite **Urban Stability Score (USS)** reflecting overall system health.
 
@@ -73,12 +73,12 @@ The simulator employs Ada's **protected types** for thread-safe shared state, **
 
 Modern urban infrastructure consists of deeply interconnected systems where failure in one subsystem can cascade across boundaries:
 
-| ðŸ”´ Failure Scenario | ðŸŒŠ Cascading Impact |
+| 🔴 Failure Scenario | 🌊 Cascading Impact |
 |---------------------|---------------------|
-| âš¡ Power grid blackout | ðŸ’§ Water pumps stop â†’ ðŸš¦ Traffic signals fail â†’ ðŸ¥ Hospitals on backup |
-| ðŸ’§ Water main burst | ðŸ¥ Hospital sterilization compromised â†’ ðŸš¨ Emergency response diverted |
-| ðŸš¦ Traffic gridlock | ðŸš¨ Emergency units delayed â†’ ðŸ¥ Patient mortality increases |
-| ðŸš¨ Emergency saturation | ðŸ¥ Untreated patients â†’ âš¡ Power stations unmaintained |
+| ⚡ Power grid blackout | 💧 Water pumps stop → 🚥 Traffic signals fail → ðŸ¥ Hospitals on backup |
+| 💧 Water main burst | ðŸ¥ Hospital sterilization compromised → 🚨 Emergency response diverted |
+| 🚥 Traffic gridlock | 🚨 Emergency units delayed → ðŸ¥ Patient mortality increases |
+| 🚨 Emergency saturation | ðŸ¥ Untreated patients → ⚡ Power stations unmaintained |
 
 **CivicShield** provides a deterministic environment to study, visualize, and mitigate these cascading risks before they manifest in real-world infrastructure.
 
@@ -90,30 +90,30 @@ Modern urban infrastructure consists of deeply interconnected systems where fail
 
 ```mermaid
 graph TB
-    subgraph "ðŸŽ¯ Entry Point"
-        MAIN["ðŸš€ Main<br/><i>main.adb</i>"]
+    subgraph "🎯 Entry Point"
+        MAIN["🚀 Main<br/><i>main.adb</i>"]
     end
 
     subgraph "ðŸ—ï¸ Infrastructure Subsystems"
-        PG["âš¡ Power Grid<br/><i>5 Generators</i><br/><i>8 Substations</i>"]
-        WN["ðŸ’§ Water Network<br/><i>6 Pumps</i><br/><i>3 Reservoirs</i>"]
-        TC["ðŸš¦ Transport Control<br/><i>12 Intersections</i>"]
-        ER["ðŸš¨ Emergency Response<br/><i>15 Units</i>"]
+        PG["⚡ Power Grid<br/><i>5 Generators</i><br/><i>8 Substations</i>"]
+        WN["💧 Water Network<br/><i>6 Pumps</i><br/><i>3 Reservoirs</i>"]
+        TC["🚥 Transport Control<br/><i>12 Intersections</i>"]
+        ER["🚨 Emergency Response<br/><i>15 Units</i>"]
         HC["ðŸ¥ Healthcare<br/><i>4 Hospitals</i>"]
     end
 
     subgraph "ðŸ§  Intelligence Engine"
-        CF["ðŸ’¥ Cascade Failure Engine<br/><i>Dependency Matrix</i>"]
-        SI["ðŸ“Š Stability Index<br/><i>USS Computation</i>"]
+        CF["💥 Cascade Failure Engine<br/><i>Dependency Matrix</i>"]
+        SI["📊 Stability Index<br/><i>USS Computation</i>"]
     end
 
     subgraph "ðŸ” Security & Logging"
-        AC["ðŸ”‘ Access Control<br/><i>RBAC</i>"]
+        AC["🔑 Access Control<br/><i>RBAC</i>"]
         LOG["ðŸ“ Logging<br/><i>Circular Buffer</i>"]
     end
 
     subgraph "ðŸ–¥ï¸ Presentation"
-        GUI["ðŸ“º Dashboard<br/><i>Real-time Display</i>"]
+        GUI["📺 Dashboard<br/><i>Real-time Display</i>"]
     end
 
     MAIN --> PG & WN & TC & ER & HC
@@ -141,15 +141,15 @@ graph TB
 
 ```mermaid
 sequenceDiagram
-    participant M as ðŸš€ Main Loop
-    participant P as âš¡ Power Grid
-    participant W as ðŸ’§ Water Network
-    participant T as ðŸš¦ Transport
-    participant E as ðŸš¨ Emergency
+    participant M as 🚀 Main Loop
+    participant P as ⚡ Power Grid
+    participant W as 💧 Water Network
+    participant T as 🚥 Transport
+    participant E as 🚨 Emergency
     participant H as ðŸ¥ Healthcare
-    participant C as ðŸ’¥ Cascade Engine
-    participant S as ðŸ“Š Stability Index
-    participant G as ðŸ“º Dashboard
+    participant C as 💥 Cascade Engine
+    participant S as 📊 Stability Index
+    participant G as 📺 Dashboard
 
     M->>P: Simulate_Step
     M->>W: Simulate_Step
@@ -167,10 +167,10 @@ sequenceDiagram
     C->>E: Get_Health_Percentage
     C->>H: Get_Health_Percentage
 
-    Note over C: Power < 50% â†’ Cascade!
-    C-->>W: ðŸ’¥ Water impact: -70%
-    C-->>T: ðŸ’¥ Transport impact: -50%
-    C-->>H: ðŸ’¥ Healthcare impact: -60%
+    Note over C: Power < 50% → Cascade!
+    C-->>W: 💥 Water impact: -70%
+    C-->>T: 💥 Transport impact: -50%
+    C-->>H: 💥 Healthcare impact: -60%
 
     M->>C: Apply_Recovery
     M->>S: Compute_Score(health)
@@ -182,15 +182,15 @@ sequenceDiagram
 
 ## 4. Module Specifications
 
-### 4.1 âš¡ Power Grid (`power_grid.ads / .adb`)
+### 4.1 ⚡ Power Grid (`power_grid.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
 | **Components** | 5 Generators, 8 Substations |
 | **Capacity** | 200 MW per generator (1000 MW total) |
 | **Concurrency** | Protected type `Grid_State` |
-| **Failure Mode** | Generator offline â†’ load redistribution |
-| **Health Formula** | `(online_capacity / total_capacity) Ã— 100` |
+| **Failure Mode** | Generator offline → load redistribution |
+| **Health Formula** | `(online_capacity / total_capacity) × 100` |
 
 ```ada
 --  Public API
@@ -204,53 +204,53 @@ function  Get_Health_Percentage return Float;
 **Status Thresholds:**
 | Health % | Status | Icon |
 |----------|--------|------|
-| â‰¥ 80% | `Normal` | ðŸŸ¢ |
-| â‰¥ 50% | `Warning` | ðŸŸ¡ |
-| â‰¥ 20% | `Critical` | ðŸŸ  |
-| < 20% | `Offline` | ðŸ”´ |
+| ≥ 80% | `Normal` | 🟢 |
+| ≥ 50% | `Warning` | 🟡 |
+| ≥ 20% | `Critical` | 🟠 |
+| < 20% | `Offline` | 🔴 |
 
 ---
 
-### 4.2 ðŸ’§ Water Network (`water_network.ads / .adb`)
+### 4.2 💧 Water Network (`water_network.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
 | **Components** | 6 Pumps, 3 Reservoirs, 10 Pipelines |
 | **Reservoir Capacity** | 1,000,000 L each |
 | **Concurrency** | Protected type `Network_State` |
-| **Failure Mode** | Pump failure â†’ pressure drop â†’ rerouting |
-| **Health Formula** | `pump_uptime Ã— 0.6 + reservoir_level Ã— 0.4` |
+| **Failure Mode** | Pump failure → pressure drop → rerouting |
+| **Health Formula** | `pump_uptime × 0.6 + reservoir_level × 0.4` |
 
 ---
 
-### 4.3 ðŸš¦ Transport Control (`transport_control.ads / .adb`)
+### 4.3 🚥 Transport Control (`transport_control.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
 | **Components** | 12 Intersections with signal phases |
-| **Signal Phases** | Green â†’ Yellow â†’ Red â†’ (Flashing on failure) |
+| **Signal Phases** | Green → Yellow → Red → (Flashing on failure) |
 | **Congestion Range** | 0.0 (empty) to 100.0 (gridlock) |
 | **Propagation** | High congestion spills 30% to adjacent intersections |
-| **Health Formula** | `(100 - avg_congestion) Ã— 0.6 + operational% Ã— 0.4` |
+| **Health Formula** | `(100 - avg_congestion) × 0.6 + operational% × 0.4` |
 
 ---
 
-### 4.4 ðŸš¨ Emergency Response (`emergency_response.ads / .adb`)
+### 4.4 🚨 Emergency Response (`emergency_response.ads / .adb`)
 
 | Property | Value |
 |----------|-------|
-| **Fleet** | 4 ðŸš’ Fire + 6 ðŸš” Police + 5 ðŸš‘ Medical = 15 units |
+| **Fleet** | 4 🚒 Fire + 6 🚓 Police + 5 🚑 Medical = 15 units |
 | **Dispatch** | Priority-based, nearest available unit |
 | **Return Rate** | 30% chance per step of returning from deployment |
-| **Health Formula** | `operational% Ã— 0.5 + available% Ã— 0.5` |
+| **Health Formula** | `operational% × 0.5 + available% × 0.5` |
 
 **Priority Levels:**
 | Priority | Response | Icon |
 |----------|----------|------|
-| `Emergency` | Immediate | ðŸ”´ |
-| `High` | < 5 min | ðŸŸ  |
-| `Medium` | < 15 min | ðŸŸ¡ |
-| `Low` | Queued | ðŸŸ¢ |
+| `Emergency` | Immediate | 🔴 |
+| `High` | < 5 min | 🟠 |
+| `Medium` | < 15 min | 🟡 |
+| `Low` | Queued | 🟢 |
 
 ---
 
@@ -268,7 +268,7 @@ function  Get_Health_Percentage return Float;
 
 ---
 
-### 4.6 ðŸ’¥ Cascade Failure Engine (`cascade_failure.ads / .adb`)
+### 4.6 💥 Cascade Failure Engine (`cascade_failure.ads / .adb`)
 
 The core intelligence module that models inter-subsystem dependencies.
 
@@ -280,13 +280,13 @@ function  Get_Impact_Report return Impact_Report;
 
 ---
 
-### 4.7 ðŸ“Š Stability Index (`stability_index.ads / .adb`)
+### 4.7 📊 Stability Index (`stability_index.ads / .adb`)
 
-Computes the **Urban Stability Score (USS)** â€” a single composite metric.
+Computes the **Urban Stability Score (USS)** — a single composite metric.
 
 ---
 
-### 4.8 ðŸ”‘ Access Control (`access_control.ads / .adb`)
+### 4.8 🔑 Access Control (`access_control.ads / .adb`)
 
 Role-based access control with three privilege tiers.
 
@@ -298,7 +298,7 @@ Centralized, thread-safe event logging with circular buffer (500 entries).
 
 ---
 
-### 4.10 ðŸ“º GUI Dashboard (`gui.ads / .adb`)
+### 4.10 📺 GUI Dashboard (`gui.ads / .adb`)
 
 Console-based real-time status dashboard with GtkAda migration points.
 
@@ -316,10 +316,10 @@ The cascade engine uses a **weighted dependency matrix** derived from urban resi
 
 ```mermaid
 graph LR
-    P["âš¡ Power"]
-    W["ðŸ’§ Water"]
-    T["ðŸš¦ Transport"]
-    E["ðŸš¨ Emergency"]
+    P["⚡ Power"]
+    W["💧 Water"]
+    T["🚥 Transport"]
+    E["🚨 Emergency"]
     H["ðŸ¥ Healthcare"]
 
     P -->|"0.70"| W
@@ -335,13 +335,13 @@ graph LR
     style H fill:#32CD32,stroke:#228B22,color:#000
 ```
 
-| Source âš¡ | Target ðŸŽ¯ | Weight | Rationale |
+| Source ⚡ | Target 🎯 | Weight | Rationale |
 |-----------|-----------|--------|-----------|
-| âš¡ Power | ðŸ’§ Water | **0.70** | Electric pumps and treatment plants require power |
-| âš¡ Power | ðŸš¦ Transport | **0.50** | Traffic signals are electrically powered |
-| âš¡ Power | ðŸ¥ Healthcare | **0.60** | Hospitals depend on continuous power supply |
-| ðŸ’§ Water | ðŸ¥ Healthcare | **0.40** | Hospitals need clean water for operations |
-| ðŸš¦ Transport | ðŸš¨ Emergency | **0.50** | Emergency vehicles require passable roads |
+| ⚡ Power | 💧 Water | **0.70** | Electric pumps and treatment plants require power |
+| ⚡ Power | 🚥 Transport | **0.50** | Traffic signals are electrically powered |
+| ⚡ Power | ðŸ¥ Healthcare | **0.60** | Hospitals depend on continuous power supply |
+| 💧 Water | ðŸ¥ Healthcare | **0.40** | Hospitals need clean water for operations |
+| 🚥 Transport | 🚨 Emergency | **0.50** | Emergency vehicles require passable roads |
 
 ### 5.2 Cascade Threshold
 
@@ -349,7 +349,7 @@ A cascade is triggered when any subsystem's health drops below **50%**:
 
 ```
 IF health(subsystem) < 50% THEN
-   degradation = (50 - health) Ã— dependency_weight
+   degradation = (50 - health) × dependency_weight
    FOR each dependent subsystem:
       apply degradation
    END FOR
@@ -362,10 +362,10 @@ Recovery follows a **priority-ordered** policy based on cascade impact:
 
 | Priority | Subsystem | Recovery Rate | Rationale |
 |----------|-----------|--------------|-----------|
-| ðŸ¥‡ 1st | âš¡ Power | -10%/step | Highest cascade multiplier |
-| ðŸ¥ˆ 2nd | ðŸ’§ Water | -8%/step | Critical for healthcare |
-| ðŸ¥‰ 3rd | ðŸš¦ Transport | -5%/step | Enables emergency access |
-| 4th | ðŸš¨ Emergency | -5%/step | Depends on transport |
+| 🥇 1st | ⚡ Power | -10%/step | Highest cascade multiplier |
+| 🥈 2nd | 💧 Water | -8%/step | Critical for healthcare |
+| 🥉 3rd | 🚥 Transport | -5%/step | Enables emergency access |
+| 4th | 🚨 Emergency | -5%/step | Depends on transport |
 | 5th | ðŸ¥ Healthcare | -5%/step | End-user impact |
 
 ---
@@ -375,31 +375,31 @@ Recovery follows a **priority-ordered** policy based on cascade impact:
 ### 6.1 Computation Formula
 
 ```
-USS = Î£ (weight_i Ã— health_i)  for i âˆˆ {Power, Water, Transport, Emergency, Healthcare}
+USS = Σ (weight_i × health_i)  for i ∈ {Power, Water, Transport, Emergency, Healthcare}
 ```
 
 | Subsystem | Weight | Justification |
 |-----------|--------|---------------|
-| âš¡ Power | **0.30** | Highest cascade impact on all other systems |
-| ðŸ’§ Water | **0.25** | Essential for healthcare and public health |
+| ⚡ Power | **0.30** | Highest cascade impact on all other systems |
+| 💧 Water | **0.25** | Essential for healthcare and public health |
 | ðŸ¥ Healthcare | **0.20** | Direct impact on population wellbeing |
-| ðŸš¨ Emergency | **0.15** | Response capability determines crisis resilience |
-| ðŸš¦ Transport | **0.10** | Indirect enabler for other services |
+| 🚨 Emergency | **0.15** | Response capability determines crisis resilience |
+| 🚥 Transport | **0.10** | Indirect enabler for other services |
 
 ### 6.2 Threat Level Classification
 
 | USS Range | Threat Level | Color | Description |
 |-----------|-------------|-------|-------------|
-| â‰¥ 80.0 | ðŸŸ¢ `LOW` | Green | All systems nominal |
-| â‰¥ 60.0 | ðŸŸ¡ `MEDIUM` | Yellow | Degraded performance |
-| â‰¥ 30.0 | ðŸŸ  `HIGH` | Orange | Multiple subsystem failures |
-| < 30.0 | ðŸ”´ `CRITICAL` | Red | Systemic collapse imminent |
+| ≥ 80.0 | 🟢 `LOW` | Green | All systems nominal |
+| ≥ 60.0 | 🟡 `MEDIUM` | Yellow | Degraded performance |
+| ≥ 30.0 | 🟠 `HIGH` | Orange | Multiple subsystem failures |
+| < 30.0 | 🔴 `CRITICAL` | Red | Systemic collapse imminent |
 
 ---
 
 ## 7. Concurrency Model
 
-CivicShield uses **Ada Protected Objects** â€” a language-level concurrency primitive that guarantees:
+CivicShield uses **Ada Protected Objects** — a language-level concurrency primitive that guarantees:
 
 | Property | Guarantee |
 |----------|-----------|
@@ -431,24 +431,24 @@ end Grid_State;
 ```mermaid
 graph TD
     subgraph "ðŸ” Access Control Matrix"
-        A["ðŸ‘‘ Administrator"]
-        O["ðŸ”§ Operator"]
+        A["👑 Administrator"]
+        O["🔧 Operator"]
         V["ðŸ‘ï¸ Observer"]
     end
 
-    subgraph "ðŸŽ¯ Actions"
-        D["ðŸ“º View Dashboard"]
+    subgraph "🎯 Actions"
+        D["📺 View Dashboard"]
         L["ðŸ“ View Logs"]
-        I["ðŸ’¥ Inject Failure"]
-        R["ðŸ”„ Trigger Recovery"]
+        I["💥 Inject Failure"]
+        R["🔄 Trigger Recovery"]
         C["âš™ï¸ Modify Config"]
-        U["ðŸ‘¥ Manage Users"]
+        U["👥 Manage Users"]
     end
 
-    A -->|âœ…| D & L & I & R & C & U
-    O -->|âœ…| D & L & I & R
+    A -->|✅| D & L & I & R & C & U
+    O -->|✅| D & L & I & R
     O -->|âŒ| C & U
-    V -->|âœ…| D & L
+    V -->|✅| D & L
     V -->|âŒ| I & R & C & U
 
     style A fill:#FFD700,stroke:#B8860B,color:#000
@@ -460,8 +460,8 @@ graph TD
 
 | Username | Password | Role | Permissions |
 |----------|----------|------|-------------|
-| `admin` | `shield2024` | ðŸ‘‘ Administrator | Full access |
-| `operator` | `ops2024` | ðŸ”§ Operator | Operations |
+| `admin` | `shield2024` | 👑 Administrator | Full access |
+| `operator` | `ops2024` | 🔧 Operator | Operations |
 | `observer` | `view2024` | ðŸ‘ï¸ Observer | Read-only |
 
 ---
@@ -472,9 +472,9 @@ graph TD
 
 | Requirement | Version | Purpose |
 |-------------|---------|---------|
-| **GNAT** | â‰¥ 15.x | Ada 2012 compiler |
-| **gprbuild** | â‰¥ 25.x | Project build system |
-| **Alire** | â‰¥ 2.x | Package manager (optional) |
+| **GNAT** | ≥ 15.x | Ada 2012 compiler |
+| **gprbuild** | ≥ 25.x | Project build system |
+| **Alire** | ≥ 2.x | Package manager (optional) |
 
 ### 9.2 Installation (Windows)
 
@@ -550,9 +550,9 @@ gantt
     Normal Operation            :active, 1, 5
 
     section Failures
-    âš¡ Generator #2 Offline     :crit, 5, 6
-    ðŸ’§ Water Pump #3 Burst      :crit, 8, 9
-    ðŸš¦ Intersection #5 Incident :crit, 10, 11
+    ⚡ Generator #2 Offline     :crit, 5, 6
+    💧 Water Pump #3 Burst      :crit, 8, 9
+    🚥 Intersection #5 Incident :crit, 10, 11
 
     section Recovery
     Cascade Evaluation          :active, 5, 20
@@ -567,41 +567,41 @@ gantt
 ```
 CivicShield/
 â”‚
-â”œâ”€â”€ ðŸ“„ civicshield.gpr              â† GNAT project file
-â”œâ”€â”€ ðŸ“„ README.md                    â† This document
+â”œâ”€â”€ 📄 civicshield.gpr              â† GNAT project file
+â”œâ”€â”€ 📄 README.md                    â† This document
 â”‚
 â””â”€â”€ ðŸ“ src/
-    â”œâ”€â”€ ðŸš€ main.adb                 â† Entry point + simulation loop
+    â”œâ”€â”€ 🚀 main.adb                 â† Entry point + simulation loop
     â”‚
-    â”œâ”€â”€ âš¡ power_grid.ads           â† Power grid specification
-    â”œâ”€â”€ âš¡ power_grid.adb           â† Power grid implementation
+    â”œâ”€â”€ ⚡ power_grid.ads           â† Power grid specification
+    â”œâ”€â”€ ⚡ power_grid.adb           â† Power grid implementation
     â”‚
-    â”œâ”€â”€ ðŸ’§ water_network.ads        â† Water network specification
-    â”œâ”€â”€ ðŸ’§ water_network.adb        â† Water network implementation
+    â”œâ”€â”€ 💧 water_network.ads        â† Water network specification
+    â”œâ”€â”€ 💧 water_network.adb        â† Water network implementation
     â”‚
-    â”œâ”€â”€ ðŸš¦ transport_control.ads    â† Transport specification
-    â”œâ”€â”€ ðŸš¦ transport_control.adb    â† Transport implementation
+    â”œâ”€â”€ 🚥 transport_control.ads    â† Transport specification
+    â”œâ”€â”€ 🚥 transport_control.adb    â† Transport implementation
     â”‚
-    â”œâ”€â”€ ðŸš¨ emergency_response.ads   â† Emergency specification
-    â”œâ”€â”€ ðŸš¨ emergency_response.adb   â† Emergency implementation
+    â”œâ”€â”€ 🚨 emergency_response.ads   â† Emergency specification
+    â”œâ”€â”€ 🚨 emergency_response.adb   â† Emergency implementation
     â”‚
     â”œâ”€â”€ ðŸ¥ healthcare.ads           â† Healthcare specification
     â”œâ”€â”€ ðŸ¥ healthcare.adb           â† Healthcare implementation
     â”‚
-    â”œâ”€â”€ ðŸ’¥ cascade_failure.ads      â† Cascade engine specification
-    â”œâ”€â”€ ðŸ’¥ cascade_failure.adb      â† Cascade engine implementation
+    â”œâ”€â”€ 💥 cascade_failure.ads      â† Cascade engine specification
+    â”œâ”€â”€ 💥 cascade_failure.adb      â† Cascade engine implementation
     â”‚
-    â”œâ”€â”€ ðŸ“Š stability_index.ads      â† USS specification
-    â”œâ”€â”€ ðŸ“Š stability_index.adb      â† USS implementation
+    â”œâ”€â”€ 📊 stability_index.ads      â† USS specification
+    â”œâ”€â”€ 📊 stability_index.adb      â† USS implementation
     â”‚
-    â”œâ”€â”€ ðŸ”‘ access_control.ads       â† RBAC specification
-    â”œâ”€â”€ ðŸ”‘ access_control.adb       â† RBAC implementation
+    â”œâ”€â”€ 🔑 access_control.ads       â† RBAC specification
+    â”œâ”€â”€ 🔑 access_control.adb       â† RBAC implementation
     â”‚
     â”œâ”€â”€ ðŸ“ logging.ads              â† Logging specification
     â”œâ”€â”€ ðŸ“ logging.adb              â† Logging implementation
     â”‚
-    â”œâ”€â”€ ðŸ“º gui.ads                  â† Dashboard specification
-    â””â”€â”€ ðŸ“º gui.adb                  â† Dashboard implementation
+    â”œâ”€â”€ 📺 gui.ads                  â† Dashboard specification
+    â””â”€â”€ 📺 gui.adb                  â† Dashboard implementation
 ```
 
 **Statistics:**
@@ -662,8 +662,9 @@ copies or substantial portions of the Software.
 </p>
 
 <p align="center">
-  <strong>ðŸ›¡ï¸ CivicShield â€” Protecting Infrastructure Through Simulation</strong>
+  <strong>ðŸ›¡ï¸ CivicShield — Protecting Infrastructure Through Simulation</strong>
 </p>
 
-#   C i v i c S h i e l d  
+#   C i v i c S h i e l d 
+ 
  
