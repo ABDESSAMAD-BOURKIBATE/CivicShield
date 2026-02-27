@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/civicshield_logo.png" alt="CivicShield Logo" width="400"/>
+  <img src="assets/civicshield_logo_v2.png" alt="CivicShield Logo" width="400"/>
 </p>
 
 <p align="center">
@@ -48,10 +48,10 @@
 - [1. Abstract](#1-abstract)
 - [2. Problem Statement](#2-problem-statement)
 - [3. System Architecture](#3-system-architecture)
-- [4. Web Dashboard](#4-web-dashboard)
-- [5. Module Specifications](#5-module-specifications)
-- [6. Physics-Driven Digital Twin (v3.0)](#6-physics-driven-digital-twin-v30)
-- [7. Cascade Failure Model](#7-cascade-failure-model)
+- [4. Module Specifications](#4-module-specifications)
+- [5. Physics-Driven Digital Twin (v3.0)](#5-physics-driven-digital-twin-v30)
+- [6. Cascade Failure Model](#6-cascade-failure-model)
+- [7. Visual Evidence & Proofs](#7-visual-evidence--proofs)
 - [8. Urban Stability Score (USS)](#8-urban-stability-score-uss)
 - [9. Concurrency Model](#9-concurrency-model)
 - [10. Security Architecture](#10-security-architecture)
@@ -65,16 +65,15 @@
 
 ## 1. Abstract
 
-> **CivicShield** is a high-integrity, fault-tolerant **Digital Twin** for critical urban infrastructure, engineered in **Ada 2012** (core simulation engine) with a **premium real-time Web Dashboard** (JavaScript/Vite). It models five interdependent subsystems — **Power Grids**, **Water Distribution Networks**, **Traffic Control Systems**, **Emergency Response Units**, and **Healthcare Facilities** — with cascading failure propagation, physics-based modeling, stochastic failure analysis, and real-time visual monitoring.
+> **CivicShield** is a high-integrity, fault-tolerant **Digital Twin** for critical urban infrastructure, engineered in **Ada 2012**. It models five interdependent subsystems — **Power Grids**, **Water Distribution Networks**, **Traffic Control Systems**, **Emergency Response Units**, and **Healthcare Facilities** — with cascading failure propagation, physics-based modeling, stochastic failure analysis, and real-time monitoring.
 
-The project operates on two tiers:
+The project operates as a high-integrity core engine:
 
 | Tier | Technology | Purpose |
 |------|-----------|---------|
 | **🧠 Core Engine** | Ada 2012 | Physics-based subsystem modeling, Weibull reliability, geospatial graph |
-| **📺 Web Dashboard** | JavaScript + Vite | Real-time glassmorphism UI, live USS gauge, event log, simulation controls |
 
-The simulator employs Ada's **protected types** for thread-safe shared state, **strong SI-unit typing** for compile-time correctness, and **Weibull failure distributions** for industrial-grade reliability modeling. A **premium web dashboard** provides real-time visualization with glassmorphism design, animated USS gauge, subsystem health panels, and role-gated simulation controls.
+The simulator employs Ada's **protected types** for thread-safe shared state, **strong SI-unit typing** for compile-time correctness, and **Weibull failure distributions** for industrial-grade reliability modeling. 
 
 ---
 
@@ -101,7 +100,6 @@ Modern urban infrastructure consists of deeply interconnected systems where fail
 graph TB
     subgraph "🎯 Entry Points"
         MAIN["🚀 Ada Main<br/><i>main.adb</i>"]
-        WEB["🌐 Web Dashboard<br/><i>main.js + Vite</i>"]
     end
 
     subgraph "🏗️ Infrastructure Subsystems"
@@ -130,7 +128,6 @@ graph TB
     end
 
     MAIN --> PG & WN & TC & ER & HC
-    WEB --> PG & WN & TC & ER & HC
     PG & WN & TC & ER & HC --> CF
     CF --> SI
     PG --> PHY
@@ -142,7 +139,6 @@ graph TB
     ST --> CT
     PG & WN & TC & ER & HC -.->|events| LOG
     MAIN --> AC
-    WEB --> AC
     AC -.->|audit| LOG
 
     style PG fill:#FFD700,stroke:#B8860B,color:#000
@@ -154,7 +150,6 @@ graph TB
     style SI fill:#20B2AA,stroke:#008B8B,color:#fff
     style ST fill:#DA70D6,stroke:#BA55D3,color:#fff
     style MAIN fill:#003459,stroke:#00A8E8,color:#fff
-    style WEB fill:#646CFF,stroke:#7C7FFF,color:#fff
     style AC fill:#8B0000,stroke:#DC143C,color:#fff
     style LOG fill:#556B2F,stroke:#9ACD32,color:#fff
     style CT fill:#2F4F4F,stroke:#5F9EA0,color:#fff
@@ -174,7 +169,6 @@ sequenceDiagram
     participant H as 🏥 Healthcare
     participant C as 💥 Cascade Engine
     participant S as 📊 Stability Index
-    participant G as 📺 Dashboard
 
     M->>P: Simulate_Step
     M->>W: Simulate_Step
@@ -199,52 +193,15 @@ sequenceDiagram
 
     M->>C: Apply_Recovery
     M->>S: Compute_Score(health)
-    S->>G: USS = 79.25 | MEDIUM
-    M->>G: Update_Status
+    S-->>M: USS = 79.25 | MEDIUM
 ```
 
 ---
 
-## 4. Web Dashboard
-
-CivicShield includes a **premium real-time web dashboard** built with Vite and vanilla JavaScript, featuring a glassmorphism dark-theme design.
-
-### 4.1 Features
-
-| Feature | Description |
-|---------|-------------|
-| 🔐 **Login Page** | Glassmorphism design with animated particles, credential hints, role-based access |
-| 📊 **USS Gauge** | Real-time SVG gauge with animated threat-level color transitions |
-| 📈 **USS History Chart** | Canvas-rendered line chart tracking USS over all simulation steps |
-| ⚡ **Subsystem Panels** | 5 live panels with health bars, component chips, and detailed metrics |
-| 📝 **Event Log** | Filterable real-time log with severity icons and color-coded entries |
-| 💥 **Cascade Status** | Active cascade count and recovery action tracker |
-| 🎮 **Simulation Controls** | Start, Pause, Resume, Step, Reset, Speed slider (0.5x – 5x) |
-| 💥 **Manual Actions** | Role-gated failure injection and recovery trigger buttons |
-| 📊 **Final Report** | Modal with subsystem breakdown, cascade history, and summary |
-
-### 4.2 Running the Dashboard
-
-```bash
-cd CivicShield
-npm install
-npm run dev
-# → opens at http://localhost:5173
-```
-
-### 4.3 Design System
-
-| Element | Style |
-|---------|-------|
-| Theme | Dark glassmorphism (blur + transparency) |
-| Fonts | Inter (UI) + JetBrains Mono (data) |
-| Colors | 🟢 Green=Normal, 🟡 Yellow=Warning, 🟠 Orange=High, 🔴 Red=Critical |
-| Layout | 3-column: Controls + Subsystems + Logs |
-| Animations | Pulse gauges, slide-in logs, glow-on-critical |
-
 ---
 
-## 5. Module Specifications
+
+## 4. Module Specifications
 
 ### 5.1 ⚡ Power Grid (`power_grid.ads / .adb`)
 
@@ -362,7 +319,7 @@ Centralized, thread-safe event logging with circular buffer (500 entries).
 
 ---
 
-## 6. Physics-Driven Digital Twin (v3.0)
+## 5. Physics-Driven Digital Twin (v3.0)
 
 > ⚡ **CivicShield v3.0** introduces a complete architectural overhaul from percentage-based simulation to physics-driven Digital Twin modeling using real engineering mathematics.
 
@@ -466,7 +423,7 @@ type MTBF_Hours             is new Long_Float range 0.0 .. Long_Float'Last;
 
 ---
 
-## 7. Cascade Failure Model
+## 6. Cascade Failure Model
 
 ### 7.1 Dependency Matrix
 
@@ -528,9 +485,27 @@ END IF
 
 ---
 
+## 7. Visual Evidence & Proofs
+
+### 8.1 System Integrity & Digital Twin Synchronization
+The integrity of the CivicShield Digital Twin is maintained through real-time physics-driven synchronization between the core Ada engine and the visual dashboard.
+
+<p align="center">
+  <img src="assets/system_integrity_proof.png" alt="System Integrity Proof" width="800"/>
+</p>
+
+### 8.2 Interdependency Logic & Cascade Foundations
+The simulator models complex interdependencies between urban subsystems. The following visualization demonstrates the logical nodes and their physical interconnects that drive the cascade failure engine.
+
+<p align="center">
+  <img src="assets/interdependency_logic.png" alt="Interdependency Logic" width="800"/>
+</p>
+
+---
+
 ## 8. Urban Stability Score (USS)
 
-### 8.1 Computation Formula
+### 9.1 Computation Formula
 
 ```
 USS = Σ (weight_i × health_i)  for i ∈ {Power, Water, Transport, Emergency, Healthcare}
@@ -626,20 +601,12 @@ graph TD
 
 ## 11. Build & Execution
 
-### 11.1 Ada Engine Prerequisites
-
 | Requirement | Version | Purpose |
 |-------------|---------|---------|
 | **GNAT** | ≥ 15.x | Ada 2012 compiler |
 | **gprbuild** | ≥ 25.x | Project build system |
 | **Alire** | ≥ 2.x | Package manager (optional) |
 
-### 11.2 Web Dashboard Prerequisites
-
-| Requirement | Version | Purpose |
-|-------------|---------|---------|
-| **Node.js** | ≥ 18.x | JavaScript runtime |
-| **npm** | ≥ 9.x | Package manager |
 
 ### 11.3 Installation (Windows)
 
@@ -647,9 +614,6 @@ graph TD
 # Install Ada toolchain
 winget install AdaLang.Alire.Portable
 alr toolchain --select gnat_native gprbuild
-
-# Install Node.js (for web dashboard)
-winget install OpenJS.NodeJS
 ```
 
 ### 11.4 Build & Run
@@ -663,29 +627,13 @@ cd CivicShield
 gprbuild -P civicshield.gpr -p
 ./bin/civicshield          # Linux/macOS
 .\bin\civicshield.exe      # Windows
-
-# === Web Dashboard ===
-npm install
-npm run dev                # → http://localhost:5173
-
-# Build for production
-npm run build
-npm run preview
 ```
 
 ---
 
 ## 12. Simulation Output
 
-### 12.1 Web Dashboard
-
-The web dashboard provides a premium glassmorphism interface with:
-- **Left Sidebar:** USS gauge (SVG), simulation controls, manual actions
-- **Center:** 5 subsystem panels with health bars and component chips, USS history chart
-- **Right Sidebar:** Filterable event log, cascade status panel
-- **Modal:** Final stability report with subsystem breakdown
-
-### 12.2 Console Dashboard
+### 12.1 Console Dashboard
 
 ```
 +----------------------------------------------------+
@@ -745,11 +693,6 @@ gantt
 CivicShield/
 │
 ├── 📄 civicshield.gpr              ← GNAT project file
-├── 📄 package.json                 ← Node.js / Vite configuration
-├── 📄 vite.config.js               ← Vite build configuration
-├── 📄 index.html                   ← Web dashboard entry point
-├── 📄 main.js                      ← JavaScript entry point
-├── 📄 style.css                    ← Premium glassmorphism stylesheet
 ├── 📄 README.md                    ← This document
 │
 ├── 📂 src/
@@ -776,21 +719,7 @@ CivicShield/
 │   │── 💧 civicshield-water_network.ads ← Pipes, pumps, tanks, solver
 │   │── 🎲 civicshield-stochastic.ads ← Weibull RNG, MTBF, CCF
 │   │
-│   ├── 📂 engine/                   ← JavaScript simulation modules
-│   │   ├── powerGrid.js
-│   │   ├── waterNetwork.js
-│   │   ├── transportControl.js
-│   │   ├── emergencyResponse.js
-│   │   ├── healthcare.js
-│   │   ├── cascadeFailure.js
-│   │   ├── stabilityIndex.js
-│   │   ├── accessControl.js
-│   │   ├── logging.js
-│   │   └── simulation.js           ← Orchestrator (20-step loop)
-│   │
-│   └── 📂 ui/                      ← JavaScript UI components
-│       ├── loginPage.js             ← Glassmorphism login
-│       └── dashboard.js             ← Real-time monitoring dashboard
+│   └── 📂 engine/                   ← JavaScript simulation modules (Legacy)
 │
 └── 📂 assets/                       ← Images and diagrams
 ```
