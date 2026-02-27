@@ -1,0 +1,3 @@
+main.adb:59:121: (style) this line is too long: 142 [-gnatyM]
+main.adb:60:121: (style) this line is too long: 141 [-gnatyM]
+main.adb:61:121: (style) this line is too long: 132 [-gnatyM]

@@ -1,0 +1,223 @@
+/* SCADA Industrial Dark Theme */
+
+.root-pane {
+    -fx-background-color: #0b0f19;
+}
+
+.label {
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.header-bar {
+    -fx-background-color: #12182b;
+    -fx-padding: 15 25;
+    -fx-border-color: transparent transparent #202a43 transparent;
+    -fx-border-width: 0 0 2 0;
+}
+
+.header-title {
+    -fx-text-fill: #e2e8f0;
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 2px;
+}
+
+.header-subtitle {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-transform: uppercase;
+}
+
+/* Connection Status Pill */
+.status-pill {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 20;
+    -fx-padding: 5 15;
+    -fx-border-color: #334155;
+    -fx-border-radius: 20;
+}
+
+.status-pill Label {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Cards */
+.dashboard-grid {
+    -fx-padding: 25;
+}
+
+.scada-card {
+    -fx-background-color: #151b2c;
+    -fx-background-radius: 8;
+    -fx-border-color: #202b45;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 4);
+}
+
+.card-header {
+    -fx-border-color: transparent transparent #202b45 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0 0 10 0;
+    -fx-margin-bottom: 15px;
+}
+
+.card-title {
+    -fx-text-fill: #f1f5f9;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 1px;
+}
+
+/* Metrics */
+.metrics-grid {
+    -fx-padding: 15 0;
+}
+
+.metric-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-transform: uppercase;
+}
+
+.metric-value {
+    -fx-text-fill: #38bdf8;
+    /* Neon Blue */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.metric-value-large {
+    -fx-text-fill: #10b981;
+    /* Neon Green */
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Specific Alerts */
+.metric-warning {
+    -fx-text-fill: #f59e0b;
+    /* Amber */
+}
+
+.metric-critical {
+    -fx-text-fill: #ef4444;
+    /* Crimson */
+}
+
+/* Alert Boxes */
+.alert-box-warning {
+    -fx-background-color: rgba(245, 158, 11, 0.1);
+    -fx-border-color: #f59e0b;
+    -fx-border-radius: 4;
+    -fx-padding: 10;
+}
+
+.alert-box-warning Label,
+.alert-box-warning .ikonli-font-icon {
+    -fx-text-fill: #f59e0b;
+    -fx-icon-color: #f59e0b;
+    -fx-font-weight: bold;
+}
+
+.alert-box-critical {
+    -fx-background-color: rgba(239, 68, 68, 0.1);
+    -fx-border-color: #ef4444;
+    -fx-border-radius: 4;
+    -fx-padding: 10;
+}
+
+.alert-box-critical Label,
+.alert-box-critical .ikonli-font-icon {
+    -fx-text-fill: #ef4444;
+    -fx-icon-color: #ef4444;
+    -fx-font-weight: bold;
+}
+
+/* Lists and Logs */
+.log-list {
+    -fx-background-color: #0b0f19;
+    -fx-border-color: #202b45;
+    -fx-control-inner-background: #0b0f19;
+}
+
+.log-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+    -fx-font-family: 'Consolas', monospace;
+    -fx-padding: 5 10;
+    -fx-border-color: transparent transparent #151b2c transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.log-list .list-cell:empty {
+    -fx-border-width: 0;
+}
+
+/* Agent List Item */
+.translucent-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.translucent-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.agent-item {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 4;
+    -fx-padding: 10;
+}
+
+.agent-item-id {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12px;
+}
+
+.agent-item-status {
+    -fx-text-fill: #10b981;
+    -fx-font-weight: bold;
+}
+
+/* Icons */
+.icon-primary {
+    -fx-icon-color: #3b82f6;
+}
+
+.icon-power {
+    -fx-icon-color: #eab308;
+}
+
+.icon-water {
+    -fx-icon-color: #0ea5e9;
+}
+
+.icon-emergency {
+    -fx-icon-color: #ec4899;
+}
+
+.icon-log {
+    -fx-icon-color: #a855f7;
+}
+
+/* Footer */
+.footer-bar {
+    -fx-background-color: #0f172a;
+    -fx-padding: 5 20;
+    -fx-border-color: #202b45 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+.footer-text {
+    -fx-text-fill: #475569;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-transform: uppercase;
+}

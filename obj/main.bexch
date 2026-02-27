@@ -4,6 +4,13 @@ b__main.o
 C:\Users\LENOVO\Downloads\CivicShield\civicshield.gpr
 20260226083350 2892cb6d3bd5bd90e4f87d2aa30a4d95
 [BOUND OBJECT FILES]
+C:\Users\LENOVO\Downloads\CivicShield\obj\civicshield.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\civicshield-core_types.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\civicshield-geospatial.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\civicshield-physics.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\civicshield-power_grid.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\civicshield-water_network.o
+C:\Users\LENOVO\Downloads\CivicShield\obj\civicshield-telemetry.o
 C:\Users\LENOVO\Downloads\CivicShield\obj\logging.o
 C:\Users\LENOVO\Downloads\CivicShield\obj\access_control.o
 C:\Users\LENOVO\Downloads\CivicShield\obj\emergency_response.o
@@ -13,7 +20,6 @@ C:\Users\LENOVO\Downloads\CivicShield\obj\stability_index.o
 C:\Users\LENOVO\Downloads\CivicShield\obj\transport_control.o
 C:\Users\LENOVO\Downloads\CivicShield\obj\water_network.o
 C:\Users\LENOVO\Downloads\CivicShield\obj\cascade_failure.o
-C:\Users\LENOVO\Downloads\CivicShield\obj\gui.o
 C:\Users\LENOVO\Downloads\CivicShield\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
@@ -26,6 +32,8 @@ b__main.ali
 -static
 C:/users/lenovo/appdata/local/alire/cache/toolchains/gnat_native_15.2.1_346e2e00/lib/gcc/x86_64-w64-mingw32/15.2.0/adalib/libgnarl.a
 C:/users/lenovo/appdata/local/alire/cache/toolchains/gnat_native_15.2.1_346e2e00/lib/gcc/x86_64-w64-mingw32/15.2.0/adalib/libgnat.a
+-lws2_32
 -Xlinker
 --stack=0x800000,0x1000
 -mthreads
+-lm

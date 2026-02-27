@@ -195,7 +195,7 @@ package CivicShield.Power_Grid is
    --  DC Power Flow solver (Gauss-Seidel / Newton-Raphson)
    procedure Solve_DC_Power_Flow
      (Buses : in out Bus_Array;
-      Lines : in     Line_Array);
+      Lines : in out Line_Array);
 
    --  Economic dispatch: allocate generation among online units to
    --  minimize total fuel cost while meeting demand.

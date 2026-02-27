@@ -9,7 +9,7 @@ A -fstack-check=specific
 A -g
 A -mtune=generic
 A -march=x86-64
-P ZX
+P SS ZX
 
 RN
 RV NO_DELAY
@@ -18,25 +18,40 @@ RV NO_EXCEPTIONS
 RV NO_FIXED_POINT
 RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_NESTED_FINALIZATION
 RV NO_RELATIVE_DELAY
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		0b652e24 NE OO SU
+U main%b		main.adb		0cc44c60 NE OO SU
 W access_control%s	access_control.adb	access_control.ali
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W cascade_failure%s	cascade_failure.adb	cascade_failure.ali
+W civicshield%s		civicshield.ads		civicshield.ali
+W civicshield.telemetry%s  civicshield-telemetry.adb  civicshield-telemetry.ali
 W emergency_response%s	emergency_response.adb	emergency_response.ali
-W gui%s			gui.adb			gui.ali
 W healthcare%s		healthcare.adb		healthcare.ali
 W logging%s		logging.adb		logging.ali
 W power_grid%s		power_grid.adb		power_grid.ali
 W stability_index%s	stability_index.adb	stability_index.ali
+Z system%s		system.ads		system.ali
 Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
 Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 W transport_control%s	transport_control.adb	transport_control.ali
 W water_network%s	water_network.adb	water_network.ali
 
@@ -44,39 +59,60 @@ D access_control.ads	20260226075448 e9babf63 access_control%s
 D ada.ads		20250808065140 76789da1 ada%s
 D a-calend.ads		20250808065140 bf7f3cc9 ada.calendar%s
 D a-caldel.ads		20250808065140 9f20b83d ada.calendar.delays%s
+D a-charac.ads		20250808065140 2d3ec45b ada.characters%s
+D a-chlat1.ads		20250808065140 e0d72e76 ada.characters.latin_1%s
 D a-except.ads		20250808065140 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250808065140 bf4f806b ada.finalization%s
 D a-ioexce.ads		20250808065140 40018c65 ada.io_exceptions%s
 D a-stream.ads		20250808065140 17477cbd ada.streams%s
 D a-string.ads		20250808065140 90ac6797 ada.strings%s
+D a-strmap.ads		20250808065140 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250808065140 18c3c634 ada.strings.search%s
 D a-sttebu.ads		20250808065140 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250808065140 b10770ab ada.strings.unbounded%s
 D a-stuten.ads		20250808065140 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20250808065140 fbca0ad5 ada.tags%s
 D a-textio.ads		20250808065140 34ef47de ada.text_io%s
 D a-unccon.ads		20250808065140 0e9b276f ada.unchecked_conversion%s
 D cascade_failure.ads	20260226075950 270fd7a5 cascade_failure%s
+D civicshield.ads	20260226205544 4be3916f civicshield%s
+D civicshield-core_types.ads  20260226205542 7cc945e4 civicshield.core_types%s
+D civicshield-geospatial.ads  20260226205724 fe624089 civicshield.geospatial%s
+D civicshield-power_grid.ads  20260227003136 0488affd civicshield.power_grid%s
+D civicshield-telemetry.ads  20260226213022 2b0646da civicshield.telemetry%s
+D civicshield-water_network.ads  20260226205906 313cdbe0 civicshield.water_network%s
 D emergency_response.ads  20260226075812 863a997b emergency_response%s
-D gui.ads		20260226090144 706ba75a gui%s
 D healthcare.ads	20260226075850 fabc5a11 healthcare%s
 D interfac.ads		20250808065140 9111f9c1 interfaces%s
+D i-c.ads		20250808065140 e94c966a interfaces.c%s
 D i-cstrea.ads		20250808065140 ffd01b9d interfaces.c_streams%s
 D logging.ads		20260226075410 446466ab logging%s
-D main.adb		20260226090218 46482577 main%b
+D main.adb		20260227003826 ab83d618 main%b
 D power_grid.ads	20260226090020 a8cbb82d power_grid%s
 D stability_index.ads	20260226075528 1edd3d25 stability_index%s
 D system.ads		20250808065140 a869df9e system%s
+D s-atocou.ads		20250808065140 dc18efc3 system.atomic_counters%s
 D s-conca3.ads		20250808065140 8a7a19a2 system.concat_3%s
+D s-conca5.ads		20250808065140 4099d1db system.concat_5%s
 D s-crtl.ads		20250808065140 beb39b9e system.crtl%s
 D s-exctab.ads		20250808065140 91bef6ef system.exception_table%s
 D s-ficobl.ads		20250808065140 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250808065140 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250808065140 0a7c3ed4 system.finalization_root%s
 D s-imagei.ads		20250808065140 5e131ce0 system.image_i%s
 D s-imgint.ads		20250808065140 67e4edfb system.img_int%s
+D s-memory.ads		20250808065140 18949c1a system.memory%s
+D s-oslock.ads		20250808065140 88eb514b system.os_locks%s
 D s-parame.ads		20250808065140 3597fc11 system.parameters%s
 D s-putima.ads		20250808065140 17291fe4 system.put_images%s
+D s-retsta.ads		20250808065140 0f6b06cb system.return_stack%s
 D s-secsta.ads		20250808065140 578279f5 system.secondary_stack%s
 D s-soflin.ads		20250808065140 5d88fdea system.soft_links%s
 D s-stache.ads		20250808065140 0b81c1fe system.stack_checking%s
 D s-stalib.ads		20250808065140 1c9580f6 system.standard_library%s
+D s-stalib.adb		20250808065140 eb464a47 system.standard_library%b
 D s-stoele.ads		20250808065140 ccded4e8 system.storage_elements%s
+D s-stratt.ads		20250808065140 516607ae system.stream_attributes%s
 D s-traent.ads		20250808065140 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20250808065140 fa2a7f59 system.unsigned_types%s
 D s-valspe.ads		20250808065140 f810d31c system.val_spec%s
@@ -85,133 +121,144 @@ D s-vauspe.ads		20250808065140 89269ba5 system.value_u_spec%s
 D s-vs_int.ads		20250808065140 06b6b724 system.vs_int%s
 D s-vs_uns.ads		20250808065140 e7f47a27 system.vs_uns%s
 D s-wchcon.ads		20250808065140 d9032363 system.wch_con%s
+D s-win32.ads		20250808065140 f77987dc system.win32%s
 D transport_control.ads	20260226075724 d0143e64 transport_control%s
 D water_network.ads	20260226075652 99fc9dbc water_network%s
 G a e
-G c Z b b [main standard 40 11 none]
-G r c none [main standard 40 11 none] [clear_screen gui 22 14 none]
-G r c none [main standard 40 11 none] [initialize logging 102 14 none]
-G r c none [main standard 40 11 none] [initialize access_control 56 14 none]
-G r c none [main standard 40 11 none] [authenticate_user access_control 65 13 none]
-G r c none [main standard 40 11 none] [log_access access_control 87 14 none]
-G r c none [main standard 40 11 none] [initialize power_grid 57 14 none]
-G r c none [main standard 40 11 none] [initialize water_network 63 14 none]
-G r c none [main standard 40 11 none] [initialize transport_control 42 14 none]
-G r c none [main standard 40 11 none] [initialize emergency_response 49 14 none]
-G r c none [main standard 40 11 none] [initialize healthcare 42 14 none]
-G r c none [main standard 40 11 none] [initialize cascade_failure 50 14 none]
-G r c none [main standard 40 11 none] [initialize stability_index 58 14 none]
-G r c none [main standard 40 11 none] [initialize_dashboard gui 18 14 none]
-G r c none [main standard 40 11 none] [simulate_step power_grid 58 14 none]
-G r c none [main standard 40 11 none] [simulate_step water_network 64 14 none]
-G r c none [main standard 40 11 none] [simulate_step transport_control 43 14 none]
-G r c none [main standard 40 11 none] [simulate_step emergency_response 50 14 none]
-G r c none [main standard 40 11 none] [simulate_step healthcare 43 14 none]
-G r c none [main standard 40 11 none] [inject_failure power_grid 59 14 none]
-G r c none [main standard 40 11 none] [dispatch_event emergency_response 51 14 none]
-G r c none [main standard 40 11 none] [inject_failure water_network 65 14 none]
-G r c none [main standard 40 11 none] [inject_incident transport_control 44 14 none]
-G r c none [main standard 40 11 none] [admit_patient healthcare 44 14 none]
-G r c none [main standard 40 11 none] [evaluate_cascade cascade_failure 51 14 none]
-G r c none [main standard 40 11 none] [apply_recovery cascade_failure 52 14 none]
-G r c none [main standard 40 11 none] [get_health_percentage power_grid 61 14 none]
-G r c none [main standard 40 11 none] [get_health_percentage water_network 67 14 none]
-G r c none [main standard 40 11 none] [get_health_percentage transport_control 46 14 none]
-G r c none [main standard 40 11 none] [get_health_percentage emergency_response 56 14 none]
-G r c none [main standard 40 11 none] [get_health_percentage healthcare 46 14 none]
-G r c none [main standard 40 11 none] [compute_score stability_index 59 14 none]
-G r c none [main standard 40 11 none] [render_dashboard gui 19 14 none]
-G r c none [main standard 40 11 none] [render_event_log gui 20 14 none]
-G r c none [main standard 40 11 none] [render_final_report gui 21 14 none]
-G r c none [main standard 40 11 none] [log_event logging 82 14 none]
+G c Z b b [main standard 25 11 none]
+G r c none [main standard 25 11 none] [initialize logging 102 14 none]
+G r c none [main standard 25 11 none] [initialize access_control 56 14 none]
+G r c none [main standard 25 11 none] [authenticate_user access_control 65 13 none]
+G r c none [main standard 25 11 none] [log_access access_control 87 14 none]
+G r c none [main standard 25 11 none] [initialize power_grid 57 14 none]
+G r c none [main standard 25 11 none] [initialize water_network 63 14 none]
+G r c none [main standard 25 11 none] [initialize transport_control 42 14 none]
+G r c none [main standard 25 11 none] [initialize emergency_response 49 14 none]
+G r c none [main standard 25 11 none] [initialize healthcare 42 14 none]
+G r c none [main standard 25 11 none] [initialize cascade_failure 50 14 none]
+G r c none [main standard 25 11 none] [initialize stability_index 58 14 none]
+G r c none [main standard 25 11 none] [start_server civicshield__telemetry 130 14 none]
+G r c none [main standard 25 11 none] [simulate_step power_grid 58 14 none]
+G r c none [main standard 25 11 none] [simulate_step water_network 64 14 none]
+G r c none [main standard 25 11 none] [simulate_step transport_control 43 14 none]
+G r c none [main standard 25 11 none] [simulate_step emergency_response 50 14 none]
+G r c none [main standard 25 11 none] [simulate_step healthcare 43 14 none]
+G r c none [main standard 25 11 none] [inject_failure power_grid 59 14 none]
+G r c none [main standard 25 11 none] [inject_failure water_network 65 14 none]
+G r c none [main standard 25 11 none] [inject_incident transport_control 44 14 none]
+G r c none [main standard 25 11 none] [evaluate_cascade cascade_failure 51 14 none]
+G r c none [main standard 25 11 none] [apply_recovery cascade_failure 52 14 none]
+G r c none [main standard 25 11 none] [get_health_percentage power_grid 61 14 none]
+G r c none [main standard 25 11 none] [get_health_percentage water_network 67 14 none]
+G r c none [main standard 25 11 none] [get_health_percentage transport_control 46 14 none]
+G r c none [main standard 25 11 none] [get_health_percentage emergency_response 56 14 none]
+G r c none [main standard 25 11 none] [get_health_percentage healthcare 46 14 none]
+G r c none [main standard 25 11 none] [compute_score stability_index 59 14 none]
+G r c none [main standard 25 11 none] [broadcast civicshield__telemetry 136 14 none]
 X 1 access_control.ads
-24K9*Access_Control 92e19 21|27w6 38r10 45r19 54r4 56r13 57r16 58r7 59r17
-37n7*View_Dashboard{36E9} 21|59r32
-48I9*Session_Token<integer> 21|38r25 45r34
-50i4*Invalid_Token{48I9} 21|57r31
-56U14*Initialize 21|54s19
-65V13*Authenticate_User{48I9} 21|56s28
-87U14*Log_Access 21|58s22
+24K9*Access_Control 92e19 33|10w6 22r10 29r19 86r4 88r13 89r16 90r7 91r17
+37n7*View_Dashboard{36E9} 33|91r32
+48I9*Session_Token<integer> 33|22r25 29r34
+50i4*Invalid_Token{48I9} 33|89r31
+56U14*Initialize 33|86s19
+65V13*Authenticate_User{48I9} 33|88s28
+87U14*Log_Access 33|90s22
 X 2 ada.ads
-18K9*Ada 22e8 21|36r6 72r4 73r4 76r4 152r7
-X 12 a-textio.ads
-58K13*Text_IO 785e16 21|36w10 72r8 73r8 76r8 152r11
-284U14*New_Line 21|76s16
-565U14*Put_Line 21|72s16 73s16 152s19
-X 14 cascade_failure.ads
-28K9*Cascade_Failure 55e20 21|33w6 67r4 114r7 115r7
-50U14*Initialize 21|67s20
-51U14*Evaluate_Cascade 21|114s23
-52U14*Apply_Recovery 21|115s23
-X 15 emergency_response.ads
-24K9*Emergency_Response 58e23 21|31w6 65r4 90r7 97r10 98r27 99r27 130r15
-28n23*Fire{28E9} 21|98r46
-30n41*High{30E9} 21|99r46
-49U14*Initialize 21|65s23
-50U14*Simulate_Step 21|90s26
-51U14*Dispatch_Event 21|97s29
-52e7 Event_Type{28E9} 21|98r13
-53e7 Priority{30E9} 21|99r13
-54a7 Location{string} 21|100r13
-56V14*Get_Health_Percentage{float} 21|130s34
-X 16 gui.ads
-16K9*GUI 24e8 21|35w6 51r4 70r4 138r7 139r7 148r4
-18U14*Initialize_Dashboard 21|70s8
-19U14*Render_Dashboard 21|138s11
-20U14*Render_Event_Log 21|139s11
-21U14*Render_Final_Report 21|148s8
-22U14*Clear_Screen 21|51s8
-X 17 healthcare.ads
-23K9*Healthcare 48e15 21|32w6 66r4 91r7 109r10 110r10 133r15
-42U14*Initialize 21|66s15
-43U14*Simulate_Step 21|91s18
-44U14*Admit_Patient 21|109s21 110s21
-46V14*Get_Health_Percentage{float} 21|133s26
-X 20 logging.ads
-23K9*Logging 104e12 21|26w6 53r4 155r7 157r18 158r18
-37n7*System{29E9} 21|157r26
-47n7*Critical{43E9} 21|158r26
-82U14*Log_Event 21|155s15
-83i7 Step{natural} 21|156r10
-84e7 Cat{29E9} 21|157r10
-85e7 Sev{43E9} 21|158r10
-86a7 Msg{string} 21|159r10
-102U14*Initialize 21|53s12
-X 21 main.adb
-40U11*Main 40b11 161l5 161t9
-42N4 Max_Steps 75r22 83r21 138r35
-43i4 Current_Step{natural} 84m7 154r25 156r18
-44r4 Health{23|39R9} 118m7 135r38
-45i4 Token{1|48I9} 56m4 57r7 59r10
-83i8 Step{integer} 84r23 94r10 103r10 107r10 138r29
-X 22 power_grid.ads
-24K9*Power_Grid 21|28w6 62r4 87r7 95r10 121r15 22|63e15
-57U14*Initialize 21|62s15
-58U14*Simulate_Step 21|87s18
-59U14*Inject_Failure 21|95s21
-61V14*Get_Health_Percentage{float} 21|121s26
-X 23 stability_index.ads
-21K9*Stability_Index 21|34w6 44r19 68r4 120r12 123r12 126r12 129r12 132r12
-. 135r7 23|64e20
-33F9*Health_Percentage<float> 21|120r28 123r28 126r28 129r28 132r28
-39R9*Subsystem_Health 21|44r35 23|45e14
-40f7*Power_Health{33F9} 21|119m10
-41f7*Water_Health{33F9} 21|122m10
-42f7*Transport_Health{33F9} 21|125m10
-43f7*Emergency_Health{33F9} 21|128m10
-44f7*Healthcare_Health{33F9} 21|131m10
-58U14*Initialize 21|68s20
-59U14*Compute_Score 21|135s23
-X 46 transport_control.ads
-23K9*Transport_Control 21|30w6 64r4 89r7 108r10 127r15 46|48e22
-42U14*Initialize 21|64s22
-43U14*Simulate_Step 21|89s25
-44U14*Inject_Incident 21|108s28
-46V14*Get_Health_Percentage{float} 21|127s33
-X 47 water_network.ads
-23K9*Water_Network 21|29w6 63r4 88r7 104r10 124r15 47|69e18
-63U14*Initialize 21|63s18
-64U14*Simulate_Step 21|88s21
-65U14*Inject_Failure 21|104s24
-67V14*Get_Health_Percentage{float} 21|124s29
+18K9*Ada 22e8 33|19r6 20r6 23r5 78r4 79r4 80r4 105r4 106r4 107r4 171r7
+X 11 a-string.ads
+16K13*Strings 35e16 33|20r10 23r9
+X 15 a-strunb.ads
+91K21*Unbounded 1641e26 33|20w18 23r17
+105R9*Unbounded_String<8|43R9> 1620e15 33|33r16
+135V13*To_String{string} 33|74s14
+159U14*Append 33|45s7 46s7 48s7 49s7 50s7 51s7 53s7 54s7 55s7 56s7 58s7 59s7
+. 60s7 61s7 62s7 64s7 65s7 66s7 68s10 70s10 72s7
+X 18 a-textio.ads
+58K13*Text_IO 785e16 33|19w10 78r8 79r8 80r8 105r8 106r8 107r8 171r11
+284U14*New_Line 33|107s16
+565U14*Put_Line 33|78s16 79s16 80s16 105s16 106s16 171s19
+X 20 cascade_failure.ads
+28K9*Cascade_Failure 55e20 33|16w6 99r4 132r7 133r7
+50U14*Initialize 33|99s20
+51U14*Evaluate_Cascade 33|132s23
+52U14*Apply_Recovery 33|133s23
+X 21 civicshield.ads
+21K9*CivicShield 30e16 33|18r6 103r4 162r10
+X 25 civicshield-telemetry.ads
+48K21*Telemetry 141e26 33|18w18 103r16 162r22
+130U14*Start_Server 33|103s26
+136U14*Broadcast 33|162s32
+X 27 emergency_response.ads
+24K9*Emergency_Response 58e23 33|14w6 97r4 119r7 148r15
+49U14*Initialize 33|97s23
+50U14*Simulate_Step 33|119s26
+56V14*Get_Health_Percentage{float} 33|148s34
+X 28 healthcare.ads
+23K9*Healthcare 48e15 33|15w6 98r4 120r7 151r15
+42U14*Initialize 33|98s15
+43U14*Simulate_Step 33|120s18
+46V14*Get_Health_Percentage{float} 33|151s26
+X 32 logging.ads
+23K9*Logging 104e12 33|9w6 85r4
+102U14*Initialize 33|85s12
+X 33 main.adb
+25U11*Main 25b11 175l5 175t9
+27i4 Current_Step{natural} 113m7 113r23 123r10 125r13 127r13 158r23 173r25
+28r4 Health{35|39R9} 136m7 153r38 159r31 160r31
+29i4 Token{1|48I9} 88m4 89r7 91r10
+32V13 Build_JSON{string} 32b13 32>25 32>41 32>53 75l8 75t18 158s12
+32i25 Tick{natural} 45r47 46r52 67r10
+32i41 Pwr_Health{natural} 34r39 35r39 36r39 37r39 38r39
+32i53 Wtr_Health{natural} 40r39 41r39 42r39
+33r7 J{15|105R9} 45m15 45r15 46m15 46r15 48m15 48r15 49m15 49r15 50m15 50r15
+. 51m15 51r15 53m15 53r15 54m15 54r15 55m15 55r15 56m15 56r15 58m15 58r15
+. 59m15 59r15 60m15 60r15 61m15 61r15 62m15 62r15 64m15 64r15 65m15 65r15
+. 66m15 66r15 68m18 68r18 70m18 70r18 72m15 72r15 74r24
+34a7 Freq{string} 48r56
+35a7 Gen{string} 49r40
+36a7 Imb{string} 50r40
+37a7 Tr_Gen{string} 51r40
+38a7 Tr_Lin{string} 50r70
+40a7 Avg_P{string} 53r63
+41a7 Min_P{string} 54r44
+42a7 Inad{string} 55r70
+157a10 JSON_String{string} 162r43
+X 34 power_grid.ads
+24K9*Power_Grid 33|11w6 94r4 116r7 124r10 139r15 34|63e15
+57U14*Initialize 33|94s15
+58U14*Simulate_Step 33|116s18
+59U14*Inject_Failure 33|124s21
+61V14*Get_Health_Percentage{float} 33|139s26
+X 35 stability_index.ads
+21K9*Stability_Index 33|17w6 28r19 100r4 138r12 141r12 144r12 147r12 150r12
+. 153r7 35|64e20
+33F9*Health_Percentage<float> 33|138r28 141r28 144r28 147r28 150r28
+39R9*Subsystem_Health 33|28r35 35|45e14
+40f7*Power_Health{33F9} 33|137m10 159r38
+41f7*Water_Health{33F9} 33|140m10 160r38
+42f7*Transport_Health{33F9} 33|143m10
+43f7*Emergency_Health{33F9} 33|146m10
+44f7*Healthcare_Health{33F9} 33|149m10
+58U14*Initialize 33|100s20
+59U14*Compute_Score 33|153s23
+X 36 system.ads
+67M9*Address
+X 47 s-memory.ads
+51V13*Alloc{36|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{36|67M9} 103i<c,__gnat_realloc>22
+X 56 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
+X 68 transport_control.ads
+23K9*Transport_Control 33|13w6 96r4 118r7 128r10 145r15 68|48e22
+42U14*Initialize 33|96s22
+43U14*Simulate_Step 33|118s25
+44U14*Inject_Incident 33|128s28
+46V14*Get_Health_Percentage{float} 33|145s33
+X 69 water_network.ads
+23K9*Water_Network 33|12w6 95r4 117r7 126r10 142r15 69|69e18
+63U14*Initialize 33|95s18
+64U14*Simulate_Step 33|117s21
+65U14*Inject_Failure 33|126s24
+67V14*Get_Health_Percentage{float} 33|142s29
 

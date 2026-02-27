@@ -1,0 +1,12 @@
+/obj/
+/bin/
+/alire/
+/config/
+node_modules/
+target/
+.idea/
+.vscode/
+*.log
+.mvn/
+dist/
+build/

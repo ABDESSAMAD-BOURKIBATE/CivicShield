@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.civicshield.ui.DashboardController"
+            styleClass="root-pane">
+
+    <top>
+        <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="20">
+            <FontIcon iconLiteral="mdi2s-shield-check" iconSize="32" styleClass="icon-primary"/>
+            <VBox>
+                <Label text="CIVICSHIELD" styleClass="header-title"/>
+                <Label text="Infrastructure Stability Simulator" styleClass="header-subtitle"/>
+            </VBox>
+            
+            <Region HBox.hgrow="ALWAYS" />
+            
+            <HBox styleClass="status-pill" alignment="CENTER" spacing="10">
+                <FontIcon iconLiteral="mdi2c-connection" iconSize="16" fx:id="connectionIcon"/>
+                <Label fx:id="connectionStatus" text="Disconnected"/>
+            </HBox>
+            <VBox alignment="CENTER_RIGHT">
+                <Label text="SIMULATION TIME" styleClass="metric-label"/>
+                <Label fx:id="simTimeLabel" text="00:00:00" styleClass="metric-value-large"/>
+            </VBox>
+        </HBox>
+    </top>
+
+    <center>
+        <GridPane styleClass="dashboard-grid" hgap="20" vgap="20">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="33.3" />
+                <ColumnConstraints percentWidth="33.3" />
+                <ColumnConstraints percentWidth="33.3" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="35" />
+                <RowConstraints percentHeight="40" />
+                <RowConstraints percentHeight="25" />
+            </rowConstraints>
+
+            <!-- Power Grid Card -->
+            <VBox styleClass="scada-card" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <HBox styleClass="card-header" alignment="CENTER_LEFT" spacing="10">
+                    <FontIcon iconLiteral="mdi2p-power-plug" iconSize="24" styleClass="icon-power"/>
+                    <Label text="POWER GRID" styleClass="card-title"/>
+                </HBox>
+                
+                <GridPane styleClass="metrics-grid" hgap="15" vgap="15">
+                    <!-- Row 1 -->
+                    <Label text="Frequency:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <Label fx:id="freqLabel" text="0.0 Hz" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                    
+                    <Label text="Imbalance:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <Label fx:id="imbalanceLabel" text="0 MW" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    
+                    <!-- Row 2 -->
+                    <Label text="Total Gen:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <Label fx:id="genMwLabel" text="0 MW" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                    
+                    <Label text="Total Load:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                    <Label fx:id="loadMwLabel" text="0 MW" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                </GridPane>
+                
+                <Region VBox.vgrow="ALWAYS" />
+                <HBox styleClass="alert-box-critical" fx:id="powerAlertBox" visible="false">
+                    <FontIcon iconLiteral="mdi2a-alert-circle" iconSize="16"/>
+                    <Label fx:id="powerAlertLabel" text="Tripped Lines: 0 | Tripped Gens: 0"/>
+                </HBox>
+            </VBox>
+
+            <!-- Water Network Card -->
+            <VBox styleClass="scada-card" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <HBox styleClass="card-header" alignment="CENTER_LEFT" spacing="10">
+                    <FontIcon iconLiteral="mdi2w-water-pump" iconSize="24" styleClass="icon-water"/>
+                    <Label text="WATER NETWORK" styleClass="card-title"/>
+                </HBox>
+                
+                <GridPane styleClass="metrics-grid" hgap="15" vgap="15">
+                    <Label text="Avg Pressure:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <Label fx:id="avgPressLabel" text="0.0 Bar" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                    
+                    <Label text="Min Pressure:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <Label fx:id="minPressLabel" text="0.0 Bar" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    
+                    <Label text="Total Demand:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <Label fx:id="waterDemandLabel" text="0.0 m³/s" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                    
+                    <Label text="Leakage:" styleClass="metric-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                    <Label fx:id="waterLeakLabel" text="0.0 m³/s" styleClass="metric-value" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                </GridPane>
+
+                <Region VBox.vgrow="ALWAYS" />
+                <HBox styleClass="alert-box-warning" fx:id="waterAlertBox" visible="false">
+                    <FontIcon iconLiteral="mdi2a-alert-outline" iconSize="16"/>
+                    <Label fx:id="waterAlertLabel" text="Inadequate Nodes: 0"/>
+                </HBox>
+            </VBox>
+
+            <!-- Emergency Agents Card -->
+            <VBox styleClass="scada-card" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                <HBox styleClass="card-header" alignment="CENTER_LEFT" spacing="10">
+                    <FontIcon iconLiteral="mdi2a-ambulance" iconSize="24" styleClass="icon-emergency"/>
+                    <Label text="FLEET DISPATCH" styleClass="card-title"/>
+                </HBox>
+                
+                <ScrollPane styleClass="translucent-scroll" fitToWidth="true" VBox.vgrow="ALWAYS">
+                    <VBox fx:id="agentsContainer" spacing="8" styleClass="agents-list"/>
+                </ScrollPane>
+            </VBox>
+            <!-- Live Map Card -->
+            <VBox styleClass="scada-card" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                <HBox styleClass="card-header" alignment="CENTER_LEFT" spacing="10">
+                    <FontIcon iconLiteral="mdi2m-map" iconSize="24" styleClass="icon-primary"/>
+                    <Label text="LIVE INFRASTRUCTURE MAP" styleClass="card-title"/>
+                </HBox>
+                <StackPane fx:id="mapContainer" VBox.vgrow="ALWAYS" style="-fx-border-color: #202b45; -fx-border-width: 1;" />
+            </VBox>
+
+            <!-- Live Chart Card -->
+            <VBox styleClass="scada-card" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <HBox styleClass="card-header" alignment="CENTER_LEFT" spacing="10">
+                    <FontIcon iconLiteral="mdi2c-chart-line" iconSize="24" styleClass="icon-power"/>
+                    <Label text="REAL-TIME FREQUENCY" styleClass="card-title"/>
+                </HBox>
+                <StackPane fx:id="chartContainer" VBox.vgrow="ALWAYS" />
+            </VBox>
+            
+            <!-- Global Event Log Card -->
+            <VBox styleClass="scada-card" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="2">
+                <HBox styleClass="card-header" alignment="CENTER_LEFT" spacing="10">
+                    <FontIcon iconLiteral="mdi2c-console-line" iconSize="24" styleClass="icon-log"/>
+                    <Label text="TELEMETRY EVENT STREAM" styleClass="card-title"/>
+                </HBox>
+                <ListView fx:id="eventLogView" styleClass="log-list" VBox.vgrow="ALWAYS"/>
+            </VBox>
+
+        </GridPane>
+    </center>
+    
+    <bottom>
+        <HBox styleClass="footer-bar" alignment="CENTER_RIGHT">
+            <Label text="High-Integrity Ada Engine Link Active" styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
